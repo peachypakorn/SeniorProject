@@ -1,0 +1,25 @@
+16:05:33 **** Auto Build of configuration Debug for project FFTDMA_Test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../FFTDMA_Test_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado\2015.2\data\ip\xilinx\xfft_v9_0\cmodel\xfft_v9_0_bitacc_cmodel_nt64" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SendPacket':
+../src/helloworld.c:498:6: warning: variable 'Value' set but not used [-Wunused-but-set-variable]
+  u32 Value;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FFTDMA_Test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFTDMA_Test_bsp/ps7_cortexa9_0/lib -o "FFTDMA_Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FFTDMA_Test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size FFTDMA_Test.elf  |tee "FFTDMA_Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40520	   1216	  24228	  65964	  101ac	FFTDMA_Test.elf
+'Finished building: FFTDMA_Test.elf.size'
+' '
+
+16:05:34 Build Finished (took 644ms)
+
