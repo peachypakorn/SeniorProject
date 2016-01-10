@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xa7z020clg484-1I" LaunchTime="1452051142">
-  <File Type="OPT-DCP" Name="FFTDMADesign_wrapper_opt.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="OPT-DCP" Name="FFTDMADesign_wrapper_opt.dcp"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
-  <File Type="PWROPT-DCP" Name="FFTDMADesign_wrapper_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
   <File Type="ROUTE-DCP" Name="FFTDMADesign_wrapper_routed.dcp"/>
   <File Type="PA-TCL" Name="FFTDMADesign_wrapper.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PWROPT-DCP" Name="FFTDMADesign_wrapper_pwropt.dcp"/>
   <File Type="OPT-DRC" Name="FFTDMADesign_wrapper_drc_opted.rpt"/>
   <File Type="PWROPT-DRC" Name="FFTDMADesign_wrapper_drc_pwropted.rpt"/>
   <File Type="OPT-HWDEF" Name="FFTDMADesign_wrapper.hwdef"/>
@@ -20,8 +20,8 @@
   <File Type="PLACE-PRE-SIMILARITY" Name="FFTDMADesign_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="FFTDMADesign_wrapper_postplace_pwropt.dcp"/>
   <File Type="PHYSOPT-DCP" Name="FFTDMADesign_wrapper_physopt.dcp"/>
-  <File Type="RDI-RDI" Name="FFTDMADesign_wrapper.vdi"/>
   <File Type="PHYSOPT-DRC" Name="FFTDMADesign_wrapper_drc_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="FFTDMADesign_wrapper.vdi"/>
   <File Type="ROUTE-DRC" Name="FFTDMADesign_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="FFTDMADesign_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="FFTDMADesign_wrapper_power_routed.rpt"/>
