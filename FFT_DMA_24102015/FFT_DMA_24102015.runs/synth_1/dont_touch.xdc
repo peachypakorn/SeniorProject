@@ -19,20 +19,17 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_rs
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_axi_mem_intercon_0/FFTDMADesign_axi_mem_intercon_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_axi_mem_intercon_0 || ORIG_REF_NAME==FFTDMADesign_axi_mem_intercon_0}]
 
-# IP: bd/FFTDMADesign/ip/FFTDMADesign_xbar_0/FFTDMADesign_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_xbar_0 || ORIG_REF_NAME==FFTDMADesign_xbar_0}]
-
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_xfft_0_0/FFTDMADesign_xfft_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_xfft_0_0 || ORIG_REF_NAME==FFTDMADesign_xfft_0_0}]
 
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_xlconcat_0_0/FFTDMADesign_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_xlconcat_0_0 || ORIG_REF_NAME==FFTDMADesign_xlconcat_0_0}]
 
+# IP: bd/FFTDMADesign/ip/FFTDMADesign_xbar_0/FFTDMADesign_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_xbar_0 || ORIG_REF_NAME==FFTDMADesign_xbar_0}]
+
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_0/FFTDMADesign_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_pc_0 || ORIG_REF_NAME==FFTDMADesign_auto_pc_0}]
-
-# IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_pc_1 || ORIG_REF_NAME==FFTDMADesign_auto_pc_1}]
 
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_0 || ORIG_REF_NAME==FFTDMADesign_auto_us_0}]
@@ -42,6 +39,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_au
 
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_2 || ORIG_REF_NAME==FFTDMADesign_auto_us_2}]
+
+# IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_pc_1 || ORIG_REF_NAME==FFTDMADesign_auto_pc_1}]
 
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_processing_system7_0_0/FFTDMADesign_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==FFTDMADesign_processing_system7_0_0 || ORIG_REF_NAME==FFTDMADesign_processing_system7_0_0}] {/inst }]/inst ]]
@@ -62,13 +62,11 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0_ooc.xdc
 
-# XDC: bd/FFTDMADesign/ip/FFTDMADesign_xbar_0/FFTDMADesign_xbar_0_ooc.xdc
-
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_xfft_0_0/FFTDMADesign_xfft_0_0_ooc.xdc
 
-# XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_0/FFTDMADesign_auto_pc_0_ooc.xdc
+# XDC: bd/FFTDMADesign/ip/FFTDMADesign_xbar_0/FFTDMADesign_xbar_0_ooc.xdc
 
-# XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1_ooc.xdc
+# XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_0/FFTDMADesign_auto_pc_0_ooc.xdc
 
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_ooc.xdc
 
@@ -84,5 +82,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_clocks.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_2 || ORIG_REF_NAME==FFTDMADesign_auto_us_2}] {/inst }]/inst ]]
+
+# XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1_ooc.xdc
 
 # XDC: bd/FFTDMADesign/FFTDMADesign_ooc.xdc

@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  65340	  35156	  24300	 124796	  1e77c	dma_fft.elf
+  65348	  35156	  24300	 124804	  1e784	dma_fft.elf

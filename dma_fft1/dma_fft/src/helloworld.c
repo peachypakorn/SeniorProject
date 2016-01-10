@@ -468,6 +468,7 @@ static int SendPacket(XAxiDma * AxiDmaInstPtr,int c)
 {
 	XAxiDma_BdRing *TxRingPtr;
 	cplx_data_t *TxPacket;
+	cplx_data_t *RxClean;
 	//u8 Value;
 	XAxiDma_Bd *BdPtr;
 	int Status;
@@ -477,22 +478,25 @@ static int SendPacket(XAxiDma * AxiDmaInstPtr,int c)
 
 	/* Create pattern in the packet to transmit */
 	//TxPacket = ((cplx_data_t *) Packet);
-	TxPacket = 	((cplx_data_t *)stim_buf);
+	TxPacket = 	((cplx_data_t *)stim_buf+c*512);
+	RxClean = ((cplx_data_t *)RX_BUFFER_BASE+c*512);
 //	Value = TEST_START_VALUE;
 //
 
-	for(Index = 0; Index < MAX_PKT_LEN; Index ++) {
-
-		cplx_data_get_string(str,TxPacket[c*32+Index]);
+	for(Index = 0; Index < MAX_PKT_LEN*16; Index ++) {
+		//RxClean[Index] = TxPacket[Index];
+		cplx_data_get_string(str,TxPacket[Index]);
 		xil_printf("Tx Value Index:%d and Value is %s\r\n",
-				    c*32+Index,str);
-
+				    c*512+Index,str);
+		//cplx_data_get_string(str,RxClean[c*32+Index]);
+			//	xil_printf("         Rx Value Index:%d and Value is %s\r\n",
+				//		    c*32+Index,str);
 }
 
 	/* Flush the SrcBuffer before the DMA transfer, in case the Data Cache
 	 * is enabled
 	 */
-	Xil_DCacheFlushRange((u32)TxPacket, MAX_PKT_LEN*32); //32 point each packet
+	Xil_DCacheFlushRange((u32)TxPacket, MAX_PKT_LEN*16); //32 point each packet
 
 
 	/* Allocate a BD */
@@ -502,7 +506,7 @@ static int SendPacket(XAxiDma * AxiDmaInstPtr,int c)
 	}
 
 	/* Set up the BD using the information of the packet to transmit */
-	Status = XAxiDma_BdSetBufAddr(BdPtr, (u32) Packet);
+	Status = XAxiDma_BdSetBufAddr(BdPtr, (u32) Packet+c*512);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Tx set buffer addr %x on BD %x failed %d\r\n",
 		    (unsigned int)Packet, (unsigned int)BdPtr, Status);
@@ -510,7 +514,7 @@ static int SendPacket(XAxiDma * AxiDmaInstPtr,int c)
 		return XST_FAILURE;
 	}
 
-	Status = XAxiDma_BdSetLength(BdPtr, MAX_PKT_LEN*32,
+	Status = XAxiDma_BdSetLength(BdPtr, MAX_PKT_LEN*16,
 				TxRingPtr->MaxTransferLen);
 	//xil_printf("max tranfer length = %d",TxRingPtr->MaxTransferLen);
 	if (Status != XST_SUCCESS) {
@@ -536,7 +540,7 @@ static int SendPacket(XAxiDma * AxiDmaInstPtr,int c)
 	XAxiDma_BdSetCtrl(BdPtr, XAXIDMA_BD_CTRL_TXEOF_MASK |
 						XAXIDMA_BD_CTRL_TXSOF_MASK);
 
-	XAxiDma_BdSetId(BdPtr, (u32) Packet);
+	XAxiDma_BdSetId(BdPtr, (u32) Packet+c*512);
 
 	/* Give the BD to DMA to kick off the transmission. */
 	Status = XAxiDma_BdRingToHw(TxRingPtr, 1, BdPtr);
