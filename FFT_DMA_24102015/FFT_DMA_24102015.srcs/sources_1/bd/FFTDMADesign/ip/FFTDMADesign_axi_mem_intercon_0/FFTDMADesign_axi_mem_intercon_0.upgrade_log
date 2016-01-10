@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sun Jan 10 17:22:28 2016
+| Host         : DESKTOP-SG5D71V running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xa7z020clg484-1I
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'FFTDMADesign_axi_mem_intercon_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of FFTDMADesign_axi_mem_intercon_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 6) to (Rev. 8)
+
