@@ -203,3 +203,36 @@ java.lang.RuntimeException: Error in Resetting Target
 13:04:38 INFO  : Processor reset is completed for ps7_cortexa9_0
 13:06:20 INFO  : Processor reset is completed for ps7_cortexa9_0
 13:14:32 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:46:08 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:46:09 INFO  : XSDB server has started successfully.
+20:46:09 INFO  : Processing command line option -hwspec D:/SeniorProject/dma_fft1/FFTDMADesign_wrapper.hdf.
+20:55:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:55:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469153" && level==0} -index 1' command is executed.
+20:55:19 INFO  : FPGA configured successfully with bitstream "D:/SeniorProject/dma_fft1/FFTDMADesign_wrapper_hw_platform_0/FFTDMADesign_wrapper.bit"
+20:56:20 INFO  : ps7_init is completed.
+20:56:20 INFO  : ps7_post_config is completed.
+20:56:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:57:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:57:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:28:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:37:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:37:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:40:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:40:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469153" && level==0} -index 1' command is executed.
+23:41:01 INFO  : FPGA configured successfully with bitstream "D:/SeniorProject/dma_fft1/FFTDMADesign_wrapper_hw_platform_0/FFTDMADesign_wrapper.bit"
+23:41:08 INFO  : ps7_init is completed.
+23:41:08 INFO  : ps7_post_config is completed.
+23:41:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:41:08 ERROR : No such port: COM4
+23:41:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:42:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:43:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:43:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469153" && level==0} -index 1' command is executed.
+23:43:25 INFO  : FPGA configured successfully with bitstream "D:/SeniorProject/dma_fft1/FFTDMADesign_wrapper_hw_platform_0/FFTDMADesign_wrapper.bit"
+23:43:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:43:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:43:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:43:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:46:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:46:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:16:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

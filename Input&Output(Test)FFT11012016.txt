@@ -1,0 +1,2053 @@
+
+--- Entering main() --- 
+BdCount = 64
+Tx Value Index:0 and Value is 9915 + j*0
+Tx Value Index:1 and Value is 8486 + j*0
+Tx Value Index:2 and Value is 7182 + j*0
+Tx Value Index:3 and Value is 6060 + j*0
+Tx Value Index:4 and Value is 5150 + j*0
+Tx Value Index:5 and Value is 4458 + j*0
+Tx Value Index:6 and Value is 3967 + j*0
+Tx Value Index:7 and Value is 3638 + j*0
+Tx Value Index:8 and Value is 3411 + j*0
+Tx Value Index:9 and Value is 3216 + j*0
+Tx Value Index:10 and Value is 2976 + j*0
+Tx Value Index:11 and Value is 2614 + j*0
+Tx Value Index:12 and Value is 2058 + j*0
+Tx Value Index:13 and Value is 1251 + j*0
+Tx Value Index:14 and Value is 153 + j*0
+Tx Value Index:15 and Value is -1251 + j*-1
+Tx Value Index:16 and Value is -2953 + j*-1
+Tx Value Index:17 and Value is -4917 + j*-1
+Tx Value Index:18 and Value is -7081 + j*-1
+Tx Value Index:19 and Value is -9363 + j*-1
+Tx Value Index:20 and Value is -11659 + j*-1
+Tx Value Index:21 and Value is -13855 + j*-1
+Tx Value Index:22 and Value is -15830 + j*-1
+Tx Value Index:23 and Value is -17466 + j*-1
+Tx Value Index:24 and Value is -18651 + j*-1
+Tx Value Index:25 and Value is -19294 + j*-1
+Tx Value Index:26 and Value is -19325 + j*-1
+Tx Value Index:27 and Value is -18702 + j*-1
+Tx Value Index:28 and Value is -17415 + j*-1
+Tx Value Index:29 and Value is -15490 + j*-1
+Tx Value Index:30 and Value is -12983 + j*-1
+Tx Value Index:31 and Value is -9984 + j*-1
+Tx Value Index:32 and Value is -6610 + j*-1
+Tx Value Index:33 and Value is -2997 + j*-1
+Tx Value Index:34 and Value is 702 + j*0
+Tx Value Index:35 and Value is 4330 + j*0
+Tx Value Index:36 and Value is 7733 + j*0
+Tx Value Index:37 and Value is 10766 + j*0
+Tx Value Index:38 and Value is 13306 + j*0
+Tx Value Index:39 and Value is 15254 + j*0
+Tx Value Index:40 and Value is 16543 + j*0
+Tx Value Index:41 and Value is 17142 + j*0
+Tx Value Index:42 and Value is 17055 + j*0
+Tx Value Index:43 and Value is 16324 + j*0
+Tx Value Index:44 and Value is 15022 + j*0
+Tx Value Index:45 and Value is 13253 + j*0
+Tx Value Index:46 and Value is 11141 + j*0
+Tx Value Index:47 and Value is 8825 + j*0
+Tx Value Index:48 and Value is 6451 + j*0
+Tx Value Index:49 and Value is 4162 + j*0
+Tx Value Index:50 and Value is 2089 + j*0
+Tx Value Index:51 and Value is 345 + j*0
+Tx Value Index:52 and Value is -986 + j*-1
+Tx Value Index:53 and Value is -1845 + j*-1
+Tx Value Index:54 and Value is -2213 + j*-1
+Tx Value Index:55 and Value is -2100 + j*-1
+Tx Value Index:56 and Value is -1555 + j*-1
+Tx Value Index:57 and Value is -654 + j*-1
+Tx Value Index:58 and Value is 503 + j*0
+Tx Value Index:59 and Value is 1795 + j*0
+Tx Value Index:60 and Value is 3092 + j*0
+Tx Value Index:61 and Value is 4263 + j*0
+Tx Value Index:62 and Value is 5181 + j*0
+Tx Value Index:63 and Value is 5737 + j*0
+Tx Value Index:64 and Value is 5845 + j*0
+Tx Value Index:65 and Value is 5444 + j*0
+Tx Value Index:66 and Value is 4508 + j*0
+Tx Value Index:67 and Value is 3046 + j*0
+Tx Value Index:68 and Value is 1101 + j*0
+Tx Value Index:69 and Value is -1251 + j*-1
+Tx Value Index:70 and Value is -3905 + j*-1
+Tx Value Index:71 and Value is -6733 + j*-1
+Tx Value Index:72 and Value is -9593 + j*-1
+Tx Value Index:73 and Value is -12334 + j*-1
+Tx Value Index:74 and Value is -14807 + j*-1
+Tx Value Index:75 and Value is -16873 + j*-1
+Tx Value Index:76 and Value is -18413 + j*-1
+Tx Value Index:77 and Value is -19332 + j*-1
+Tx Value Index:78 and Value is -19565 + j*-1
+Tx Value Index:79 and Value is -19082 + j*-1
+Tx Value Index:80 and Value is -17892 + j*-1
+Tx Value Index:81 and Value is -16035 + j*-1
+Tx Value Index:82 and Value is -13588 + j*-1
+Tx Value Index:83 and Value is -10656 + j*-1
+Tx Value Index:84 and Value is -7366 + j*-1
+Tx Value Index:85 and Value is -3861 + j*-1
+Tx Value Index:86 and Value is -291 + j*-1
+Tx Value Index:87 and Value is 3193 + j*0
+Tx Value Index:88 and Value is 6452 + j*0
+Tx Value Index:89 and Value is 9362 + j*0
+Tx Value Index:90 and Value is 11822 + j*0
+Tx Value Index:91 and Value is 13759 + j*0
+Tx Value Index:92 and Value is 15131 + j*0
+Tx Value Index:93 and Value is 15926 + j*0
+Tx Value Index:94 and Value is 16164 + j*0
+Tx Value Index:95 and Value is 15895 + j*0
+Tx Value Index:96 and Value is 15189 + j*0
+Tx Value Index:97 and Value is 14136 + j*0
+Tx Value Index:98 and Value is 12837 + j*0
+Tx Value Index:99 and Value is 11396 + j*0
+Tx Value Index:100 and Value is 9915 + j*0
+Tx Value Index:101 and Value is 8486 + j*0
+Tx Value Index:102 and Value is 7182 + j*0
+Tx Value Index:103 and Value is 6060 + j*0
+Tx Value Index:104 and Value is 5150 + j*0
+Tx Value Index:105 and Value is 4458 + j*0
+Tx Value Index:106 and Value is 3967 + j*0
+Tx Value Index:107 and Value is 3638 + j*0
+Tx Value Index:108 and Value is 3411 + j*0
+Tx Value Index:109 and Value is 3216 + j*0
+Tx Value Index:110 and Value is 2976 + j*0
+Tx Value Index:111 and Value is 2614 + j*0
+Tx Value Index:112 and Value is 2058 + j*0
+Tx Value Index:113 and Value is 1251 + j*0
+Tx Value Index:114 and Value is 153 + j*0
+Tx Value Index:115 and Value is -1251 + j*-1
+Tx Value Index:116 and Value is -2953 + j*-1
+Tx Value Index:117 and Value is -4917 + j*-1
+Tx Value Index:118 and Value is -7081 + j*-1
+Tx Value Index:119 and Value is -9363 + j*-1
+Tx Value Index:120 and Value is -11659 + j*-1
+Tx Value Index:121 and Value is -13855 + j*-1
+Tx Value Index:122 and Value is -15830 + j*-1
+Tx Value Index:123 and Value is -17466 + j*-1
+Tx Value Index:124 and Value is -18651 + j*-1
+Tx Value Index:125 and Value is -19294 + j*-1
+Tx Value Index:126 and Value is -19325 + j*-1
+Tx Value Index:127 and Value is -18702 + j*-1
+Tx Value Index:128 and Value is -17415 + j*-1
+Tx Value Index:129 and Value is -15490 + j*-1
+Tx Value Index:130 and Value is -12983 + j*-1
+Tx Value Index:131 and Value is -9984 + j*-1
+Tx Value Index:132 and Value is -6610 + j*-1
+Tx Value Index:133 and Value is -2997 + j*-1
+Tx Value Index:134 and Value is 702 + j*0
+Tx Value Index:135 and Value is 4330 + j*0
+Tx Value Index:136 and Value is 7733 + j*0
+Tx Value Index:137 and Value is 10766 + j*0
+Tx Value Index:138 and Value is 13306 + j*0
+Tx Value Index:139 and Value is 15254 + j*0
+Tx Value Index:140 and Value is 16543 + j*0
+Tx Value Index:141 and Value is 17142 + j*0
+Tx Value Index:142 and Value is 17055 + j*0
+Tx Value Index:143 and Value is 16324 + j*0
+Tx Value Index:144 and Value is 15022 + j*0
+Tx Value Index:145 and Value is 13253 + j*0
+Tx Value Index:146 and Value is 11141 + j*0
+Tx Value Index:147 and Value is 8825 + j*0
+Tx Value Index:148 and Value is 6451 + j*0
+Tx Value Index:149 and Value is 4162 + j*0
+Tx Value Index:150 and Value is 2089 + j*0
+Tx Value Index:151 and Value is 345 + j*0
+Tx Value Index:152 and Value is -986 + j*-1
+Tx Value Index:153 and Value is -1845 + j*-1
+Tx Value Index:154 and Value is -2213 + j*-1
+Tx Value Index:155 and Value is -2100 + j*-1
+Tx Value Index:156 and Value is -1555 + j*-1
+Tx Value Index:157 and Value is -654 + j*-1
+Tx Value Index:158 and Value is 503 + j*0
+Tx Value Index:159 and Value is 1795 + j*0
+Tx Value Index:160 and Value is 3092 + j*0
+Tx Value Index:161 and Value is 4263 + j*0
+Tx Value Index:162 and Value is 5181 + j*0
+Tx Value Index:163 and Value is 5737 + j*0
+Tx Value Index:164 and Value is 5845 + j*0
+Tx Value Index:165 and Value is 5444 + j*0
+Tx Value Index:166 and Value is 4508 + j*0
+Tx Value Index:167 and Value is 3046 + j*0
+Tx Value Index:168 and Value is 1101 + j*0
+Tx Value Index:169 and Value is -1251 + j*-1
+Tx Value Index:170 and Value is -3905 + j*-1
+Tx Value Index:171 and Value is -6733 + j*-1
+Tx Value Index:172 and Value is -9593 + j*-1
+Tx Value Index:173 and Value is -12334 + j*-1
+Tx Value Index:174 and Value is -14807 + j*-1
+Tx Value Index:175 and Value is -16873 + j*-1
+Tx Value Index:176 and Value is -18413 + j*-1
+Tx Value Index:177 and Value is -19332 + j*-1
+Tx Value Index:178 and Value is -19565 + j*-1
+Tx Value Index:179 and Value is -19082 + j*-1
+Tx Value Index:180 and Value is -17892 + j*-1
+Tx Value Index:181 and Value is -16035 + j*-1
+Tx Value Index:182 and Value is -13588 + j*-1
+Tx Value Index:183 and Value is -10656 + j*-1
+Tx Value Index:184 and Value is -7366 + j*-1
+Tx Value Index:185 and Value is -3861 + j*-1
+Tx Value Index:186 and Value is -291 + j*-1
+Tx Value Index:187 and Value is 3193 + j*0
+Tx Value Index:188 and Value is 6452 + j*0
+Tx Value Index:189 and Value is 9362 + j*0
+Tx Value Index:190 and Value is 11822 + j*0
+Tx Value Index:191 and Value is 13759 + j*0
+Tx Value Index:192 and Value is 15131 + j*0
+Tx Value Index:193 and Value is 15926 + j*0
+Tx Value Index:194 and Value is 16164 + j*0
+Tx Value Index:195 and Value is 15895 + j*0
+Tx Value Index:196 and Value is 15189 + j*0
+Tx Value Index:197 and Value is 14136 + j*0
+Tx Value Index:198 and Value is 12837 + j*0
+Tx Value Index:199 and Value is 11396 + j*0
+Tx Value Index:200 and Value is 9915 + j*0
+Tx Value Index:201 and Value is 8486 + j*0
+Tx Value Index:202 and Value is 7182 + j*0
+Tx Value Index:203 and Value is 6060 + j*0
+Tx Value Index:204 and Value is 5150 + j*0
+Tx Value Index:205 and Value is 4458 + j*0
+Tx Value Index:206 and Value is 3967 + j*0
+Tx Value Index:207 and Value is 3638 + j*0
+Tx Value Index:208 and Value is 3411 + j*0
+Tx Value Index:209 and Value is 3216 + j*0
+Tx Value Index:210 and Value is 2976 + j*0
+Tx Value Index:211 and Value is 2614 + j*0
+Tx Value Index:212 and Value is 2058 + j*0
+Tx Value Index:213 and Value is 1251 + j*0
+Tx Value Index:214 and Value is 153 + j*0
+Tx Value Index:215 and Value is -1251 + j*-1
+Tx Value Index:216 and Value is -2953 + j*-1
+Tx Value Index:217 and Value is -4917 + j*-1
+Tx Value Index:218 and Value is -7081 + j*-1
+Tx Value Index:219 and Value is -9363 + j*-1
+Tx Value Index:220 and Value is -11659 + j*-1
+Tx Value Index:221 and Value is -13855 + j*-1
+Tx Value Index:222 and Value is -15830 + j*-1
+Tx Value Index:223 and Value is -17466 + j*-1
+Tx Value Index:224 and Value is -18651 + j*-1
+Tx Value Index:225 and Value is -19294 + j*-1
+Tx Value Index:226 and Value is -19325 + j*-1
+Tx Value Index:227 and Value is -18702 + j*-1
+Tx Value Index:228 and Value is -17415 + j*-1
+Tx Value Index:229 and Value is -15490 + j*-1
+Tx Value Index:230 and Value is -12983 + j*-1
+Tx Value Index:231 and Value is -9984 + j*-1
+Tx Value Index:232 and Value is -6610 + j*-1
+Tx Value Index:233 and Value is -2997 + j*-1
+Tx Value Index:234 and Value is 702 + j*0
+Tx Value Index:235 and Value is 4330 + j*0
+Tx Value Index:236 and Value is 7733 + j*0
+Tx Value Index:237 and Value is 10766 + j*0
+Tx Value Index:238 and Value is 13306 + j*0
+Tx Value Index:239 and Value is 15254 + j*0
+Tx Value Index:240 and Value is 16543 + j*0
+Tx Value Index:241 and Value is 17142 + j*0
+Tx Value Index:242 and Value is 17055 + j*0
+Tx Value Index:243 and Value is 16324 + j*0
+Tx Value Index:244 and Value is 15022 + j*0
+Tx Value Index:245 and Value is 13253 + j*0
+Tx Value Index:246 and Value is 11141 + j*0
+Tx Value Index:247 and Value is 8825 + j*0
+Tx Value Index:248 and Value is 6451 + j*0
+Tx Value Index:249 and Value is 4162 + j*0
+Tx Value Index:250 and Value is 2089 + j*0
+Tx Value Index:251 and Value is 345 + j*0
+Tx Value Index:252 and Value is -986 + j*-1
+Tx Value Index:253 and Value is -1845 + j*-1
+Tx Value Index:254 and Value is -2213 + j*-1
+Tx Value Index:255 and Value is -2100 + j*-1
+Tx Value Index:256 and Value is -1555 + j*-1
+Tx Value Index:257 and Value is -654 + j*-1
+Tx Value Index:258 and Value is 503 + j*0
+Tx Value Index:259 and Value is 1795 + j*0
+Tx Value Index:260 and Value is 3092 + j*0
+Tx Value Index:261 and Value is 4263 + j*0
+Tx Value Index:262 and Value is 5181 + j*0
+Tx Value Index:263 and Value is 5737 + j*0
+Tx Value Index:264 and Value is 5845 + j*0
+Tx Value Index:265 and Value is 5444 + j*0
+Tx Value Index:266 and Value is 4508 + j*0
+Tx Value Index:267 and Value is 3046 + j*0
+Tx Value Index:268 and Value is 1101 + j*0
+Tx Value Index:269 and Value is -1251 + j*-1
+Tx Value Index:270 and Value is -3905 + j*-1
+Tx Value Index:271 and Value is -6733 + j*-1
+Tx Value Index:272 and Value is -9593 + j*-1
+Tx Value Index:273 and Value is -12334 + j*-1
+Tx Value Index:274 and Value is -14807 + j*-1
+Tx Value Index:275 and Value is -16873 + j*-1
+Tx Value Index:276 and Value is -18413 + j*-1
+Tx Value Index:277 and Value is -19332 + j*-1
+Tx Value Index:278 and Value is -19565 + j*-1
+Tx Value Index:279 and Value is -19082 + j*-1
+Tx Value Index:280 and Value is -17892 + j*-1
+Tx Value Index:281 and Value is -16035 + j*-1
+Tx Value Index:282 and Value is -13588 + j*-1
+Tx Value Index:283 and Value is -10656 + j*-1
+Tx Value Index:284 and Value is -7366 + j*-1
+Tx Value Index:285 and Value is -3861 + j*-1
+Tx Value Index:286 and Value is -291 + j*-1
+Tx Value Index:287 and Value is 3193 + j*0
+Tx Value Index:288 and Value is 6452 + j*0
+Tx Value Index:289 and Value is 9362 + j*0
+Tx Value Index:290 and Value is 11822 + j*0
+Tx Value Index:291 and Value is 13759 + j*0
+Tx Value Index:292 and Value is 15131 + j*0
+Tx Value Index:293 and Value is 15926 + j*0
+Tx Value Index:294 and Value is 16164 + j*0
+Tx Value Index:295 and Value is 15895 + j*0
+Tx Value Index:296 and Value is 15189 + j*0
+Tx Value Index:297 and Value is 14136 + j*0
+Tx Value Index:298 and Value is 12837 + j*0
+Tx Value Index:299 and Value is 11396 + j*0
+Tx Value Index:300 and Value is 9915 + j*0
+Tx Value Index:301 and Value is 8486 + j*0
+Tx Value Index:302 and Value is 7182 + j*0
+Tx Value Index:303 and Value is 6060 + j*0
+Tx Value Index:304 and Value is 5150 + j*0
+Tx Value Index:305 and Value is 4458 + j*0
+Tx Value Index:306 and Value is 3967 + j*0
+Tx Value Index:307 and Value is 3638 + j*0
+Tx Value Index:308 and Value is 3411 + j*0
+Tx Value Index:309 and Value is 3216 + j*0
+Tx Value Index:310 and Value is 2976 + j*0
+Tx Value Index:311 and Value is 2614 + j*0
+Tx Value Index:312 and Value is 2058 + j*0
+Tx Value Index:313 and Value is 1251 + j*0
+Tx Value Index:314 and Value is 153 + j*0
+Tx Value Index:315 and Value is -1251 + j*-1
+Tx Value Index:316 and Value is -2953 + j*-1
+Tx Value Index:317 and Value is -4917 + j*-1
+Tx Value Index:318 and Value is -7081 + j*-1
+Tx Value Index:319 and Value is -9363 + j*-1
+Tx Value Index:320 and Value is -11659 + j*-1
+Tx Value Index:321 and Value is -13855 + j*-1
+Tx Value Index:322 and Value is -15830 + j*-1
+Tx Value Index:323 and Value is -17466 + j*-1
+Tx Value Index:324 and Value is -18651 + j*-1
+Tx Value Index:325 and Value is -19294 + j*-1
+Tx Value Index:326 and Value is -19325 + j*-1
+Tx Value Index:327 and Value is -18702 + j*-1
+Tx Value Index:328 and Value is -17415 + j*-1
+Tx Value Index:329 and Value is -15490 + j*-1
+Tx Value Index:330 and Value is -12983 + j*-1
+Tx Value Index:331 and Value is -9984 + j*-1
+Tx Value Index:332 and Value is -6610 + j*-1
+Tx Value Index:333 and Value is -2997 + j*-1
+Tx Value Index:334 and Value is 702 + j*0
+Tx Value Index:335 and Value is 4330 + j*0
+Tx Value Index:336 and Value is 7733 + j*0
+Tx Value Index:337 and Value is 10766 + j*0
+Tx Value Index:338 and Value is 13306 + j*0
+Tx Value Index:339 and Value is 15254 + j*0
+Tx Value Index:340 and Value is 16543 + j*0
+Tx Value Index:341 and Value is 17142 + j*0
+Tx Value Index:342 and Value is 17055 + j*0
+Tx Value Index:343 and Value is 16324 + j*0
+Tx Value Index:344 and Value is 15022 + j*0
+Tx Value Index:345 and Value is 13253 + j*0
+Tx Value Index:346 and Value is 11141 + j*0
+Tx Value Index:347 and Value is 8825 + j*0
+Tx Value Index:348 and Value is 6451 + j*0
+Tx Value Index:349 and Value is 4162 + j*0
+Tx Value Index:350 and Value is 2089 + j*0
+Tx Value Index:351 and Value is 345 + j*0
+Tx Value Index:352 and Value is -986 + j*-1
+Tx Value Index:353 and Value is -1845 + j*-1
+Tx Value Index:354 and Value is -2213 + j*-1
+Tx Value Index:355 and Value is -2100 + j*-1
+Tx Value Index:356 and Value is -1555 + j*-1
+Tx Value Index:357 and Value is -654 + j*-1
+Tx Value Index:358 and Value is 503 + j*0
+Tx Value Index:359 and Value is 1795 + j*0
+Tx Value Index:360 and Value is 3092 + j*0
+Tx Value Index:361 and Value is 4263 + j*0
+Tx Value Index:362 and Value is 5181 + j*0
+Tx Value Index:363 and Value is 5737 + j*0
+Tx Value Index:364 and Value is 5845 + j*0
+Tx Value Index:365 and Value is 5444 + j*0
+Tx Value Index:366 and Value is 4508 + j*0
+Tx Value Index:367 and Value is 3046 + j*0
+Tx Value Index:368 and Value is 1101 + j*0
+Tx Value Index:369 and Value is -1251 + j*-1
+Tx Value Index:370 and Value is -3905 + j*-1
+Tx Value Index:371 and Value is -6733 + j*-1
+Tx Value Index:372 and Value is -9593 + j*-1
+Tx Value Index:373 and Value is -12334 + j*-1
+Tx Value Index:374 and Value is -14807 + j*-1
+Tx Value Index:375 and Value is -16873 + j*-1
+Tx Value Index:376 and Value is -18413 + j*-1
+Tx Value Index:377 and Value is -19332 + j*-1
+Tx Value Index:378 and Value is -19565 + j*-1
+Tx Value Index:379 and Value is -19082 + j*-1
+Tx Value Index:380 and Value is -17892 + j*-1
+Tx Value Index:381 and Value is -16035 + j*-1
+Tx Value Index:382 and Value is -13588 + j*-1
+Tx Value Index:383 and Value is -10656 + j*-1
+Tx Value Index:384 and Value is -7366 + j*-1
+Tx Value Index:385 and Value is -3861 + j*-1
+Tx Value Index:386 and Value is -291 + j*-1
+Tx Value Index:387 and Value is 3193 + j*0
+Tx Value Index:388 and Value is 6452 + j*0
+Tx Value Index:389 and Value is 9362 + j*0
+Tx Value Index:390 and Value is 11822 + j*0
+Tx Value Index:391 and Value is 13759 + j*0
+Tx Value Index:392 and Value is 15131 + j*0
+Tx Value Index:393 and Value is 15926 + j*0
+Tx Value Index:394 and Value is 16164 + j*0
+Tx Value Index:395 and Value is 15895 + j*0
+Tx Value Index:396 and Value is 15189 + j*0
+Tx Value Index:397 and Value is 14136 + j*0
+Tx Value Index:398 and Value is 12837 + j*0
+Tx Value Index:399 and Value is 11396 + j*0
+Tx Value Index:400 and Value is 9915 + j*0
+Tx Value Index:401 and Value is 8486 + j*0
+Tx Value Index:402 and Value is 7182 + j*0
+Tx Value Index:403 and Value is 6060 + j*0
+Tx Value Index:404 and Value is 5150 + j*0
+Tx Value Index:405 and Value is 4458 + j*0
+Tx Value Index:406 and Value is 3967 + j*0
+Tx Value Index:407 and Value is 3638 + j*0
+Tx Value Index:408 and Value is 3411 + j*0
+Tx Value Index:409 and Value is 3216 + j*0
+Tx Value Index:410 and Value is 2976 + j*0
+Tx Value Index:411 and Value is 2614 + j*0
+Tx Value Index:412 and Value is 2058 + j*0
+Tx Value Index:413 and Value is 1251 + j*0
+Tx Value Index:414 and Value is 153 + j*0
+Tx Value Index:415 and Value is -1251 + j*-1
+Tx Value Index:416 and Value is -2953 + j*-1
+Tx Value Index:417 and Value is -4917 + j*-1
+Tx Value Index:418 and Value is -7081 + j*-1
+Tx Value Index:419 and Value is -9363 + j*-1
+Tx Value Index:420 and Value is -11659 + j*-1
+Tx Value Index:421 and Value is -13855 + j*-1
+Tx Value Index:422 and Value is -15830 + j*-1
+Tx Value Index:423 and Value is -17466 + j*-1
+Tx Value Index:424 and Value is -18651 + j*-1
+Tx Value Index:425 and Value is -19294 + j*-1
+Tx Value Index:426 and Value is -19325 + j*-1
+Tx Value Index:427 and Value is -18702 + j*-1
+Tx Value Index:428 and Value is -17415 + j*-1
+Tx Value Index:429 and Value is -15490 + j*-1
+Tx Value Index:430 and Value is -12983 + j*-1
+Tx Value Index:431 and Value is -9984 + j*-1
+Tx Value Index:432 and Value is -6610 + j*-1
+Tx Value Index:433 and Value is -2997 + j*-1
+Tx Value Index:434 and Value is 702 + j*0
+Tx Value Index:435 and Value is 4330 + j*0
+Tx Value Index:436 and Value is 7733 + j*0
+Tx Value Index:437 and Value is 10766 + j*0
+Tx Value Index:438 and Value is 13306 + j*0
+Tx Value Index:439 and Value is 15254 + j*0
+Tx Value Index:440 and Value is 16543 + j*0
+Tx Value Index:441 and Value is 17142 + j*0
+Tx Value Index:442 and Value is 17055 + j*0
+Tx Value Index:443 and Value is 16324 + j*0
+Tx Value Index:444 and Value is 15022 + j*0
+Tx Value Index:445 and Value is 13253 + j*0
+Tx Value Index:446 and Value is 11141 + j*0
+Tx Value Index:447 and Value is 8825 + j*0
+Tx Value Index:448 and Value is 6451 + j*0
+Tx Value Index:449 and Value is 4162 + j*0
+Tx Value Index:450 and Value is 2089 + j*0
+Tx Value Index:451 and Value is 345 + j*0
+Tx Value Index:452 and Value is -986 + j*-1
+Tx Value Index:453 and Value is -1845 + j*-1
+Tx Value Index:454 and Value is -2213 + j*-1
+Tx Value Index:455 and Value is -2100 + j*-1
+Tx Value Index:456 and Value is -1555 + j*-1
+Tx Value Index:457 and Value is -654 + j*-1
+Tx Value Index:458 and Value is 503 + j*0
+Tx Value Index:459 and Value is 1795 + j*0
+Tx Value Index:460 and Value is 3092 + j*0
+Tx Value Index:461 and Value is 4263 + j*0
+Tx Value Index:462 and Value is 5181 + j*0
+Tx Value Index:463 and Value is 5737 + j*0
+Tx Value Index:464 and Value is 5845 + j*0
+Tx Value Index:465 and Value is 5444 + j*0
+Tx Value Index:466 and Value is 4508 + j*0
+Tx Value Index:467 and Value is 3046 + j*0
+Tx Value Index:468 and Value is 1101 + j*0
+Tx Value Index:469 and Value is -1251 + j*-1
+Tx Value Index:470 and Value is -3905 + j*-1
+Tx Value Index:471 and Value is -6733 + j*-1
+Tx Value Index:472 and Value is -9593 + j*-1
+Tx Value Index:473 and Value is -12334 + j*-1
+Tx Value Index:474 and Value is -14807 + j*-1
+Tx Value Index:475 and Value is -16873 + j*-1
+Tx Value Index:476 and Value is -18413 + j*-1
+Tx Value Index:477 and Value is -19332 + j*-1
+Tx Value Index:478 and Value is -19565 + j*-1
+Tx Value Index:479 and Value is -19082 + j*-1
+Tx Value Index:480 and Value is -17892 + j*-1
+Tx Value Index:481 and Value is -16035 + j*-1
+Tx Value Index:482 and Value is -13588 + j*-1
+Tx Value Index:483 and Value is -10656 + j*-1
+Tx Value Index:484 and Value is -7366 + j*-1
+Tx Value Index:485 and Value is -3861 + j*-1
+Tx Value Index:486 and Value is -291 + j*-1
+Tx Value Index:487 and Value is 3193 + j*0
+Tx Value Index:488 and Value is 6452 + j*0
+Tx Value Index:489 and Value is 9362 + j*0
+Tx Value Index:490 and Value is 11822 + j*0
+Tx Value Index:491 and Value is 13759 + j*0
+Tx Value Index:492 and Value is 15131 + j*0
+Tx Value Index:493 and Value is 15926 + j*0
+Tx Value Index:494 and Value is 16164 + j*0
+Tx Value Index:495 and Value is 15895 + j*0
+Tx Value Index:496 and Value is 15189 + j*0
+Tx Value Index:497 and Value is 14136 + j*0
+Tx Value Index:498 and Value is 12837 + j*0
+Tx Value Index:499 and Value is 11396 + j*0
+Tx Value Index:500 and Value is 9915 + j*0
+Tx Value Index:501 and Value is 8486 + j*0
+Tx Value Index:502 and Value is 7182 + j*0
+Tx Value Index:503 and Value is 6060 + j*0
+Tx Value Index:504 and Value is 5150 + j*0
+Tx Value Index:505 and Value is 4458 + j*0
+Tx Value Index:506 and Value is 3967 + j*0
+Tx Value Index:507 and Value is 3638 + j*0
+Tx Value Index:508 and Value is 3411 + j*0
+Tx Value Index:509 and Value is 3216 + j*0
+Tx Value Index:510 and Value is 2976 + j*0
+Tx Value Index:511 and Value is 2614 + j*0
+Tx Value Index:512 and Value is 2058 + j*0
+Tx Value Index:513 and Value is 1251 + j*0
+Tx Value Index:514 and Value is 153 + j*0
+Tx Value Index:515 and Value is -1251 + j*-1
+Tx Value Index:516 and Value is -2953 + j*-1
+Tx Value Index:517 and Value is -4917 + j*-1
+Tx Value Index:518 and Value is -7081 + j*-1
+Tx Value Index:519 and Value is -9363 + j*-1
+Tx Value Index:520 and Value is -11659 + j*-1
+Tx Value Index:521 and Value is -13855 + j*-1
+Tx Value Index:522 and Value is -15830 + j*-1
+Tx Value Index:523 and Value is -17466 + j*-1
+Tx Value Index:524 and Value is -18651 + j*-1
+Tx Value Index:525 and Value is -19294 + j*-1
+Tx Value Index:526 and Value is -19325 + j*-1
+Tx Value Index:527 and Value is -18702 + j*-1
+Tx Value Index:528 and Value is -17415 + j*-1
+Tx Value Index:529 and Value is -15490 + j*-1
+Tx Value Index:530 and Value is -12983 + j*-1
+Tx Value Index:531 and Value is -9984 + j*-1
+Tx Value Index:532 and Value is -6610 + j*-1
+Tx Value Index:533 and Value is -2997 + j*-1
+Tx Value Index:534 and Value is 702 + j*0
+Tx Value Index:535 and Value is 4330 + j*0
+Tx Value Index:536 and Value is 7733 + j*0
+Tx Value Index:537 and Value is 10766 + j*0
+Tx Value Index:538 and Value is 13306 + j*0
+Tx Value Index:539 and Value is 15254 + j*0
+Tx Value Index:540 and Value is 16543 + j*0
+Tx Value Index:541 and Value is 17142 + j*0
+Tx Value Index:542 and Value is 17055 + j*0
+Tx Value Index:543 and Value is 16324 + j*0
+Tx Value Index:544 and Value is 15022 + j*0
+Tx Value Index:545 and Value is 13253 + j*0
+Tx Value Index:546 and Value is 11141 + j*0
+Tx Value Index:547 and Value is 8825 + j*0
+Tx Value Index:548 and Value is 6451 + j*0
+Tx Value Index:549 and Value is 4162 + j*0
+Tx Value Index:550 and Value is 2089 + j*0
+Tx Value Index:551 and Value is 345 + j*0
+Tx Value Index:552 and Value is -986 + j*-1
+Tx Value Index:553 and Value is -1845 + j*-1
+Tx Value Index:554 and Value is -2213 + j*-1
+Tx Value Index:555 and Value is -2100 + j*-1
+Tx Value Index:556 and Value is -1555 + j*-1
+Tx Value Index:557 and Value is -654 + j*-1
+Tx Value Index:558 and Value is 503 + j*0
+Tx Value Index:559 and Value is 1795 + j*0
+Tx Value Index:560 and Value is 3092 + j*0
+Tx Value Index:561 and Value is 4263 + j*0
+Tx Value Index:562 and Value is 5181 + j*0
+Tx Value Index:563 and Value is 5737 + j*0
+Tx Value Index:564 and Value is 5845 + j*0
+Tx Value Index:565 and Value is 5444 + j*0
+Tx Value Index:566 and Value is 4508 + j*0
+Tx Value Index:567 and Value is 3046 + j*0
+Tx Value Index:568 and Value is 1101 + j*0
+Tx Value Index:569 and Value is -1251 + j*-1
+Tx Value Index:570 and Value is -3905 + j*-1
+Tx Value Index:571 and Value is -6733 + j*-1
+Tx Value Index:572 and Value is -9593 + j*-1
+Tx Value Index:573 and Value is -12334 + j*-1
+Tx Value Index:574 and Value is -14807 + j*-1
+Tx Value Index:575 and Value is -16873 + j*-1
+Tx Value Index:576 and Value is -18413 + j*-1
+Tx Value Index:577 and Value is -19332 + j*-1
+Tx Value Index:578 and Value is -19565 + j*-1
+Tx Value Index:579 and Value is -19082 + j*-1
+Tx Value Index:580 and Value is -17892 + j*-1
+Tx Value Index:581 and Value is -16035 + j*-1
+Tx Value Index:582 and Value is -13588 + j*-1
+Tx Value Index:583 and Value is -10656 + j*-1
+Tx Value Index:584 and Value is -7366 + j*-1
+Tx Value Index:585 and Value is -3861 + j*-1
+Tx Value Index:586 and Value is -291 + j*-1
+Tx Value Index:587 and Value is 3193 + j*0
+Tx Value Index:588 and Value is 6452 + j*0
+Tx Value Index:589 and Value is 9362 + j*0
+Tx Value Index:590 and Value is 11822 + j*0
+Tx Value Index:591 and Value is 13759 + j*0
+Tx Value Index:592 and Value is 15131 + j*0
+Tx Value Index:593 and Value is 15926 + j*0
+Tx Value Index:594 and Value is 16164 + j*0
+Tx Value Index:595 and Value is 15895 + j*0
+Tx Value Index:596 and Value is 15189 + j*0
+Tx Value Index:597 and Value is 14136 + j*0
+Tx Value Index:598 and Value is 12837 + j*0
+Tx Value Index:599 and Value is 11396 + j*0
+Tx Value Index:600 and Value is 9915 + j*0
+Tx Value Index:601 and Value is 8486 + j*0
+Tx Value Index:602 and Value is 7182 + j*0
+Tx Value Index:603 and Value is 6060 + j*0
+Tx Value Index:604 and Value is 5150 + j*0
+Tx Value Index:605 and Value is 4458 + j*0
+Tx Value Index:606 and Value is 3967 + j*0
+Tx Value Index:607 and Value is 3638 + j*0
+Tx Value Index:608 and Value is 3411 + j*0
+Tx Value Index:609 and Value is 3216 + j*0
+Tx Value Index:610 and Value is 2976 + j*0
+Tx Value Index:611 and Value is 2614 + j*0
+Tx Value Index:612 and Value is 2058 + j*0
+Tx Value Index:613 and Value is 1251 + j*0
+Tx Value Index:614 and Value is 153 + j*0
+Tx Value Index:615 and Value is -1251 + j*-1
+Tx Value Index:616 and Value is -2953 + j*-1
+Tx Value Index:617 and Value is -4917 + j*-1
+Tx Value Index:618 and Value is -7081 + j*-1
+Tx Value Index:619 and Value is -9363 + j*-1
+Tx Value Index:620 and Value is -11659 + j*-1
+Tx Value Index:621 and Value is -13855 + j*-1
+Tx Value Index:622 and Value is -15830 + j*-1
+Tx Value Index:623 and Value is -17466 + j*-1
+Tx Value Index:624 and Value is -18651 + j*-1
+Tx Value Index:625 and Value is -19294 + j*-1
+Tx Value Index:626 and Value is -19325 + j*-1
+Tx Value Index:627 and Value is -18702 + j*-1
+Tx Value Index:628 and Value is -17415 + j*-1
+Tx Value Index:629 and Value is -15490 + j*-1
+Tx Value Index:630 and Value is -12983 + j*-1
+Tx Value Index:631 and Value is -9984 + j*-1
+Tx Value Index:632 and Value is -6610 + j*-1
+Tx Value Index:633 and Value is -2997 + j*-1
+Tx Value Index:634 and Value is 702 + j*0
+Tx Value Index:635 and Value is 4330 + j*0
+Tx Value Index:636 and Value is 7733 + j*0
+Tx Value Index:637 and Value is 10766 + j*0
+Tx Value Index:638 and Value is 13306 + j*0
+Tx Value Index:639 and Value is 15254 + j*0
+Tx Value Index:640 and Value is 16543 + j*0
+Tx Value Index:641 and Value is 17142 + j*0
+Tx Value Index:642 and Value is 17055 + j*0
+Tx Value Index:643 and Value is 16324 + j*0
+Tx Value Index:644 and Value is 15022 + j*0
+Tx Value Index:645 and Value is 13253 + j*0
+Tx Value Index:646 and Value is 11141 + j*0
+Tx Value Index:647 and Value is 8825 + j*0
+Tx Value Index:648 and Value is 6451 + j*0
+Tx Value Index:649 and Value is 4162 + j*0
+Tx Value Index:650 and Value is 2089 + j*0
+Tx Value Index:651 and Value is 345 + j*0
+Tx Value Index:652 and Value is -986 + j*-1
+Tx Value Index:653 and Value is -1845 + j*-1
+Tx Value Index:654 and Value is -2213 + j*-1
+Tx Value Index:655 and Value is -2100 + j*-1
+Tx Value Index:656 and Value is -1555 + j*-1
+Tx Value Index:657 and Value is -654 + j*-1
+Tx Value Index:658 and Value is 503 + j*0
+Tx Value Index:659 and Value is 1795 + j*0
+Tx Value Index:660 and Value is 3092 + j*0
+Tx Value Index:661 and Value is 4263 + j*0
+Tx Value Index:662 and Value is 5181 + j*0
+Tx Value Index:663 and Value is 5737 + j*0
+Tx Value Index:664 and Value is 5845 + j*0
+Tx Value Index:665 and Value is 5444 + j*0
+Tx Value Index:666 and Value is 4508 + j*0
+Tx Value Index:667 and Value is 3046 + j*0
+Tx Value Index:668 and Value is 1101 + j*0
+Tx Value Index:669 and Value is -1251 + j*-1
+Tx Value Index:670 and Value is -3905 + j*-1
+Tx Value Index:671 and Value is -6733 + j*-1
+Tx Value Index:672 and Value is -9593 + j*-1
+Tx Value Index:673 and Value is -12334 + j*-1
+Tx Value Index:674 and Value is -14807 + j*-1
+Tx Value Index:675 and Value is -16873 + j*-1
+Tx Value Index:676 and Value is -18413 + j*-1
+Tx Value Index:677 and Value is -19332 + j*-1
+Tx Value Index:678 and Value is -19565 + j*-1
+Tx Value Index:679 and Value is -19082 + j*-1
+Tx Value Index:680 and Value is -17892 + j*-1
+Tx Value Index:681 and Value is -16035 + j*-1
+Tx Value Index:682 and Value is -13588 + j*-1
+Tx Value Index:683 and Value is -10656 + j*-1
+Tx Value Index:684 and Value is -7366 + j*-1
+Tx Value Index:685 and Value is -3861 + j*-1
+Tx Value Index:686 and Value is -291 + j*-1
+Tx Value Index:687 and Value is 3193 + j*0
+Tx Value Index:688 and Value is 6452 + j*0
+Tx Value Index:689 and Value is 9362 + j*0
+Tx Value Index:690 and Value is 11822 + j*0
+Tx Value Index:691 and Value is 13759 + j*0
+Tx Value Index:692 and Value is 15131 + j*0
+Tx Value Index:693 and Value is 15926 + j*0
+Tx Value Index:694 and Value is 16164 + j*0
+Tx Value Index:695 and Value is 15895 + j*0
+Tx Value Index:696 and Value is 15189 + j*0
+Tx Value Index:697 and Value is 14136 + j*0
+Tx Value Index:698 and Value is 12837 + j*0
+Tx Value Index:699 and Value is 11396 + j*0
+Tx Value Index:700 and Value is 9915 + j*0
+Tx Value Index:701 and Value is 8486 + j*0
+Tx Value Index:702 and Value is 7182 + j*0
+Tx Value Index:703 and Value is 6060 + j*0
+Tx Value Index:704 and Value is 5150 + j*0
+Tx Value Index:705 and Value is 4458 + j*0
+Tx Value Index:706 and Value is 3967 + j*0
+Tx Value Index:707 and Value is 3638 + j*0
+Tx Value Index:708 and Value is 3411 + j*0
+Tx Value Index:709 and Value is 3216 + j*0
+Tx Value Index:710 and Value is 2976 + j*0
+Tx Value Index:711 and Value is 2614 + j*0
+Tx Value Index:712 and Value is 2058 + j*0
+Tx Value Index:713 and Value is 1251 + j*0
+Tx Value Index:714 and Value is 153 + j*0
+Tx Value Index:715 and Value is -1251 + j*-1
+Tx Value Index:716 and Value is -2953 + j*-1
+Tx Value Index:717 and Value is -4917 + j*-1
+Tx Value Index:718 and Value is -7081 + j*-1
+Tx Value Index:719 and Value is -9363 + j*-1
+Tx Value Index:720 and Value is -11659 + j*-1
+Tx Value Index:721 and Value is -13855 + j*-1
+Tx Value Index:722 and Value is -15830 + j*-1
+Tx Value Index:723 and Value is -17466 + j*-1
+Tx Value Index:724 and Value is -18651 + j*-1
+Tx Value Index:725 and Value is -19294 + j*-1
+Tx Value Index:726 and Value is -19325 + j*-1
+Tx Value Index:727 and Value is -18702 + j*-1
+Tx Value Index:728 and Value is -17415 + j*-1
+Tx Value Index:729 and Value is -15490 + j*-1
+Tx Value Index:730 and Value is -12983 + j*-1
+Tx Value Index:731 and Value is -9984 + j*-1
+Tx Value Index:732 and Value is -6610 + j*-1
+Tx Value Index:733 and Value is -2997 + j*-1
+Tx Value Index:734 and Value is 702 + j*0
+Tx Value Index:735 and Value is 4330 + j*0
+Tx Value Index:736 and Value is 7733 + j*0
+Tx Value Index:737 and Value is 10766 + j*0
+Tx Value Index:738 and Value is 13306 + j*0
+Tx Value Index:739 and Value is 15254 + j*0
+Tx Value Index:740 and Value is 16543 + j*0
+Tx Value Index:741 and Value is 17142 + j*0
+Tx Value Index:742 and Value is 17055 + j*0
+Tx Value Index:743 and Value is 16324 + j*0
+Tx Value Index:744 and Value is 15022 + j*0
+Tx Value Index:745 and Value is 13253 + j*0
+Tx Value Index:746 and Value is 11141 + j*0
+Tx Value Index:747 and Value is 8825 + j*0
+Tx Value Index:748 and Value is 6451 + j*0
+Tx Value Index:749 and Value is 4162 + j*0
+Tx Value Index:750 and Value is 2089 + j*0
+Tx Value Index:751 and Value is 345 + j*0
+Tx Value Index:752 and Value is -986 + j*-1
+Tx Value Index:753 and Value is -1845 + j*-1
+Tx Value Index:754 and Value is -2213 + j*-1
+Tx Value Index:755 and Value is -2100 + j*-1
+Tx Value Index:756 and Value is -1555 + j*-1
+Tx Value Index:757 and Value is -654 + j*-1
+Tx Value Index:758 and Value is 503 + j*0
+Tx Value Index:759 and Value is 1795 + j*0
+Tx Value Index:760 and Value is 3092 + j*0
+Tx Value Index:761 and Value is 4263 + j*0
+Tx Value Index:762 and Value is 5181 + j*0
+Tx Value Index:763 and Value is 5737 + j*0
+Tx Value Index:764 and Value is 5845 + j*0
+Tx Value Index:765 and Value is 5444 + j*0
+Tx Value Index:766 and Value is 4508 + j*0
+Tx Value Index:767 and Value is 3046 + j*0
+Tx Value Index:768 and Value is 1101 + j*0
+Tx Value Index:769 and Value is -1251 + j*-1
+Tx Value Index:770 and Value is -3905 + j*-1
+Tx Value Index:771 and Value is -6733 + j*-1
+Tx Value Index:772 and Value is -9593 + j*-1
+Tx Value Index:773 and Value is -12334 + j*-1
+Tx Value Index:774 and Value is -14807 + j*-1
+Tx Value Index:775 and Value is -16873 + j*-1
+Tx Value Index:776 and Value is -18413 + j*-1
+Tx Value Index:777 and Value is -19332 + j*-1
+Tx Value Index:778 and Value is -19565 + j*-1
+Tx Value Index:779 and Value is -19082 + j*-1
+Tx Value Index:780 and Value is -17892 + j*-1
+Tx Value Index:781 and Value is -16035 + j*-1
+Tx Value Index:782 and Value is -13588 + j*-1
+Tx Value Index:783 and Value is -10656 + j*-1
+Tx Value Index:784 and Value is -7366 + j*-1
+Tx Value Index:785 and Value is -3861 + j*-1
+Tx Value Index:786 and Value is -291 + j*-1
+Tx Value Index:787 and Value is 3193 + j*0
+Tx Value Index:788 and Value is 6452 + j*0
+Tx Value Index:789 and Value is 9362 + j*0
+Tx Value Index:790 and Value is 11822 + j*0
+Tx Value Index:791 and Value is 13759 + j*0
+Tx Value Index:792 and Value is 15131 + j*0
+Tx Value Index:793 and Value is 15926 + j*0
+Tx Value Index:794 and Value is 16164 + j*0
+Tx Value Index:795 and Value is 15895 + j*0
+Tx Value Index:796 and Value is 15189 + j*0
+Tx Value Index:797 and Value is 14136 + j*0
+Tx Value Index:798 and Value is 12837 + j*0
+Tx Value Index:799 and Value is 11396 + j*0
+Tx Value Index:800 and Value is 9915 + j*0
+Tx Value Index:801 and Value is 8486 + j*0
+Tx Value Index:802 and Value is 7182 + j*0
+Tx Value Index:803 and Value is 6060 + j*0
+Tx Value Index:804 and Value is 5150 + j*0
+Tx Value Index:805 and Value is 4458 + j*0
+Tx Value Index:806 and Value is 3967 + j*0
+Tx Value Index:807 and Value is 3638 + j*0
+Tx Value Index:808 and Value is 3411 + j*0
+Tx Value Index:809 and Value is 3216 + j*0
+Tx Value Index:810 and Value is 2976 + j*0
+Tx Value Index:811 and Value is 2614 + j*0
+Tx Value Index:812 and Value is 2058 + j*0
+Tx Value Index:813 and Value is 1251 + j*0
+Tx Value Index:814 and Value is 153 + j*0
+Tx Value Index:815 and Value is -1251 + j*-1
+Tx Value Index:816 and Value is -2953 + j*-1
+Tx Value Index:817 and Value is -4917 + j*-1
+Tx Value Index:818 and Value is -7081 + j*-1
+Tx Value Index:819 and Value is -9363 + j*-1
+Tx Value Index:820 and Value is -11659 + j*-1
+Tx Value Index:821 and Value is -13855 + j*-1
+Tx Value Index:822 and Value is -15830 + j*-1
+Tx Value Index:823 and Value is -17466 + j*-1
+Tx Value Index:824 and Value is -18651 + j*-1
+Tx Value Index:825 and Value is -19294 + j*-1
+Tx Value Index:826 and Value is -19325 + j*-1
+Tx Value Index:827 and Value is -18702 + j*-1
+Tx Value Index:828 and Value is -17415 + j*-1
+Tx Value Index:829 and Value is -15490 + j*-1
+Tx Value Index:830 and Value is -12983 + j*-1
+Tx Value Index:831 and Value is -9984 + j*-1
+Tx Value Index:832 and Value is -6610 + j*-1
+Tx Value Index:833 and Value is -2997 + j*-1
+Tx Value Index:834 and Value is 702 + j*0
+Tx Value Index:835 and Value is 4330 + j*0
+Tx Value Index:836 and Value is 7733 + j*0
+Tx Value Index:837 and Value is 10766 + j*0
+Tx Value Index:838 and Value is 13306 + j*0
+Tx Value Index:839 and Value is 15254 + j*0
+Tx Value Index:840 and Value is 16543 + j*0
+Tx Value Index:841 and Value is 17142 + j*0
+Tx Value Index:842 and Value is 17055 + j*0
+Tx Value Index:843 and Value is 16324 + j*0
+Tx Value Index:844 and Value is 15022 + j*0
+Tx Value Index:845 and Value is 13253 + j*0
+Tx Value Index:846 and Value is 11141 + j*0
+Tx Value Index:847 and Value is 8825 + j*0
+Tx Value Index:848 and Value is 6451 + j*0
+Tx Value Index:849 and Value is 4162 + j*0
+Tx Value Index:850 and Value is 2089 + j*0
+Tx Value Index:851 and Value is 345 + j*0
+Tx Value Index:852 and Value is -986 + j*-1
+Tx Value Index:853 and Value is -1845 + j*-1
+Tx Value Index:854 and Value is -2213 + j*-1
+Tx Value Index:855 and Value is -2100 + j*-1
+Tx Value Index:856 and Value is -1555 + j*-1
+Tx Value Index:857 and Value is -654 + j*-1
+Tx Value Index:858 and Value is 503 + j*0
+Tx Value Index:859 and Value is 1795 + j*0
+Tx Value Index:860 and Value is 3092 + j*0
+Tx Value Index:861 and Value is 4263 + j*0
+Tx Value Index:862 and Value is 5181 + j*0
+Tx Value Index:863 and Value is 5737 + j*0
+Tx Value Index:864 and Value is 5845 + j*0
+Tx Value Index:865 and Value is 5444 + j*0
+Tx Value Index:866 and Value is 4508 + j*0
+Tx Value Index:867 and Value is 3046 + j*0
+Tx Value Index:868 and Value is 1101 + j*0
+Tx Value Index:869 and Value is -1251 + j*-1
+Tx Value Index:870 and Value is -3905 + j*-1
+Tx Value Index:871 and Value is -6733 + j*-1
+Tx Value Index:872 and Value is -9593 + j*-1
+Tx Value Index:873 and Value is -12334 + j*-1
+Tx Value Index:874 and Value is -14807 + j*-1
+Tx Value Index:875 and Value is -16873 + j*-1
+Tx Value Index:876 and Value is -18413 + j*-1
+Tx Value Index:877 and Value is -19332 + j*-1
+Tx Value Index:878 and Value is -19565 + j*-1
+Tx Value Index:879 and Value is -19082 + j*-1
+Tx Value Index:880 and Value is -17892 + j*-1
+Tx Value Index:881 and Value is -16035 + j*-1
+Tx Value Index:882 and Value is -13588 + j*-1
+Tx Value Index:883 and Value is -10656 + j*-1
+Tx Value Index:884 and Value is -7366 + j*-1
+Tx Value Index:885 and Value is -3861 + j*-1
+Tx Value Index:886 and Value is -291 + j*-1
+Tx Value Index:887 and Value is 3193 + j*0
+Tx Value Index:888 and Value is 6452 + j*0
+Tx Value Index:889 and Value is 9362 + j*0
+Tx Value Index:890 and Value is 11822 + j*0
+Tx Value Index:891 and Value is 13759 + j*0
+Tx Value Index:892 and Value is 15131 + j*0
+Tx Value Index:893 and Value is 15926 + j*0
+Tx Value Index:894 and Value is 16164 + j*0
+Tx Value Index:895 and Value is 15895 + j*0
+Tx Value Index:896 and Value is 15189 + j*0
+Tx Value Index:897 and Value is 14136 + j*0
+Tx Value Index:898 and Value is 12837 + j*0
+Tx Value Index:899 and Value is 11396 + j*0
+Tx Value Index:900 and Value is 9915 + j*0
+Tx Value Index:901 and Value is 8486 + j*0
+Tx Value Index:902 and Value is 7182 + j*0
+Tx Value Index:903 and Value is 6060 + j*0
+Tx Value Index:904 and Value is 5150 + j*0
+Tx Value Index:905 and Value is 4458 + j*0
+Tx Value Index:906 and Value is 3967 + j*0
+Tx Value Index:907 and Value is 3638 + j*0
+Tx Value Index:908 and Value is 3411 + j*0
+Tx Value Index:909 and Value is 3216 + j*0
+Tx Value Index:910 and Value is 2976 + j*0
+Tx Value Index:911 and Value is 2614 + j*0
+Tx Value Index:912 and Value is 2058 + j*0
+Tx Value Index:913 and Value is 1251 + j*0
+Tx Value Index:914 and Value is 153 + j*0
+Tx Value Index:915 and Value is -1251 + j*-1
+Tx Value Index:916 and Value is -2953 + j*-1
+Tx Value Index:917 and Value is -4917 + j*-1
+Tx Value Index:918 and Value is -7081 + j*-1
+Tx Value Index:919 and Value is -9363 + j*-1
+Tx Value Index:920 and Value is -11659 + j*-1
+Tx Value Index:921 and Value is -13855 + j*-1
+Tx Value Index:922 and Value is -15830 + j*-1
+Tx Value Index:923 and Value is -17466 + j*-1
+Tx Value Index:924 and Value is -18651 + j*-1
+Tx Value Index:925 and Value is -19294 + j*-1
+Tx Value Index:926 and Value is -19325 + j*-1
+Tx Value Index:927 and Value is -18702 + j*-1
+Tx Value Index:928 and Value is -17415 + j*-1
+Tx Value Index:929 and Value is -15490 + j*-1
+Tx Value Index:930 and Value is -12983 + j*-1
+Tx Value Index:931 and Value is -9984 + j*-1
+Tx Value Index:932 and Value is -6610 + j*-1
+Tx Value Index:933 and Value is -2997 + j*-1
+Tx Value Index:934 and Value is 702 + j*0
+Tx Value Index:935 and Value is 4330 + j*0
+Tx Value Index:936 and Value is 7733 + j*0
+Tx Value Index:937 and Value is 10766 + j*0
+Tx Value Index:938 and Value is 13306 + j*0
+Tx Value Index:939 and Value is 15254 + j*0
+Tx Value Index:940 and Value is 16543 + j*0
+Tx Value Index:941 and Value is 17142 + j*0
+Tx Value Index:942 and Value is 17055 + j*0
+Tx Value Index:943 and Value is 16324 + j*0
+Tx Value Index:944 and Value is 15022 + j*0
+Tx Value Index:945 and Value is 13253 + j*0
+Tx Value Index:946 and Value is 11141 + j*0
+Tx Value Index:947 and Value is 8825 + j*0
+Tx Value Index:948 and Value is 6451 + j*0
+Tx Value Index:949 and Value is 4162 + j*0
+Tx Value Index:950 and Value is 2089 + j*0
+Tx Value Index:951 and Value is 345 + j*0
+Tx Value Index:952 and Value is -986 + j*-1
+Tx Value Index:953 and Value is -1845 + j*-1
+Tx Value Index:954 and Value is -2213 + j*-1
+Tx Value Index:955 and Value is -2100 + j*-1
+Tx Value Index:956 and Value is -1555 + j*-1
+Tx Value Index:957 and Value is -654 + j*-1
+Tx Value Index:958 and Value is 503 + j*0
+Tx Value Index:959 and Value is 1795 + j*0
+Tx Value Index:960 and Value is 3092 + j*0
+Tx Value Index:961 and Value is 4263 + j*0
+Tx Value Index:962 and Value is 5181 + j*0
+Tx Value Index:963 and Value is 5737 + j*0
+Tx Value Index:964 and Value is 5845 + j*0
+Tx Value Index:965 and Value is 5444 + j*0
+Tx Value Index:966 and Value is 4508 + j*0
+Tx Value Index:967 and Value is 3046 + j*0
+Tx Value Index:968 and Value is 1101 + j*0
+Tx Value Index:969 and Value is -1251 + j*-1
+Tx Value Index:970 and Value is -3905 + j*-1
+Tx Value Index:971 and Value is -6733 + j*-1
+Tx Value Index:972 and Value is -9593 + j*-1
+Tx Value Index:973 and Value is -12334 + j*-1
+Tx Value Index:974 and Value is -14807 + j*-1
+Tx Value Index:975 and Value is -16873 + j*-1
+Tx Value Index:976 and Value is -18413 + j*-1
+Tx Value Index:977 and Value is -19332 + j*-1
+Tx Value Index:978 and Value is -19565 + j*-1
+Tx Value Index:979 and Value is -19082 + j*-1
+Tx Value Index:980 and Value is -17892 + j*-1
+Tx Value Index:981 and Value is -16035 + j*-1
+Tx Value Index:982 and Value is -13588 + j*-1
+Tx Value Index:983 and Value is -10656 + j*-1
+Tx Value Index:984 and Value is -7366 + j*-1
+Tx Value Index:985 and Value is -3861 + j*-1
+Tx Value Index:986 and Value is -291 + j*-1
+Tx Value Index:987 and Value is 3193 + j*0
+Tx Value Index:988 and Value is 6452 + j*0
+Tx Value Index:989 and Value is 9362 + j*0
+Tx Value Index:990 and Value is 11822 + j*0
+Tx Value Index:991 and Value is 13759 + j*0
+Tx Value Index:992 and Value is 15131 + j*0
+Tx Value Index:993 and Value is 15926 + j*0
+Tx Value Index:994 and Value is 16164 + j*0
+Tx Value Index:995 and Value is 15895 + j*0
+Tx Value Index:996 and Value is 15189 + j*0
+Tx Value Index:997 and Value is 14136 + j*0
+Tx Value Index:998 and Value is 12837 + j*0
+Tx Value Index:999 and Value is 11396 + j*0
+Tx Value Index:1000 and Value is 9915 + j*0
+Tx Value Index:1001 and Value is 8486 + j*0
+Tx Value Index:1002 and Value is 7182 + j*0
+Tx Value Index:1003 and Value is 6060 + j*0
+Tx Value Index:1004 and Value is 5150 + j*0
+Tx Value Index:1005 and Value is 4458 + j*0
+Tx Value Index:1006 and Value is 3967 + j*0
+Tx Value Index:1007 and Value is 3638 + j*0
+Tx Value Index:1008 and Value is 3411 + j*0
+Tx Value Index:1009 and Value is 3216 + j*0
+Tx Value Index:1010 and Value is 2976 + j*0
+Tx Value Index:1011 and Value is 2614 + j*0
+Tx Value Index:1012 and Value is 2058 + j*0
+Tx Value Index:1013 and Value is 1251 + j*0
+Tx Value Index:1014 and Value is 153 + j*0
+Tx Value Index:1015 and Value is -1251 + j*-1
+Tx Value Index:1016 and Value is -2953 + j*-1
+Tx Value Index:1017 and Value is -4917 + j*-1
+Tx Value Index:1018 and Value is -7081 + j*-1
+Tx Value Index:1019 and Value is -9363 + j*-1
+Tx Value Index:1020 and Value is -11659 + j*-1
+Tx Value Index:1021 and Value is -13855 + j*-1
+Tx Value Index:1022 and Value is -15830 + j*-1
+Tx Value Index:1023 and Value is -17466 + j*-1
+finish!!!!!!!xn(0) = 26 + j*206
+xn(1) = -386 + j*-702
+xn(2) = 451 + j*-414
+xn(3) = -210 + j*-196
+xn(4) = -304 + j*-851
+xn(5) = 132 + j*94
+xn(6) = 121 + j*-189
+xn(7) = 283 + j*256
+xn(8) = 177 + j*-122
+xn(9) = -417 + j*-676
+xn(10) = 340 + j*-221
+xn(11) = -93 + j*-128
+xn(12) = 593 + j*242
+xn(13) = 33 + j*13
+xn(14) = -72 + j*11
+xn(15) = -178 + j*-143
+xn(16) = 84 + j*95
+xn(17) = 221 + j*-755
+xn(18) = 532 + j*83
+xn(19) = 35 + j*-272
+xn(20) = 384 + j*808
+xn(21) = -43 + j*197
+xn(22) = 256 + j*81
+xn(23) = -89 + j*139
+xn(24) = -55 + j*-8
+xn(25) = -26 + j*154
+xn(26) = -6 + j*56
+xn(27) = 79 + j*-25
+xn(28) = 65 + j*846
+xn(29) = -195 + j*8
+xn(30) = -66 + j*472
+xn(31) = -779 + j*-328
+xn(32) = -139 + j*45
+xn(33) = -680 + j*129
+xn(34) = 94 + j*-556
+xn(35) = -286 + j*-104
+xn(36) = 221 + j*-801
+xn(37) = 194 + j*151
+xn(38) = 289 + j*-225
+xn(39) = 19 + j*381
+xn(40) = 19 + j*111
+xn(41) = 270 + j*212
+xn(42) = -150 + j*23
+xn(43) = -41 + j*71
+xn(44) = -1120 + j*127
+xn(45) = 101 + j*-74
+xn(46) = -168 + j*-235
+xn(47) = 452 + j*-304
+xn(48) = -33 + j*-132
+xn(49) = -202 + j*-290
+xn(50) = 310 + j*-53
+xn(51) = -17 + j*-205
+xn(52) = 36 + j*588
+xn(53) = 34 + j*249
+xn(54) = 437 + j*-144
+xn(55) = 539 + j*295
+xn(56) = -298 + j*-298
+xn(57) = -799 + j*1801
+xn(58) = -1130 + j*-295
+xn(59) = -76 + j*565
+xn(60) = -586 + j*-1061
+xn(61) = -55 + j*-497
+xn(62) = -822 + j*211
+xn(63) = -444 + j*-834
+xn(64) = 122 + j*51
+xn(65) = -319 + j*-1161
+xn(66) = 666 + j*-294
+xn(67) = -154 + j*-280
+xn(68) = 348 + j*-464
+xn(69) = 96 + j*159
+xn(70) = 247 + j*-125
+xn(71) = 193 + j*431
+xn(72) = 169 + j*-137
+xn(73) = -660 + j*-408
+xn(74) = 123 + j*-423
+xn(75) = -208 + j*-5
+xn(76) = 466 + j*199
+xn(77) = 125 + j*-113
+xn(78) = -289 + j*-93
+xn(79) = -182 + j*-388
+xn(80) = 90 + j*119
+xn(81) = 32 + j*-907
+xn(82) = 582 + j*-208
+xn(83) = -189 + j*-258
+xn(84) = -129 + j*863
+xn(85) = 283 + j*87
+xn(86) = -68 + j*-598
+xn(87) = 1017 + j*-613
+xn(88) = -300 + j*-233
+xn(89) = -228 + j*566
+xn(90) = -149 + j*-32
+xn(91) = -10 + j*54
+xn(92) = 824 + j*379
+xn(93) = -5 + j*-163
+xn(94) = -527 + j*84
+xn(95) = -429 + j*-1256
+xn(96) = -319 + j*239
+xn(97) = 539 + j*-92
+xn(98) = 427 + j*115
+xn(99) = -25 + j*-290
+xn(100) = -139 + j*-706
+xn(101) = 154 + j*239
+xn(102) = 280 + j*-405
+xn(103) = 804 + j*22
+xn(104) = -106 + j*-196
+xn(105) = -109 + j*54
+xn(106) = 194 + j*63
+xn(107) = 41 + j*-170
+xn(108) = 834 + j*276
+xn(109) = -2 + j*154
+xn(110) = 109 + j*-65
+xn(111) = 235 + j*-429
+xn(112) = -345 + j*-86
+xn(113) = -81 + j*747
+xn(114) = -94 + j*39
+xn(115) = 47 + j*-82
+xn(116) = 1316 + j*-1034
+xn(117) = -94 + j*198
+xn(118) = 367 + j*253
+xn(119) = -644 + j*394
+xn(120) = -13 + j*259
+xn(121) = 556 + j*159
+xn(122) = 20 + j*176
+xn(123) = 43 + j*-77
+xn(124) = -425 + j*-607
+xn(125) = 20 + j*145
+xn(126) = 260 + j*-94
+xn(127) = 239 + j*273
+xn(128) = 12 + j*-61
+xn(129) = 37 + j*-96
+xn(130) = 204 + j*114
+xn(131) = 90 + j*-182
+xn(132) = 605 + j*-236
+xn(133) = -139 + j*281
+xn(134) = 569 + j*303
+xn(135) = -484 + j*847
+xn(136) = 135 + j*30
+xn(137) = -435 + j*-56
+xn(138) = 50 + j*-386
+xn(139) = -221 + j*-73
+xn(140) = 249 + j*8
+xn(141) = 199 + j*128
+xn(142) = 193 + j*-279
+xn(143) = 31 + j*-41
+xn(144) = -214 + j*234
+xn(145) = 922 + j*697
+xn(146) = -194 + j*377
+xn(147) = 89 + j*-15
+xn(148) = -1871 + j*-768
+xn(149) = 140 + j*187
+xn(150) = 445 + j*-552
+xn(151) = 1498 + j*667
+xn(152) = 29 + j*-532
+xn(153) = -780 + j*435
+xn(154) = -269 + j*-75
+xn(155) = 52 + j*90
+xn(156) = 672 + j*145
+xn(157) = -93 + j*11
+xn(158) = 67 + j*137
+xn(159) = -91 + j*34
+xn(160) = -83 + j*-27
+xn(161) = -74 + j*349
+xn(162) = -116 + j*10
+xn(163) = 21 + j*-4
+xn(164) = -353 + j*-457
+xn(165) = 1 + j*121
+xn(166) = 304 + j*-113
+xn(167) = 548 + j*481
+xn(168) = 29 + j*-303
+xn(169) = -745 + j*291
+xn(170) = -185 + j*-248
+xn(171) = -64 + j*58
+xn(172) = 354 + j*-93
+xn(173) = 19 + j*24
+xn(174) = 77 + j*-82
+xn(175) = 390 + j*7
+xn(176) = -127 + j*-252
+xn(177) = -762 + j*565
+xn(178) = -255 + j*-337
+xn(179) = -132 + j*67
+xn(180) = 1058 + j*-1048
+xn(181) = 92 + j*66
+xn(182) = 237 + j*-172
+xn(183) = 260 + j*454
+xn(184) = 30 + j*-25
+xn(185) = 184 + j*415
+xn(186) = -342 + j*178
+xn(187) = 103 + j*174
+xn(188) = 310 + j*-259
+xn(189) = -95 + j*-126
+xn(190) = -181 + j*153
+xn(191) = -205 + j*-169
+xn(192) = 13 + j*61
+xn(193) = 233 + j*-198
+xn(194) = 149 + j*167
+xn(195) = 92 + j*-94
+xn(196) = 539 + j*-725
+xn(197) = -67 + j*138
+xn(198) = 334 + j*68
+xn(199) = -52 + j*717
+xn(200) = 250 + j*91
+xn(201) = 733 + j*-560
+xn(202) = 263 + j*613
+xn(203) = 375 + j*-142
+xn(204) = -309 + j*1027
+xn(205) = -399 + j*195
+xn(206) = 445 + j*625
+xn(207) = -352 + j*816
+xn(208) = 181 + j*-314
+xn(209) = -1430 + j*-60
+xn(210) = -87 + j*-604
+xn(211) = -155 + j*53
+xn(212) = 861 + j*178
+xn(213) = -113 + j*-26
+xn(214) = 4 + j*385
+xn(215) = -668 + j*203
+xn(216) = 188 + j*10
+xn(217) = -680 + j*-800
+xn(218) = 503 + j*-470
+xn(219) = -202 + j*-277
+xn(220) = 936 + j*557
+xn(221) = 71 + j*301
+xn(222) = 552 + j*-49
+xn(223) = 118 + j*650
+xn(224) = -40 + j*-169
+xn(225) = -806 + j*670
+xn(226) = -378 + j*-445
+xn(227) = -180 + j*136
+xn(228) = 1147 + j*325
+xn(229) = 33 + j*-16
+xn(230) = 31 + j*116
+xn(231) = -560 + j*-56
+xn(232) = -184 + j*247
+xn(233) = 479 + j*925
+xn(234) = -544 + j*146
+xn(235) = 57 + j*251
+xn(236) = -921 + j*-280
+xn(237) = -96 + j*-174
+xn(238) = -232 + j*230
+xn(239) = -344 + j*-83
+xn(240) = 151 + j*-29
+xn(241) = -547 + j*-765
+xn(242) = 451 + j*-377
+xn(243) = -176 + j*-219
+xn(244) = 373 + j*1131
+xn(245) = 95 + j*151
+xn(246) = 92 + j*-114
+xn(247) = 175 + j*-628
+xn(248) = -603 + j*-133
+xn(249) = -636 + j*2001
+xn(250) = -865 + j*-403
+xn(251) = -201 + j*288
+xn(252) = -58 + j*-2778
+xn(253) = 163 + j*-17
+xn(254) = 226 + j*-281
+xn(255) = 452 + j*807
+xn(256) = 277 + j*-148
+xn(257) = -385 + j*-254
+xn(258) = -98 + j*-196
+xn(259) = -92 + j*105
+xn(260) = 749 + j*-156
+xn(261) = 67 + j*-129
+xn(262) = -239 + j*-88
+xn(263) = -18 + j*-337
+xn(264) = -33 + j*119
+xn(265) = 616 + j*-193
+xn(266) = 196 + j*412
+xn(267) = 235 + j*-127
+xn(268) = 627 + j*-2
+xn(269) = -287 + j*160
+xn(270) = 320 + j*574
+xn(271) = -821 + j*492
+xn(272) = 94 + j*51
+xn(273) = -478 + j*-149
+xn(274) = 146 + j*-327
+xn(275) = -124 + j*-140
+xn(276) = 595 + j*-832
+xn(277) = -8 + j*296
+xn(278) = 718 + j*117
+xn(279) = -205 + j*1300
+xn(280) = 231 + j*-76
+xn(281) = -696 + j*215
+xn(282) = -298 + j*-454
+xn(283) = -205 + j*130
+xn(284) = 541 + j*-689
+xn(285) = 86 + j*50
+xn(286) = 362 + j*-24
+xn(287) = -194 + j*1126
+xn(288) = 393 + j*81
+xn(289) = 53 + j*-453
+xn(290) = -51 + j*-24
+xn(291) = 3 + j*88
+xn(292) = 25 + j*1538
+xn(293) = -112 + j*-70
+xn(294) = -58 + j*342
+xn(295) = -642 + j*-28
+xn(296) = -96 + j*22
+xn(297) = -768 + j*732
+xn(298) = -560 + j*-629
+xn(299) = -324 + j*311
+xn(300) = -94 + j*-843
+xn(301) = 187 + j*-270
+xn(302) = -366 + j*-114
+xn(303) = -373 + j*-103
+xn(304) = 206 + j*244
+xn(305) = 326 + j*-727
+xn(306) = 226 + j*-105
+xn(307) = -144 + j*-16
+xn(308) = -503 + j*526
+xn(309) = 179 + j*-134
+xn(310) = -334 + j*-252
+xn(311) = 49 + j*-497
+xn(312) = 21 + j*147
+xn(313) = 431 + j*-661
+xn(314) = 473 + j*68
+xn(315) = -51 + j*-233
+xn(316) = -462 + j*1056
+xn(317) = 170 + j*140
+xn(318) = 88 + j*-399
+xn(319) = 700 + j*-434
+xn(320) = -395 + j*-143
+xn(321) = -34 + j*1222
+xn(322) = -490 + j*55
+xn(323) = 23 + j*149
+xn(324) = -569 + j*-872
+xn(325) = 31 + j*10
+xn(326) = 147 + j*-164
+xn(327) = 601 + j*371
+xn(328) = 45 + j*-324
+xn(329) = -910 + j*334
+xn(330) = -332 + j*-397
+xn(331) = -153 + j*192
+xn(332) = 882 + j*-454
+xn(333) = 70 + j*-168
+xn(334) = -237 + j*-36
+xn(335) = -202 + j*-118
+xn(336) = 98 + j*165
+xn(337) = 503 + j*-401
+xn(338) = 146 + j*220
+xn(339) = 90 + j*-27
+xn(340) = -83 + j*706
+xn(341) = -78 + j*-43
+xn(342) = -124 + j*146
+xn(343) = -170 + j*-235
+xn(344) = -49 + j*-36
+xn(345) = -355 + j*32
+xn(346) = -23 + j*-231
+xn(347) = -106 + j*33
+xn(348) = 332 + j*251
+xn(349) = 48 + j*-114
+xn(350) = -331 + j*-7
+xn(351) = -194 + j*-770
+xn(352) = -235 + j*120
+xn(353) = 291 + j*248
+xn(354) = 34 + j*103
+xn(355) = 40 + j*-56
+xn(356) = 31 + j*-641
+xn(357) = -59 + j*55
+xn(358) = 67 + j*149
+xn(359) = -258 + j*31
+xn(360) = 9 + j*1
+xn(361) = -349 + j*-169
+xn(362) = 172 + j*-288
+xn(363) = -156 + j*-113
+xn(364) = 513 + j*-792
+xn(365) = 119 + j*116
+xn(366) = 178 + j*-147
+xn(367) = -10 + j*126
+xn(368) = -27 + j*113
+xn(369) = 383 + j*13
+xn(370) = 129 + j*140
+xn(371) = 34 + j*-142
+xn(372) = 30 + j*-1128
+xn(373) = 17 + j*281
+xn(374) = 676 + j*-76
+xn(375) = 207 + j*1300
+xn(376) = 322 + j*-77
+xn(377) = -132 + j*-269
+xn(378) = -19 + j*-28
+xn(379) = -3 + j*12
+xn(380) = -68 + j*136
+xn(381) = 12 + j*71
+xn(382) = 258 + j*-76
+xn(383) = 271 + j*625
+xn(384) = 173 + j*-103
+xn(385) = -23 + j*-115
+xn(386) = -52 + j*171
+xn(387) = 166 + j*26
+xn(388) = 225 + j*326
+xn(389) = -285 + j*80
+xn(390) = 374 + j*587
+xn(391) = -744 + j*1175
+xn(392) = 483 + j*-76
+xn(393) = -1053 + j*-851
+xn(394) = 133 + j*-650
+xn(395) = -269 + j*43
+xn(396) = 183 + j*1405
+xn(397) = 70 + j*-156
+xn(398) = -336 + j*65
+xn(399) = -360 + j*-475
+xn(400) = -7 + j*52
+xn(401) = -384 + j*-426
+xn(402) = 302 + j*-370
+xn(403) = -193 + j*-144
+xn(404) = 265 + j*711
+xn(405) = 98 + j*80
+xn(406) = 64 + j*-62
+xn(407) = -39 + j*-122
+xn(408) = -116 + j*-62
+xn(409) = -621 + j*284
+xn(410) = -67 + j*-470
+xn(411) = -240 + j*-7
+xn(412) = 551 + j*-231
+xn(413) = 133 + j*53
+xn(414) = 127 + j*-80
+xn(415) = -201 + j*221
+xn(416) = 47 + j*78
+xn(417) = -216 + j*-61
+xn(418) = 41 + j*-332
+xn(419) = -216 + j*-41
+xn(420) = 220 + j*36
+xn(421) = 173 + j*97
+xn(422) = 260 + j*-188
+xn(423) = -33 + j*553
+xn(424) = 142 + j*69
+xn(425) = -133 + j*-36
+xn(426) = -136 + j*-305
+xn(427) = -230 + j*117
+xn(428) = -581 + j*1499
+xn(429) = 255 + j*-223
+xn(430) = -609 + j*-394
+xn(431) = 269 + j*-1519
+xn(432) = -586 + j*102
+xn(433) = 405 + j*1152
+xn(434) = -320 + j*75
+xn(435) = -45 + j*57
+xn(436) = -1126 + j*-1599
+xn(437) = 162 + j*50
+xn(438) = 165 + j*-404
+xn(439) = 860 + j*375
+xn(440) = 125 + j*-316
+xn(441) = -775 + j*-265
+xn(442) = 128 + j*-372
+xn(443) = -175 + j*-76
+xn(444) = 649 + j*-372
+xn(445) = 143 + j*111
+xn(446) = 259 + j*-227
+xn(447) = 310 + j*491
+xn(448) = 132 + j*-125
+xn(449) = -575 + j*-207
+xn(450) = 90 + j*-434
+xn(451) = -258 + j*-64
+xn(452) = 565 + j*-188
+xn(453) = 264 + j*132
+xn(454) = 345 + j*-455
+xn(455) = 591 + j*716
+xn(456) = 181 + j*-132
+xn(457) = -457 + j*-75
+xn(458) = -119 + j*-414
+xn(459) = -296 + j*97
+xn(460) = 164 + j*754
+xn(461) = 426 + j*-144
+xn(462) = -333 + j*-902
+xn(463) = 1507 + j*-649
+xn(464) = -139 + j*-317
+xn(465) = -228 + j*-147
+xn(466) = 310 + j*-22
+xn(467) = -32 + j*-232
+xn(468) = -1426 + j*-651
+xn(469) = 91 + j*299
+xn(470) = 539 + j*-157
+xn(471) = -14 + j*453
+xn(472) = -231 + j*186
+xn(473) = 718 + j*1409
+xn(474) = -752 + j*275
+xn(475) = 53 + j*279
+xn(476) = -39 + j*608
+xn(477) = 102 + j*-10
+xn(478) = 293 + j*-329
+xn(479) = 755 + j*1030
+xn(480) = 336 + j*-263
+xn(481) = -622 + j*-183
+xn(482) = -231 + j*-359
+xn(483) = -231 + j*179
+xn(484) = 284 + j*1816
+xn(485) = 385 + j*-96
+xn(486) = 138 + j*-922
+xn(487) = 1768 + j*1300
+xn(488) = 851 + j*-430
+xn(489) = -300 + j*-2426
+xn(490) = 985 + j*65
+xn(491) = 33 + j*-351
+xn(492) = -123 + j*-666
+xn(493) = 103 + j*193
+xn(494) = 318 + j*-391
+xn(495) = 924 + j*475
+xn(496) = 82 + j*-223
+xn(497) = 69 + j*87
+xn(498) = -152 + j*252
+xn(499) = 144 + j*95
+xn(500) = -479 + j*1002
+xn(501) = -18 + j*-97
+xn(502) = -164 + j*-226
+xn(503) = 986 + j*-274
+xn(504) = -123 + j*-427
+xn(505) = -607 + j*503
+xn(506) = -358 + j*53
+xn(507) = 159 + j*209
+xn(508) = -187 + j*-75
+xn(509) = 168 + j*294
+xn(510) = -166 + j*323
+xn(511) = 257 + j*122
+xn(512) = 2696 + j*1024
+xn(513) = -5888 + j*-30456
+xn(514) = -32156 + j*452
+xn(515) = 17436 + j*342
+xn(516) = 8832 + j*12288
+xn(517) = 10756 + j*9408
+xn(518) = 4353 + j*14348
+xn(519) = 1329 + j*17993
+xn(520) = 22796 + j*-32256
+xn(521) = -31741 + j*-24394
+xn(522) = 8897 + j*4369
+xn(523) = 14912 + j*-15256
+xn(524) = 4609 + j*25355
+xn(525) = -32446 + j*-31166
+xn(526) = -32167 + j*19552
+xn(527) = 18755 + j*3073
+xn(528) = 12298 + j*-12092
+xn(529) = 2050 + j*4608
+xn(530) = 4100 + j*10762
+xn(531) = 8216 + j*1284
+xn(532) = -32248 + j*-8443
+xn(533) = 8768 + j*8906
+xn(534) = 8464 + j*2481
+xn(535) = 96 + j*4104
+xn(536) = -24188 + j*-28136
+xn(537) = -16125 + j*24781
+xn(538) = -18329 + j*12426
+xn(539) = 3144 + j*4310
+xn(540) = 13673 + j*165
+xn(541) = 25104 + j*-12126
+xn(542) = 19548 + j*-30623
+xn(543) = -6192 + j*21508
+xn(544) = 32 + j*282
+xn(545) = 594 + j*10242
+xn(546) = 4353 + j*-24576
+xn(547) = 1376 + j*-1728
+xn(548) = -18263 + j*-16306
+xn(549) = 16896 + j*-32415
+xn(550) = 372 + j*5121
+xn(551) = 2144 + j*30172
+xn(552) = 206 + j*130
+xn(553) = 1040 + j*20556
+xn(554) = -32590 + j*21776
+xn(555) = 16384 + j*-2782
+xn(556) = 264 + j*-12094
+xn(557) = 8224 + j*8606
+xn(558) = 5440 + j*16772
+xn(559) = 337 + j*-31725
+xn(560) = 8784 + j*9106
+xn(561) = 9536 + j*3498
+xn(562) = 20488 + j*6464
+xn(563) = -12283 + j*14086
+xn(564) = -32708 + j*-30686
+xn(565) = 2691 + j*2635
+xn(566) = 117 + j*9765
+xn(567) = -15872 + j*21825
+xn(568) = 12864 + j*12493
+xn(569) = 2408 + j*-14072
+xn(570) = 12289 + j*-28670
+xn(571) = 26388 + j*1156
+xn(572) = 8866 + j*22536
+xn(573) = -13310 + j*4112
+xn(574) = 20752 + j*29701
+xn(575) = 16965 + j*166
+xn(576) = -24560 + j*8371
+xn(577) = 17329 + j*9284
+xn(578) = 16484 + j*-15577
+xn(579) = 17664 + j*7212
+xn(580) = 17848 + j*10
+xn(581) = -26494 + j*32
+xn(582) = 9538 + j*29229
+xn(583) = 5721 + j*19585
+xn(584) = -21736 + j*-31680
+xn(585) = 4164 + j*33
+xn(586) = 20484 + j*-10229
+xn(587) = 21772 + j*16576
+xn(588) = -28160 + j*28712
+xn(589) = -16184 + j*14786
+xn(590) = 1248 + j*17198
+xn(591) = 768 + j*23688
+xn(592) = 25204 + j*4232
+xn(593) = 802 + j*-22016
+xn(594) = 593 + j*1041
+xn(595) = 22530 + j*4453
+xn(596) = 8441 + j*10242
+xn(597) = -29546 + j*288
+xn(598) = -31727 + j*17666
+xn(599) = 54 + j*-11840
+xn(600) = 177 + j*-22528
+xn(601) = -30584 + j*288
+xn(602) = -28608 + j*-16268
+xn(603) = -31115 + j*4097
+xn(604) = -30718 + j*-14076
+xn(605) = -24016 + j*-30451
+xn(606) = -24208 + j*12577
+xn(607) = 23752 + j*25984
+xn(608) = 9264 + j*-13821
+xn(609) = 16384 + j*2049
+xn(610) = 4148 + j*16402
+xn(611) = -15147 + j*13691
+xn(612) = -24448 + j*-26176
+xn(613) = 650 + j*-7537
+xn(614) = 4849 + j*7232
+xn(615) = 16389 + j*17443
+xn(616) = 10457 + j*1928
+xn(617) = -27616 + j*-9600
+xn(618) = 20688 + j*3784
+xn(619) = 2369 + j*4258
+xn(620) = 10240 + j*16537
+xn(621) = -28562 + j*-32124
+xn(622) = 160 + j*20504
+xn(623) = 7188 + j*-16119
+xn(624) = 18489 + j*-27584
+xn(625) = 16552 + j*-16216
+xn(626) = -12015 + j*19240
+xn(627) = 22032 + j*12313
+xn(628) = -22826 + j*18944
+xn(629) = 12450 + j*-24404
+xn(630) = 329 + j*17668
+xn(631) = -27355 + j*-12158
+xn(632) = -24576 + j*-32288
+xn(633) = 24216 + j*-8149
+xn(634) = 5709 + j*20937
+xn(635) = -24464 + j*8256
+xn(636) = -22512 + j*8722
+xn(637) = -5096 + j*6415
+xn(638) = -32445 + j*-31467
+xn(639) = 16737 + j*20612
+xn(640) = 1024 + j*16928
+xn(641) = 10752 + j*-30720
+xn(642) = 17952 + j*21508
+xn(643) = 22868 + j*266
+xn(644) = 19745 + j*4518
+xn(645) = 577 + j*-5120
+xn(646) = 5733 + j*1027
+xn(647) = 154 + j*0
+xn(648) = 17568 + j*-29916
+xn(649) = 2048 + j*24615
+xn(650) = 24592 + j*-10672
+xn(651) = -6971 + j*4512
+xn(652) = 12802 + j*8292
+xn(653) = 26634 + j*-32744
+xn(654) = 10581 + j*529
+xn(655) = 320 + j*20560
+xn(656) = 14473 + j*170
+xn(657) = 16968 + j*8833
+xn(658) = 4304 + j*384
+xn(659) = -6923 + j*21572
+xn(660) = -24465 + j*1028
+xn(661) = 264 + j*1888
+xn(662) = -20908 + j*8032
+xn(663) = 20935 + j*-27431
+xn(664) = -32760 + j*3886
+xn(665) = 7976 + j*-32256
+xn(666) = 6678 + j*-31469
+xn(667) = 5649 + j*2139
+xn(668) = 2048 + j*70
+xn(669) = -7774 + j*2060
+xn(670) = 17417 + j*4096
+xn(671) = 5904 + j*16742
+xn(672) = 768 + j*-32382
+xn(673) = 24808 + j*2147
+xn(674) = 2060 + j*9376
+xn(675) = 21520 + j*289
+xn(676) = 9385 + j*20994
+xn(677) = -15864 + j*19718
+xn(678) = 4900 + j*20704
+xn(679) = 18754 + j*-15862
+xn(680) = 8833 + j*2064
+xn(681) = -16364 + j*-6464
+xn(682) = 22532 + j*-30424
+xn(683) = 29504 + j*-16256
+xn(684) = 14856 + j*1096
+xn(685) = 802 + j*13851
+xn(686) = -11167 + j*3392
+xn(687) = 6295 + j*8196
+xn(688) = -30336 + j*-28371
+xn(689) = -2014 + j*23043
+xn(690) = 9000 + j*18691
+xn(691) = 16916 + j*-13115
+xn(692) = 1600 + j*2048
+xn(693) = 158 + j*12586
+xn(694) = 16626 + j*5376
+xn(695) = 12289 + j*25758
+xn(696) = -10336 + j*-5495
+xn(697) = 1562 + j*-16352
+xn(698) = -32687 + j*133
+xn(699) = 1104 + j*2072
+xn(700) = -24574 + j*-17174
+xn(701) = -24184 + j*16394
+xn(702) = 4417 + j*25664
+xn(703) = 18824 + j*17664
+xn(704) = -5504 + j*523
+xn(705) = 864 + j*20498
+xn(706) = 17991 + j*21504
+xn(707) = 3184 + j*22788
+xn(708) = 1665 + j*555
+xn(709) = 25606 + j*-22528
+xn(710) = 16688 + j*262
+xn(711) = 23819 + j*-16120
+xn(712) = 2762 + j*1552
+xn(713) = 256 + j*-32636
+xn(714) = 31 + j*16400
+xn(715) = 14693 + j*5237
+xn(716) = -24030 + j*26976
+xn(717) = 27146 + j*18968
+xn(718) = -19632 + j*17552
+xn(719) = 3401 + j*-28580
+xn(720) = -28672 + j*17932
+xn(721) = 152 + j*-16215
+xn(722) = 20820 + j*521
+xn(723) = 3589 + j*-12235
+xn(724) = 195 + j*64
+xn(725) = 1576 + j*4609
+xn(726) = 22336 + j*10136
+xn(727) = 1364 + j*-32752
+xn(728) = 2 + j*11464
+xn(729) = 18952 + j*25088
+xn(730) = 8192 + j*-16091
+xn(731) = 16651 + j*17484
+xn(732) = 22560 + j*131
+xn(733) = -32763 + j*387
+xn(734) = 16423 + j*-15336
+xn(735) = 4597 + j*23889
+xn(736) = 2307 + j*25088
+xn(737) = -15742 + j*2211
+xn(738) = 1024 + j*217
+xn(739) = 28994 + j*22805
+xn(740) = -32380 + j*-24536
+xn(741) = 9504 + j*36
+xn(742) = -16372 + j*16661
+xn(743) = -29167 + j*5124
+xn(744) = 8275 + j*-24224
+xn(745) = 14504 + j*26667
+xn(746) = 20599 + j*-30363
+xn(747) = 9090 + j*12356
+xn(748) = 17073 + j*4320
+xn(749) = 17416 + j*9034
+xn(750) = 1557 + j*-31344
+xn(751) = 17444 + j*-32636
+xn(752) = 10499 + j*5138
+xn(753) = 8 + j*16493
+xn(754) = 14480 + j*788
+xn(755) = 16481 + j*4578
+xn(756) = 2730 + j*-32639
+xn(757) = -16380 + j*-29808
+xn(758) = -31744 + j*22537
+xn(759) = 5904 + j*-27487
+xn(760) = 20869 + j*4160
+xn(761) = 13032 + j*16873
+xn(762) = -15934 + j*-32668
+xn(763) = 16688 + j*22665
+xn(764) = 22037 + j*19733
+xn(765) = -20343 + j*-30621
+xn(766) = 11016 + j*20224
+xn(767) = 4179 + j*1329
+xn(768) = 5204 + j*24966
+xn(769) = 544 + j*8361
+xn(770) = 28931 + j*-32160
+xn(771) = 21522 + j*31975
+xn(772) = 17220 + j*20547
+xn(773) = 10266 + j*8203
+xn(774) = 3529 + j*-25919
+xn(775) = 4613 + j*6152
+xn(776) = 2048 + j*-32721
+xn(777) = 3208 + j*24070
+xn(778) = 4116 + j*-32639
+xn(779) = 27860 + j*15646
+xn(780) = -29568 + j*26280
+xn(781) = 4282 + j*-24568
+xn(782) = 22656 + j*9282
+xn(783) = 3148 + j*21824
+xn(784) = 10770 + j*2145
+xn(785) = -9699 + j*6786
+xn(786) = 376 + j*-28636
+xn(787) = 10378 + j*17543
+xn(788) = 4874 + j*-23931
+xn(789) = -23264 + j*8747
+xn(790) = 676 + j*2597
+xn(791) = -31415 + j*201
+xn(792) = 14529 + j*1056
+xn(793) = -28152 + j*10372
+xn(794) = -11660 + j*21036
+xn(795) = 4160 + j*1027
+xn(796) = 5123 + j*18443
+xn(797) = 16520 + j*10242
+xn(798) = 19463 + j*5812
+xn(799) = -28601 + j*16436
+xn(800) = -32012 + j*18977
+xn(801) = 10658 + j*14400
+xn(802) = 9412 + j*1264
+xn(803) = 21504 + j*2628
+xn(804) = 762 + j*8832
+xn(805) = -30632 + j*9801
+xn(806) = 16401 + j*4113
+xn(807) = 4124 + j*18694
+xn(808) = 10386 + j*3328
+xn(809) = 20971 + j*-31928
+xn(810) = 17537 + j*2453
+xn(811) = 1053 + j*11541
+xn(812) = 6146 + j*12291
+xn(813) = 8581 + j*8616
+xn(814) = 21545 + j*18945
+xn(815) = 16661 + j*6225
+xn(816) = 10788 + j*-28592
+xn(817) = 4338 + j*16906
+xn(818) = 4146 + j*1633
+xn(819) = 32064 + j*6189
+xn(820) = 72 + j*9735
+xn(821) = -1910 + j*-30140
+xn(822) = -23535 + j*-14656
+xn(823) = 23764 + j*11
+xn(824) = 2306 + j*12800
+xn(825) = 32 + j*4528
+xn(826) = 16 + j*448
+xn(827) = 17666 + j*10444
+xn(828) = 2562 + j*25800
+xn(829) = 612 + j*14337
+xn(830) = 5000 + j*25639
+xn(831) = 19989 + j*5485
+xn(832) = 8342 + j*8328
+xn(833) = 18496 + j*-30199
+xn(834) = 5181 + j*16480
+xn(835) = 18592 + j*1413
+xn(836) = 6152 + j*6304
+xn(837) = 18372 + j*14
+xn(838) = 780 + j*2072
+xn(839) = 256 + j*1815
+xn(840) = -31520 + j*-25464
+xn(841) = 12407 + j*771
+xn(842) = 16453 + j*19469
+xn(843) = 20496 + j*4448
+xn(844) = -3958 + j*-31734
+xn(845) = 20616 + j*9752
+xn(846) = 69 + j*-16124
+xn(847) = 24963 + j*4736
+xn(848) = 9300 + j*26122
+xn(849) = 21704 + j*-32768
+xn(850) = 3392 + j*5660
+xn(851) = 3702 + j*3073
+xn(852) = 8227 + j*-32086
+xn(853) = -5492 + j*18468
+xn(854) = -31926 + j*-10401
+xn(855) = -23551 + j*1538
+xn(856) = 20736 + j*10246
+xn(857) = -30700 + j*13354
+xn(858) = 16385 + j*-32432
+xn(859) = 5456 + j*17672
+xn(860) = -32336 + j*16512
+xn(861) = 9796 + j*11620
+xn(862) = -8123 + j*4657
+xn(863) = 1 + j*13668
+xn(864) = -32072 + j*3712
+xn(865) = -29440 + j*3
+xn(866) = -16076 + j*-1503
+xn(867) = 833 + j*21518
+xn(868) = 19020 + j*9480
+xn(869) = 12416 + j*9761
+xn(870) = 16501 + j*-25915
+xn(871) = 9490 + j*-23417
+xn(872) = 8193 + j*-31842
+xn(873) = 9296 + j*18464
+xn(874) = 369 + j*5120
+xn(875) = -31845 + j*2068
+xn(876) = 8848 + j*5234
+xn(877) = -30943 + j*1932
+xn(878) = 5200 + j*-16255
+xn(879) = 1804 + j*19714
+xn(880) = 2080 + j*24659
+xn(881) = -23856 + j*-28662
+xn(882) = 17216 + j*20481
+xn(883) = -24431 + j*16912
+xn(884) = 20512 + j*2114
+xn(885) = -29949 + j*3728
+xn(886) = -27356 + j*21540
+xn(887) = -11069 + j*1392
+xn(888) = -16868 + j*-23632
+xn(889) = -31734 + j*-32238
+xn(890) = 128 + j*-31447
+xn(891) = 8017 + j*16799
+xn(892) = 3300 + j*16430
+xn(893) = 43 + j*-31678
+xn(894) = 289 + j*16901
+xn(895) = 5644 + j*13122
+xn(896) = 17472 + j*4641
+xn(897) = 24580 + j*-13178
+xn(898) = 15636 + j*21218
+xn(899) = 20961 + j*6978
+xn(900) = -6104 + j*43
+xn(901) = 8960 + j*-6649
+xn(902) = -11711 + j*3347
+xn(903) = 11520 + j*17761
+xn(904) = 9222 + j*3200
+xn(905) = -23648 + j*-32640
+xn(906) = 9317 + j*321
+xn(907) = 21827 + j*12292
+xn(908) = -8190 + j*11968
+xn(909) = 198 + j*64
+xn(910) = 8327 + j*277
+xn(911) = 17216 + j*5389
+xn(912) = 2113 + j*25000
+xn(913) = 792 + j*-30560
+xn(914) = 1449 + j*2
+xn(915) = 7830 + j*23628
+xn(916) = 4802 + j*-21630
+xn(917) = 14633 + j*318
+xn(918) = 22535 + j*832
+xn(919) = 4422 + j*-13264
+xn(920) = 4618 + j*-15228
+xn(921) = 2087 + j*-21502
+xn(922) = -29612 + j*1108
+xn(923) = 4352 + j*-25984
+xn(924) = 25092 + j*51
+xn(925) = 1066 + j*28944
+xn(926) = 16688 + j*1251
+xn(927) = 1026 + j*-16319
+xn(928) = 2051 + j*2181
+xn(929) = 16907 + j*4640
+xn(930) = 1056 + j*24970
+xn(931) = 4144 + j*788
+xn(932) = 2482 + j*-30200
+xn(933) = -30078 + j*522
+xn(934) = -6543 + j*16461
+xn(935) = 4375 + j*9472
+xn(936) = 8704 + j*-30016
+xn(937) = 1184 + j*2562
+xn(938) = -26368 + j*6217
+xn(939) = 17743 + j*-19679
+xn(940) = 520 + j*11
+xn(941) = 4112 + j*4099
+xn(942) = 21269 + j*136
+xn(943) = -22397 + j*18148
+xn(944) = 8968 + j*199
+xn(945) = 6534 + j*24730
+xn(946) = -32704 + j*18646
+xn(947) = -11900 + j*-12288
+xn(948) = -32608 + j*-24338
+xn(949) = 3760 + j*5376
+xn(950) = 2504 + j*-29567
+xn(951) = 26114 + j*18053
+xn(952) = 6156 + j*23682
+xn(953) = 27204 + j*-16216
+xn(954) = 1028 + j*8386
+xn(955) = 25 + j*-31854
+xn(956) = 672 + j*18327
+xn(957) = 522 + j*-24440
+xn(958) = 8267 + j*16736
+xn(959) = 20490 + j*5540
+xn(960) = 10418 + j*-24380
+xn(961) = 16514 + j*20002
+xn(962) = 16 + j*1300
+xn(963) = 26724 + j*0
+xn(964) = 19 + j*10426
+xn(965) = 25312 + j*-20439
+xn(966) = 16979 + j*4624
+xn(967) = -10927 + j*17409
+xn(968) = -28362 + j*19002
+xn(969) = -23167 + j*8576
+xn(970) = 70 + j*1280
+xn(971) = 5121 + j*15964
+xn(972) = 13224 + j*-30576
+xn(973) = -29664 + j*14464
+xn(974) = -15336 + j*13315
+xn(975) = 22597 + j*15812
+xn(976) = -8143 + j*4780
+xn(977) = 2062 + j*-23678
+xn(978) = 256 + j*20822
+xn(979) = 16709 + j*19682
+xn(980) = -23295 + j*6435
+xn(981) = -22006 + j*4614
+xn(982) = 24 + j*21761
+xn(983) = 5901 + j*23688
+xn(984) = 6344 + j*-26544
+xn(985) = 21129 + j*-4768
+xn(986) = 9153 + j*-16254
+xn(987) = 4295 + j*-26255
+xn(988) = 9162 + j*-15770
+xn(989) = 16386 + j*-15680
+xn(990) = 4736 + j*22976
+xn(991) = 31780 + j*1025
+xn(992) = -21728 + j*4264
+xn(993) = 3113 + j*5292
+xn(994) = 265 + j*-28590
+xn(995) = 9222 + j*7232
+xn(996) = 19008 + j*17200
+xn(997) = 172 + j*4096
+xn(998) = 1138 + j*16980
+xn(999) = 2305 + j*15488
+xn(1000) = 25992 + j*0
+xn(1001) = -29976 + j*5156
+xn(1002) = 1061 + j*2
+xn(1003) = 20752 + j*77
+xn(1004) = 4780 + j*2696
+xn(1005) = -30655 + j*10240
+xn(1006) = 2048 + j*19536
+xn(1007) = 5832 + j*21126
+xn(1008) = 8704 + j*-26620
+xn(1009) = -7039 + j*13216
+xn(1010) = 16512 + j*132
+xn(1011) = 5440 + j*12
+xn(1012) = 8808 + j*-28468
+xn(1013) = 130 + j*8706
+xn(1014) = 49 + j*20293
+xn(1015) = -16056 + j*512
+xn(1016) = -27502 + j*8265
+xn(1017) = -24575 + j*10272
+xn(1018) = -32736 + j*13607
+xn(1019) = 7236 + j*5249
+xn(1020) = -30332 + j*24608
+xn(1021) = -27568 + j*8196
+xn(1022) = 11300 + j*8710
+xn(1023) = 21268 + j*5720
+AXI DMA SG Polling Test passed
+--- Exiting main() --- 
