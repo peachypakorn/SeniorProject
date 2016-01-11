@@ -132,8 +132,8 @@ FFTDMADesign_axi_dma_0_0 your_instance_name (
   .m_axi_s2mm_awcache(m_axi_s2mm_awcache),          // output wire [3 : 0] m_axi_s2mm_awcache
   .m_axi_s2mm_awvalid(m_axi_s2mm_awvalid),          // output wire m_axi_s2mm_awvalid
   .m_axi_s2mm_awready(m_axi_s2mm_awready),          // input wire m_axi_s2mm_awready
-  .m_axi_s2mm_wdata(m_axi_s2mm_wdata),              // output wire [31 : 0] m_axi_s2mm_wdata
-  .m_axi_s2mm_wstrb(m_axi_s2mm_wstrb),              // output wire [3 : 0] m_axi_s2mm_wstrb
+  .m_axi_s2mm_wdata(m_axi_s2mm_wdata),              // output wire [63 : 0] m_axi_s2mm_wdata
+  .m_axi_s2mm_wstrb(m_axi_s2mm_wstrb),              // output wire [7 : 0] m_axi_s2mm_wstrb
   .m_axi_s2mm_wlast(m_axi_s2mm_wlast),              // output wire m_axi_s2mm_wlast
   .m_axi_s2mm_wvalid(m_axi_s2mm_wvalid),            // output wire m_axi_s2mm_wvalid
   .m_axi_s2mm_wready(m_axi_s2mm_wready),            // input wire m_axi_s2mm_wready
@@ -141,8 +141,8 @@ FFTDMADesign_axi_dma_0_0 your_instance_name (
   .m_axi_s2mm_bvalid(m_axi_s2mm_bvalid),            // input wire m_axi_s2mm_bvalid
   .m_axi_s2mm_bready(m_axi_s2mm_bready),            // output wire m_axi_s2mm_bready
   .s2mm_prmry_reset_out_n(s2mm_prmry_reset_out_n),  // output wire s2mm_prmry_reset_out_n
-  .s_axis_s2mm_tdata(s_axis_s2mm_tdata),            // input wire [31 : 0] s_axis_s2mm_tdata
-  .s_axis_s2mm_tkeep(s_axis_s2mm_tkeep),            // input wire [3 : 0] s_axis_s2mm_tkeep
+  .s_axis_s2mm_tdata(s_axis_s2mm_tdata),            // input wire [63 : 0] s_axis_s2mm_tdata
+  .s_axis_s2mm_tkeep(s_axis_s2mm_tkeep),            // input wire [7 : 0] s_axis_s2mm_tkeep
   .s_axis_s2mm_tvalid(s_axis_s2mm_tvalid),          // input wire s_axis_s2mm_tvalid
   .s_axis_s2mm_tready(s_axis_s2mm_tready),          // output wire s_axis_s2mm_tready
   .s_axis_s2mm_tlast(s_axis_s2mm_tlast),            // input wire s_axis_s2mm_tlast

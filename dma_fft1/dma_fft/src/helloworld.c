@@ -320,7 +320,7 @@ static int RxSetup(XAxiDma * AxiDmaInstPtr)
 	/* Attach buffers to RxBD ring so we are ready to receive packets */
 
 	FreeBdCount = XAxiDma_BdRingGetFreeCnt(RxRingPtr);
-
+	//xil_printf("RxFreeBdCount %d", FreeBdCount);
 	Status = XAxiDma_BdRingAlloc(RxRingPtr, FreeBdCount, &BdPtr);
 	if (Status != XST_SUCCESS) {
 		xil_printf("RX alloc BD failed %d\r\n", Status);
@@ -340,12 +340,12 @@ static int RxSetup(XAxiDma * AxiDmaInstPtr)
 
 			return XST_FAILURE;
 		}
-
-		Status = XAxiDma_BdSetLength(BdCurPtr, MAX_PKT_LEN,
+// test_fix
+		Status = XAxiDma_BdSetLength(BdCurPtr, MAX_PKT_LEN*2,
 				RxRingPtr->MaxTransferLen);
 		if (Status != XST_SUCCESS) {
 			xil_printf("Rx set length %d on BD %x failed %d\r\n",
-			    MAX_PKT_LEN, (unsigned int)BdCurPtr, Status);
+			    MAX_PKT_LEN*2, (unsigned int)BdCurPtr, Status);
 
 			return XST_FAILURE;
 		}
@@ -356,13 +356,13 @@ static int RxSetup(XAxiDma * AxiDmaInstPtr)
 		XAxiDma_BdSetCtrl(BdCurPtr, 0);
 		XAxiDma_BdSetId(BdCurPtr, RxBufferPtr);
 
-		RxBufferPtr += MAX_PKT_LEN;
+		RxBufferPtr += MAX_PKT_LEN*2;
 		BdCurPtr = XAxiDma_BdRingNext(RxRingPtr, BdCurPtr);
 	}
 
 	/* Clear the receive buffer, so we can verify data
 	 */
-	memset((void *)RX_BUFFER_BASE, 0, MAX_PKT_LEN);
+	memset((void *)RX_BUFFER_BASE, 0, MAX_PKT_LEN*128);
 
 	Status = XAxiDma_BdRingToHw(RxRingPtr, FreeBdCount,
 						BdPtr);
@@ -427,7 +427,7 @@ static int TxSetup(XAxiDma * AxiDmaInstPtr)
 
 		return XST_FAILURE;
 	}
-xil_printf("BdCount = %d\r\n",BdCount);
+//xil_printf("BdCount = %d\r\n",BdCount);
 	/*
 	 * We create an all-zero BD as the template.
 	 */
@@ -466,91 +466,78 @@ xil_printf("BdCount = %d\r\n",BdCount);
 ******************************************************************************/
 static int SendPacket(XAxiDma * AxiDmaInstPtr,int c)
 {
-	XAxiDma_BdRing *TxRingPtr;
-	cplx_data_t *TxPacket;
-	cplx_data_t *RxClean;
-	//u8 Value;
-	XAxiDma_Bd *BdPtr;
+	XAxiDma_BdRing *TxRingPtr; //TxRing
+	cplx_data_t *TxPacket;	   //PacketPointer
+	//cplx_data_t *RxClean;    //CleanData Do in RxSetup
+
+	XAxiDma_Bd *BdPtr;			//Start BDPointer
 	int Status;
 	int Index;
 	char         str[30];
 	TxRingPtr = XAxiDma_GetTxRing(AxiDmaInstPtr);
 
-	/* Create pattern in the packet to transmit */
-	//TxPacket = ((cplx_data_t *) Packet);
-	TxPacket = 	((cplx_data_t *)stim_buf+c*512);
-	RxClean = ((cplx_data_t *)RX_BUFFER_BASE+c*512);
-//	Value = TEST_START_VALUE;
-//
-
-	for(Index = 0; Index < MAX_PKT_LEN*16; Index ++) {
-		//RxClean[Index] = TxPacket[Index];
-		cplx_data_get_string(str,TxPacket[Index]);
-		xil_printf("Tx Value Index:%d and Value is %s\r\n",
-				    c*512+Index,str);
-		//cplx_data_get_string(str,RxClean[c*32+Index]);
-			//	xil_printf("         Rx Value Index:%d and Value is %s\r\n",
-				//		    c*32+Index,str);
-}
+	TxPacket = 	(cplx_data_t *)stim_buf;	//setPointerForPacket
 
 	/* Flush the SrcBuffer before the DMA transfer, in case the Data Cache
 	 * is enabled
 	 */
-	Xil_DCacheFlushRange((u32)TxPacket, MAX_PKT_LEN*16); //32 point each packet
-
+	Xil_DCacheFlushRange((u32)TxPacket, MAX_PKT_LEN*128); //32 point each packet
 
 	/* Allocate a BD */
-	Status = XAxiDma_BdRingAlloc(TxRingPtr, 1, &BdPtr);
+	Status = XAxiDma_BdRingAlloc(TxRingPtr, 64, &BdPtr);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 
-	/* Set up the BD using the information of the packet to transmit */
-	Status = XAxiDma_BdSetBufAddr(BdPtr, (u32) Packet+c*512);
-	if (Status != XST_SUCCESS) {
+	XAxiDma_Bd *BdCurPtr;
+	u32 TxBufferPtr;
+	BdCurPtr = BdPtr;		// Set Current BDptr
+	TxBufferPtr = (u32)stim_buf;
+
+	for (Index = 0; Index < 64; Index++) {
+		Status = XAxiDma_BdSetBufAddr(BdCurPtr, TxBufferPtr);
+		if (Status != XST_SUCCESS) {
 		xil_printf("Tx set buffer addr %x on BD %x failed %d\r\n",
-		    (unsigned int)Packet, (unsigned int)BdPtr, Status);
+		    (unsigned int)TxBufferPtr, (unsigned int)BdCurPtr, Status);
 
 		return XST_FAILURE;
 	}
 
-	Status = XAxiDma_BdSetLength(BdPtr, MAX_PKT_LEN*16,
+	Status = XAxiDma_BdSetLength(BdCurPtr, MAX_PKT_LEN*2,
 				TxRingPtr->MaxTransferLen);
-	//xil_printf("max tranfer length = %d",TxRingPtr->MaxTransferLen);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Tx set length %d on BD %x failed %d\r\n",
-		    MAX_PKT_LEN, (unsigned int)BdPtr, Status);
+		    MAX_PKT_LEN*2, (unsigned int)BdCurPtr, Status);
 
 		return XST_FAILURE;
 	}
-
-#if (XPAR_AXIDMA_0_SG_INCLUDE_STSCNTRL_STRM == 1)
-	Status = XAxiDma_BdSetAppWord(BdPtr,
-	    XAXIDMA_LAST_APPWORD, MAX_PKT_LEN);
+	#if (XPAR_AXIDMA_0_SG_INCLUDE_STSCNTRL_STRM == 1)
+	Status = XAxiDma_BdSetAppWord(BdCurPtr,
+	    XAXIDMA_LAST_APPWORD, MAX_PKT_LEN*2);
 
 	/* If Set app length failed, it is not fatal
 	 */
 	if (Status != XST_SUCCESS) {
 		xil_printf("Set app word failed with %d\r\n", Status);
 	}
-#endif
+	#endif
 
 	/* For single packet, both SOF and EOF are to be set
 	 */
-	XAxiDma_BdSetCtrl(BdPtr, XAXIDMA_BD_CTRL_TXEOF_MASK |
+	XAxiDma_BdSetCtrl(BdCurPtr, XAXIDMA_BD_CTRL_TXEOF_MASK |
 						XAXIDMA_BD_CTRL_TXSOF_MASK);
 
-	XAxiDma_BdSetId(BdPtr, (u32) Packet+c*512);
+	XAxiDma_BdSetId(BdCurPtr, (u32) TxBufferPtr);
+	TxBufferPtr += MAX_PKT_LEN*2;
+	BdCurPtr = XAxiDma_BdRingNext(TxRingPtr, BdCurPtr);
+	}
 
 	/* Give the BD to DMA to kick off the transmission. */
-	Status = XAxiDma_BdRingToHw(TxRingPtr, 1, BdPtr);
+	Status = XAxiDma_BdRingToHw(TxRingPtr, 64, BdPtr);
 	if (Status != XST_SUCCESS) {
 		xil_printf("to hw failed %d\r\n", Status);
 		return XST_FAILURE;
 	}
-
-
-
 	return XST_SUCCESS;
 }
 
@@ -571,7 +558,7 @@ static int CheckData(void)
 {
 	cplx_data_t *RxPacket;
 	int Index = 0;
-	char         str[25];
+	char str[25];
 
 
 	RxPacket = (cplx_data_t *) RX_BUFFER_BASE;
@@ -580,7 +567,7 @@ static int CheckData(void)
 	/* Invalidate the DestBuffer before receiving the data, in case the
 	 * Data Cache is enabled
 	 */
-	Xil_DCacheInvalidateRange((u32)RxPacket, MAX_PKT_LEN*32);
+	Xil_DCacheInvalidateRange((u32)RxPacket, MAX_PKT_LEN*128);
 
 	for(Index = 0; Index < MAX_PKT_LEN*32; Index++) {
 		cplx_data_get_string(str, RxPacket[Index]);
@@ -628,8 +615,9 @@ static int CheckDmaResult(XAxiDma * AxiDmaInstPtr)
 	while ((ProcessedBdCount = XAxiDma_BdRingFromHw(TxRingPtr,
 						       XAXIDMA_ALL_BDS,
 						       &BdPtr)) == 0) {
+		xil_printf("wait for Transmit");
 	}
-
+		xil_printf("Transmit ProcessedBdCount = %d",ProcessedBdCount);
 	/* Free all processed TX BDs for future transmission */
 	Status = XAxiDma_BdRingFree(TxRingPtr, ProcessedBdCount, BdPtr);
 	if (Status != XST_SUCCESS) {
@@ -642,8 +630,9 @@ static int CheckDmaResult(XAxiDma * AxiDmaInstPtr)
 	while ((ProcessedBdCount = XAxiDma_BdRingFromHw(RxRingPtr,
 						       XAXIDMA_ALL_BDS,
 						       &BdPtr)) == 0) {
+		xil_printf("wait for Recieve");
 	}
-
+	xil_printf("Recieve ProcessedBdCount = %d",ProcessedBdCount);
 	/* Check received data */
 	if (CheckData() != XST_SUCCESS) {
 

@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="FFTDMADesign" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1452424972"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1452424972"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1452424972"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1452485070"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1452485070"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1452485070"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\FFTDMADesign_processing_system7_0_0\FFTDMADesign_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -88,14 +88,6 @@
       </File>
       <File Name="ip\FFTDMADesign_auto_us_1\FFTDMADesign_auto_us_1.xci" Type="IP">
         <Instance HierarchyPath="axi_mem_intercon/s01_couplers/auto_us"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\FFTDMADesign_auto_us_2\FFTDMADesign_auto_us_2.xci" Type="IP">
-        <Instance HierarchyPath="axi_mem_intercon/s02_couplers/auto_us"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

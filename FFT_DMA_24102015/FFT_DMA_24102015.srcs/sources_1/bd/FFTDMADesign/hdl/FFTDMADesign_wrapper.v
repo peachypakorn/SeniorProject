@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-//Date        : Sun Jan 10 18:22:28 2016
+//Date        : Mon Jan 11 11:04:07 2016
 //Host        : DESKTOP-6GLAFKI running 64-bit major release  (build 9200)
 //Command     : generate_target FFTDMADesign_wrapper.bd
 //Design      : FFTDMADesign_wrapper

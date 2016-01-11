@@ -37,9 +37,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_au
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_1 || ORIG_REF_NAME==FFTDMADesign_auto_us_1}]
 
-# IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_2 || ORIG_REF_NAME==FFTDMADesign_auto_us_2}]
-
 # IP: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_pc_1 || ORIG_REF_NAME==FFTDMADesign_auto_pc_1}]
 
@@ -77,11 +74,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_1 || ORIG_REF_NAME==FFTDMADesign_auto_us_1}] {/inst }]/inst ]]
-
-# XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_ooc.xdc
-
-# XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==FFTDMADesign_auto_us_2 || ORIG_REF_NAME==FFTDMADesign_auto_us_2}] {/inst }]/inst ]]
 
 # XDC: bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1_ooc.xdc
 

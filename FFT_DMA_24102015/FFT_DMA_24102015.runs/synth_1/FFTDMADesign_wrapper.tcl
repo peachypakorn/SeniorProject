@@ -29,8 +29,6 @@ set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_D
 set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/FFTDMADesign_ooc.xdc]
 set_property is_locked true [get_files D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/FFTDMADesign.bd]

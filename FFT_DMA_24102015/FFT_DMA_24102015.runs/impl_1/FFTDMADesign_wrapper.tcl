@@ -68,8 +68,6 @@ set rc [catch {
   set_property processing_order LATE [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_clocks.xdc]
   read_xdc -ref FFTDMADesign_auto_us_1 -cells inst d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc
   set_property processing_order LATE [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc]
-  read_xdc -ref FFTDMADesign_auto_us_2 -cells inst d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_clocks.xdc
-  set_property processing_order LATE [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_2/FFTDMADesign_auto_us_2_clocks.xdc]
   link_design -top FFTDMADesign_wrapper -part xa7z020clg484-1I
   close_msg_db -file init_design.pb
 } RESULT]
