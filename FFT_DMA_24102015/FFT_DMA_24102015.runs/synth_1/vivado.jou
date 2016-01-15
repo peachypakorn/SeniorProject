@@ -2,11 +2,11 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Mon Jan 11 11:04:32 2016
-# Process ID: 12976
-# Current directory: D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1
+# Start of session at: Thu Jan 14 15:51:05 2016
+# Process ID: 7076
+# Current directory: F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1
 # Command line: vivado.exe -log FFTDMADesign_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source FFTDMADesign_wrapper.tcl
-# Log file: D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1/FFTDMADesign_wrapper.vds
-# Journal file: D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1\vivado.jou
+# Log file: F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1/FFTDMADesign_wrapper.vds
+# Journal file: F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source FFTDMADesign_wrapper.tcl -notrace

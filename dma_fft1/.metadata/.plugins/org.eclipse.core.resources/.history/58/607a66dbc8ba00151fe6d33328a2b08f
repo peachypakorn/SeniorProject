@@ -1,0 +1,17 @@
+/*
+ * grayscaleh.h
+ *
+ *  Created on: Jan 14, 2016
+ *      Author: Peachy
+ */
+
+#ifndef GRAYSCALEH_H_
+#define GRAYSCALEH_H_
+
+class Grayscale {
+public:
+	Grayscale();
+	virtual ~Grayscale();
+};
+
+#endif /* GRAYSCALEH_H_ */

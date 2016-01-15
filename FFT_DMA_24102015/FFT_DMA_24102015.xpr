@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.xpr">
+<Project Version="7" Minor="10" Path="F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f45c4ceb539d4c0faf829e09113f32a0"/>
@@ -33,23 +33,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_xbar_0/FFTDMADesign_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_xlconcat_0_0/FFTDMADesign_xlconcat_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_xfft_0_0/FFTDMADesign_xfft_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_axi_mem_intercon_0/FFTDMADesign_axi_mem_intercon_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_processing_system7_0_axi_periph_0/FFTDMADesign_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_processing_system7_0_0/FFTDMADesign_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="hdl/FFTDMADesign.hwdef"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="hw_handoff/FFTDMADesign_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="hw_handoff/FFTDMADesign.hwh"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_auto_pc_0/FFTDMADesign_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0.xci"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="FFTDMADesign_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="hdl/FFTDMADesign.v"/>
-        <CompFileExtendedInfo CompFileName="FFTDMADesign.bd" FileRelPathName="ip/FFTDMADesign_auto_pc_1/FFTDMADesign_auto_pc_1.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/FFTDMADesign/hdl/FFTDMADesign_wrapper.v">
         <FileInfo>

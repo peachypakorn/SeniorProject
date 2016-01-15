@@ -1,0 +1,18 @@
+/*
+ * grayscale.cpp
+ *
+ *  Created on: Jan 14, 2016
+ *      Author: Peachy
+ */
+
+#include "grayscaleh.h"
+
+Grayscale::Grayscale() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Grayscale::~Grayscale() {
+	// TODO Auto-generated destructor stub
+}
+

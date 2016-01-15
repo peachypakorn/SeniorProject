@@ -8,16 +8,19 @@ LD_SRCS += \
 
 C_SRCS += \
 ../src/cplx_data.c \
+../src/grayscale.c \
 ../src/helloworld.c \
 ../src/platform.c 
 
 OBJS += \
 ./src/cplx_data.o \
+./src/grayscale.o \
 ./src/helloworld.o \
 ./src/platform.o 
 
 C_DEPS += \
 ./src/cplx_data.d \
+./src/grayscale.d \
 ./src/helloworld.d \
 ./src/platform.d 
 

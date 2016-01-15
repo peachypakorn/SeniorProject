@@ -1,6 +1,63 @@
-14:53:12 **** Incremental Build of configuration Debug for project dma_fft ****
+05:47:26 **** Auto Build of configuration Debug for project dma_fft ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/grayscale.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/grayscale.o" -I../../dma_fft_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/grayscale.d" -MT"src/grayscale.d" -o "src/grayscale.o" "../src/grayscale.c"
+In file included from ../src/grayscale.c:8:0:
+../src/grayscaleh.h:25:1: warning: parameter names (without types) in function declaration
+ grayimage tograyscale(image);
+ ^
+../src/grayscaleh.h:26:1: error: unknown type name 'image'
+ image tocolor(grayimage);
+ ^
+../src/grayscale.c:16:3: error: conflicting types for 'grayimage_t'
+ } grayimage_t;
+   ^
+In file included from ../src/grayscale.c:8:0:
+../src/grayscaleh.h:21:3: note: previous declaration of 'grayimage_t' was here
+ } grayimage_t;
+   ^
+../src/grayscale.c:17:22: error: conflicting types for 'grayimage'
+ typedef grayimage_t *grayimage;
+                      ^
+In file included from ../src/grayscale.c:8:0:
+../src/grayscaleh.h:22:22: note: previous declaration of 'grayimage' was here
+ typedef grayimage_t *grayimage;
+                      ^
+../src/grayscale.c:19:11: error: conflicting types for 'alloc_grayimg'
+ grayimage alloc_grayimg(unsigned int, unsigned int);
+           ^
+In file included from ../src/grayscale.c:8:0:
+../src/grayscaleh.h:24:11: note: previous declaration of 'alloc_grayimg' was here
+ grayimage alloc_grayimg(unsigned int, unsigned int);
+           ^
+../src/grayscale.c:20:1: warning: parameter names (without types) in function declaration
+ grayimage tograyscale(image);
+ ^
+../src/grayscale.c:20:11: error: conflicting types for 'tograyscale'
+ grayimage tograyscale(image);
+           ^
+In file included from ../src/grayscale.c:8:0:
+../src/grayscaleh.h:25:11: note: previous declaration of 'tograyscale' was here
+ grayimage tograyscale(image);
+           ^
+../src/grayscale.c:21:1: error: unknown type name 'image'
+ image tocolor(grayimage);
+ ^
+../src/grayscale.c:21:7: error: conflicting types for 'tocolor'
+ image tocolor(grayimage);
+       ^
+In file included from ../src/grayscale.c:8:0:
+../src/grayscaleh.h:26:7: note: previous declaration of 'tocolor' was here
+ image tocolor(grayimage);
+       ^
+../src/grayscale.c:23:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ Grayscale::Grayscale() {
+          ^
+../src/grayscale.c:28:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+ Grayscale::~Grayscale() {
+          ^
+make: *** [src/grayscale.o] Error 1
 
-14:53:13 Build Finished (took 172ms)
+05:47:28 Build Finished (took 1s.271ms)
 
