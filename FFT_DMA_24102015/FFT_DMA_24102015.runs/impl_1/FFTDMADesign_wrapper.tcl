@@ -49,25 +49,25 @@ start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.cache/wt [current_project]
-  set_property parent.project_path F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.xpr [current_project]
-  set_property ip_repo_paths f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.cache/ip [current_project]
-  set_property ip_output_repo f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.cache/ip [current_project]
-  add_files -quiet F:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1/FFTDMADesign_wrapper.dcp
-  read_xdc -ref FFTDMADesign_processing_system7_0_0 -cells inst f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_processing_system7_0_0/FFTDMADesign_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_processing_system7_0_0/FFTDMADesign_processing_system7_0_0.xdc]
-  read_xdc -ref FFTDMADesign_axi_dma_0_0 -cells U0 f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0.xdc
-  set_property processing_order EARLY [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref FFTDMADesign_rst_processing_system7_0_50M_0 f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0_board.xdc
-  set_property processing_order EARLY [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0_board.xdc]
-  read_xdc -ref FFTDMADesign_rst_processing_system7_0_50M_0 f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0.xdc
-  set_property processing_order EARLY [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0.xdc]
-  read_xdc -ref FFTDMADesign_axi_dma_0_0 -cells U0 f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0_clocks.xdc
-  set_property processing_order LATE [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0_clocks.xdc]
-  read_xdc -ref FFTDMADesign_auto_us_0 -cells inst f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_clocks.xdc
-  set_property processing_order LATE [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_clocks.xdc]
-  read_xdc -ref FFTDMADesign_auto_us_1 -cells inst f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc
-  set_property processing_order LATE [get_files f:/SeniorProj/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc]
+  set_property webtalk.parent_dir D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.cache/wt [current_project]
+  set_property parent.project_path D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.xpr [current_project]
+  set_property ip_repo_paths d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.cache/ip [current_project]
+  set_property ip_output_repo d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.cache/ip [current_project]
+  add_files -quiet D:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.runs/synth_1/FFTDMADesign_wrapper.dcp
+  read_xdc -ref FFTDMADesign_processing_system7_0_0 -cells inst d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_processing_system7_0_0/FFTDMADesign_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_processing_system7_0_0/FFTDMADesign_processing_system7_0_0.xdc]
+  read_xdc -ref FFTDMADesign_axi_dma_0_0 -cells U0 d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0.xdc
+  set_property processing_order EARLY [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref FFTDMADesign_rst_processing_system7_0_50M_0 d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0_board.xdc
+  set_property processing_order EARLY [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0_board.xdc]
+  read_xdc -ref FFTDMADesign_rst_processing_system7_0_50M_0 d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0.xdc
+  set_property processing_order EARLY [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_rst_processing_system7_0_50M_0/FFTDMADesign_rst_processing_system7_0_50M_0.xdc]
+  read_xdc -ref FFTDMADesign_axi_dma_0_0 -cells U0 d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0_clocks.xdc
+  set_property processing_order LATE [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_axi_dma_0_0/FFTDMADesign_axi_dma_0_0_clocks.xdc]
+  read_xdc -ref FFTDMADesign_auto_us_0 -cells inst d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_clocks.xdc
+  set_property processing_order LATE [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_0/FFTDMADesign_auto_us_0_clocks.xdc]
+  read_xdc -ref FFTDMADesign_auto_us_1 -cells inst d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc
+  set_property processing_order LATE [get_files d:/SeniorProject/FFT_DMA_24102015/FFT_DMA_24102015.srcs/sources_1/bd/FFTDMADesign/ip/FFTDMADesign_auto_us_1/FFTDMADesign_auto_us_1_clocks.xdc]
   link_design -top FFTDMADesign_wrapper -part xa7z020clg484-1I
   close_msg_db -file init_design.pb
 } RESULT]
