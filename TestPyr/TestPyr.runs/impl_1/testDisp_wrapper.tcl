@@ -60,10 +60,14 @@ set rc [catch {
 } [current_project]
   set_property ip_output_repo f:/SeniorProj/TestPyr/TestPyr.cache/ip [current_project]
   add_files -quiet F:/SeniorProj/TestPyr/TestPyr.runs/synth_1/testDisp_wrapper.dcp
-  read_xdc -ref testDisp_processing_system7_0_0 -cells inst f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_processing_system7_0_0/testDisp_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_processing_system7_0_0/testDisp_processing_system7_0_0.xdc]
   read_xdc -ref testDisp_axi_dma_0_0 -cells U0 f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_axi_dma_0_0/testDisp_axi_dma_0_0.xdc
   set_property processing_order EARLY [get_files f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_axi_dma_0_0/testDisp_axi_dma_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref testDisp_axi_gpio_0_0 -cells U0 f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0_board.xdc
+  set_property processing_order EARLY [get_files f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0_board.xdc]
+  read_xdc -ref testDisp_axi_gpio_0_0 -cells U0 f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0.xdc
+  set_property processing_order EARLY [get_files f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0.xdc]
+  read_xdc -ref testDisp_processing_system7_0_0 -cells inst f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_processing_system7_0_0_1/testDisp_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_processing_system7_0_0_1/testDisp_processing_system7_0_0.xdc]
   read_xdc -prop_thru_buffers -ref testDisp_rst_processing_system7_0_100M_0 f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_rst_processing_system7_0_100M_0/testDisp_rst_processing_system7_0_100M_0_board.xdc
   set_property processing_order EARLY [get_files f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_rst_processing_system7_0_100M_0/testDisp_rst_processing_system7_0_100M_0_board.xdc]
   read_xdc -ref testDisp_rst_processing_system7_0_100M_0 f:/SeniorProj/TestPyr/TestPyr.srcs/sources_1/bd/testDisp/ip/testDisp_rst_processing_system7_0_100M_0/testDisp_rst_processing_system7_0_100M_0.xdc

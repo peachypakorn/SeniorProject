@@ -4,11 +4,17 @@
 # Block Designs: bd/testDisp/testDisp.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp || ORIG_REF_NAME==testDisp}]
 
-# IP: bd/testDisp/ip/testDisp_processing_system7_0_0/testDisp_processing_system7_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_processing_system7_0_0 || ORIG_REF_NAME==testDisp_processing_system7_0_0}]
-
 # IP: bd/testDisp/ip/testDisp_axi_dma_0_0/testDisp_axi_dma_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axi_dma_0_0 || ORIG_REF_NAME==testDisp_axi_dma_0_0}]
+
+# IP: bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axi_gpio_0_0 || ORIG_REF_NAME==testDisp_axi_gpio_0_0}]
+
+# IP: bd/testDisp/ip/testDisp_xbar_0/testDisp_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xbar_0 || ORIG_REF_NAME==testDisp_xbar_0}]
+
+# IP: bd/testDisp/ip/testDisp_processing_system7_0_0_1/testDisp_processing_system7_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_processing_system7_0_0 || ORIG_REF_NAME==testDisp_processing_system7_0_0}]
 
 # IP: bd/testDisp/ip/testDisp_processing_system7_0_axi_periph_0/testDisp_processing_system7_0_axi_periph_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_processing_system7_0_axi_periph_0 || ORIG_REF_NAME==testDisp_processing_system7_0_axi_periph_0}]
@@ -16,23 +22,23 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_proces
 # IP: bd/testDisp/ip/testDisp_rst_processing_system7_0_100M_0/testDisp_rst_processing_system7_0_100M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_rst_processing_system7_0_100M_0 || ORIG_REF_NAME==testDisp_rst_processing_system7_0_100M_0}]
 
-# IP: bd/testDisp/ip/testDisp_axi_mem_intercon_1/testDisp_axi_mem_intercon_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axi_mem_intercon_1 || ORIG_REF_NAME==testDisp_axi_mem_intercon_1}]
-
-# IP: bd/testDisp/ip/testDisp_xbar_1/testDisp_xbar_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xbar_1 || ORIG_REF_NAME==testDisp_xbar_1}]
+# IP: bd/testDisp/ip/testDisp_axi_mem_intercon_0/testDisp_axi_mem_intercon_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axi_mem_intercon_0 || ORIG_REF_NAME==testDisp_axi_mem_intercon_0}]
 
 # IP: bd/testDisp/ip/testDisp_xlconstant_0_0/testDisp_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xlconstant_0_0 || ORIG_REF_NAME==testDisp_xlconstant_0_0}]
 
-# IP: bd/testDisp/ip/testDisp_pyrconstuct_top_0_4/testDisp_pyrconstuct_top_0_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_pyrconstuct_top_0_4 || ORIG_REF_NAME==testDisp_pyrconstuct_top_0_4}]
+# IP: bd/testDisp/ip/testDisp_pyrconstuct_top_0_0/testDisp_pyrconstuct_top_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_pyrconstuct_top_0_0 || ORIG_REF_NAME==testDisp_pyrconstuct_top_0_0}]
 
 # IP: bd/testDisp/ip/testDisp_axis_subset_converter_0_0/testDisp_axis_subset_converter_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axis_subset_converter_0_0 || ORIG_REF_NAME==testDisp_axis_subset_converter_0_0}]
 
 # IP: bd/testDisp/ip/testDisp_xlconcat_0_0/testDisp_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xlconcat_0_0 || ORIG_REF_NAME==testDisp_xlconcat_0_0}]
+
+# IP: bd/testDisp/ip/testDisp_xbar_1/testDisp_xbar_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xbar_1 || ORIG_REF_NAME==testDisp_xbar_1}]
 
 # IP: bd/testDisp/ip/testDisp_auto_pc_0/testDisp_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_auto_pc_0 || ORIG_REF_NAME==testDisp_auto_pc_0}]
@@ -49,9 +55,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_auto_u
 # IP: bd/testDisp/ip/testDisp_auto_us_2/testDisp_auto_us_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_auto_us_2 || ORIG_REF_NAME==testDisp_auto_us_2}]
 
-# XDC: bd/testDisp/ip/testDisp_processing_system7_0_0/testDisp_processing_system7_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==testDisp_processing_system7_0_0 || ORIG_REF_NAME==testDisp_processing_system7_0_0}] {/inst }]/inst ]]
-
 # XDC: bd/testDisp/ip/testDisp_axi_dma_0_0/testDisp_axi_dma_0_0_ooc.xdc
 
 # XDC: bd/testDisp/ip/testDisp_axi_dma_0_0/testDisp_axi_dma_0_0.xdc
@@ -59,6 +62,19 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/testDisp/ip/testDisp_axi_dma_0_0/testDisp_axi_dma_0_0_clocks.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==testDisp_axi_dma_0_0 || ORIG_REF_NAME==testDisp_axi_dma_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==testDisp_axi_gpio_0_0 || ORIG_REF_NAME==testDisp_axi_gpio_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0_ooc.xdc
+
+# XDC: bd/testDisp/ip/testDisp_axi_gpio_0_0/testDisp_axi_gpio_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==testDisp_axi_gpio_0_0 || ORIG_REF_NAME==testDisp_axi_gpio_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/testDisp/ip/testDisp_xbar_0/testDisp_xbar_0_ooc.xdc
+
+# XDC: bd/testDisp/ip/testDisp_processing_system7_0_0_1/testDisp_processing_system7_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==testDisp_processing_system7_0_0 || ORIG_REF_NAME==testDisp_processing_system7_0_0}] {/inst }]/inst ]]
 
 # XDC: bd/testDisp/ip/testDisp_rst_processing_system7_0_100M_0/testDisp_rst_processing_system7_0_100M_0_board.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_rst_processing_system7_0_100M_0 || ORIG_REF_NAME==testDisp_rst_processing_system7_0_100M_0}]
@@ -68,11 +84,11 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/testDisp/ip/testDisp_rst_processing_system7_0_100M_0/testDisp_rst_processing_system7_0_100M_0_ooc.xdc
 
-# XDC: bd/testDisp/ip/testDisp_xbar_1/testDisp_xbar_1_ooc.xdc
-
-# XDC: bd/testDisp/ip/testDisp_pyrconstuct_top_0_4/constraints/pyrconstuct_top_ooc.xdc
+# XDC: bd/testDisp/ip/testDisp_pyrconstuct_top_0_0/constraints/pyrconstuct_top_ooc.xdc
 
 # XDC: bd/testDisp/ip/testDisp_axis_subset_converter_0_0/testDisp_axis_subset_converter_0_0_ooc.xdc
+
+# XDC: bd/testDisp/ip/testDisp_xbar_1/testDisp_xbar_1_ooc.xdc
 
 # XDC: bd/testDisp/ip/testDisp_auto_pc_0/testDisp_auto_pc_0_ooc.xdc
 
