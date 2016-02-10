@@ -1,0 +1,25 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2015.4
+  Build 1412921 on Wed Nov 18 09:58:55 AM 2015
+  Copyright (C) 2015 Xilinx Inc. All rights reserved.
+================================================================
+@I [HLS-10] Running 'D:/Xilinx/Vivado_HLS/2015.4/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'catus' on host 'catus-hp' (Windows NT_amd64 version 6.1) on Wed Dec 30 23:50:42 -0500 2015
+            in directory 'H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1'
+@I [HLS-10] Creating and opening project 'H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/PyramidCon'.
+@W [HLS-40] Cannot find design file 'PyramidCon/pyr.h'
+@W [HLS-40] Cannot find design file 'PyramidCon/pyramidbuild.cpp'
+@W [HLS-40] Cannot find test bench file 'PyramidCon/pyramid_build_test.cpp'
+@I [HLS-10] Creating and opening solution 'H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/PyramidCon/solution1'.
+@I [HLS-10] Setting target device to 'xc7z100ffv900-1'
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@E [SIM-50] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+@E [SIM-1] CSim failed with errors.
+4
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+

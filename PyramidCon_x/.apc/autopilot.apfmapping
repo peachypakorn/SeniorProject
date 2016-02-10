@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pyramidbuild.cpp" path="F:\FPGA\PyramidCon_x\pyramidbuild.cpp"/>
+    <originFiles name="pyr.h" path="F:\FPGA\pyr.h"/>
+  </source>
+  <testbench>
+    <originFiles name="pyramid_build_test.cpp" path="F:\FPGA\PyramidCon_x\pyramid_build_test.cpp"/>
+    <originFiles name="raw_img.dat" path="F:\FPGA\PyramidCon_x\raw_img.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

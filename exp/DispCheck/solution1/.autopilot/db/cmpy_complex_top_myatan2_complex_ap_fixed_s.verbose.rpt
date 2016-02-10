@@ -1,0 +1,662 @@
+
+
+================================================================
+== Vivado HLS Report for 'cmpy_complex_top_myatan2_complex_ap_fixed_s'
+================================================================
+* Date:           Mon Feb 08 23:42:54 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DispCheck
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.51|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   10|   10|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------+------------------------------+-----+-----+-----+-----+----------+
+        |                                        |                              |  Latency  |  Interval | Pipeline |
+        |                Instance                |            Module            | min | max | min | max |   Type   |
+        +----------------------------------------+------------------------------+-----+-----+-----+-----+----------+
+        |grp_cmpy_complex_top_cordic_base_fu_32  |cmpy_complex_top_cordic_base  |   10|   10|    1|    1| function |
+        +----------------------------------------+------------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      1|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|     663|   1502|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      1|
+|Register         |        -|      -|      11|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     674|   1504|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |      2|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------+------------------------------+---------+-------+-----+------+
+    |                Instance                |            Module            | BRAM_18K| DSP48E|  FF |  LUT |
+    +----------------------------------------+------------------------------+---------+-------+-----+------+
+    |grp_cmpy_complex_top_cordic_base_fu_32  |cmpy_complex_top_cordic_base  |        0|      0|  663|  1502|
+    +----------------------------------------+------------------------------+---------+-------+-----+------+
+    |Total                                   |                              |        0|      0|  663|  1502|
+    +----------------------------------------+------------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------+----------+-------+---+----+------------+------------+
+    | Variable Name | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------+----------+-------+---+----+------------+------------+
+    |ap_sig_bdd_74  |    or    |      0|  0|   1|           1|           1|
+    +---------------+----------+-------+---+----+------------+------------+
+    |Total          |          |      0|  0|   1|           1|           1|
+    +---------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |xin_TDATA_blk_n  |   1|          2|    1|          2|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            |   1|          2|    1|          2|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------+---+----+-----+-----------+
+    |          Name          | FF| LUT| Bits| Const Bits|
+    +------------------------+---+----+-----+-----------+
+    |ap_CS_fsm               |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it10  |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it2   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it3   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it4   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it5   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it6   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it7   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it8   |  1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it9   |  1|   0|    1|          0|
+    +------------------------+---+----+-----+-----------+
+    |Total                   | 11|   0|   11|          0|
+    +------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+---------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |                Source Object                |    C Type    |
++-----------------+-----+-----+------------+---------------------------------------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_start         |  in |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_done          | out |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_idle          | out |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_ready         | out |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_ce            |  in |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|xin_TDATA_blk_n  | out |    1| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|ap_return        | out |   20| ap_ctrl_hs | cmpy_complex_top_myatan2<complex,ap_fixed > | return value |
+|xin_TVALID       |  in |    1|    axis    |                     xin                     |    pointer   |
+|xin_TDATA        |  in |   24|    axis    |                     xin                     |    pointer   |
+|xin_TREADY       | out |    1|    axis    |                     xin                     |    pointer   |
++-----------------+-----+-----+------------+---------------------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 11
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 11
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 11, States = { 1 2 3 4 5 6 7 8 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+* FSM state operations: 
+
+ <State 1>: 7.55ns
+ST_1: xin_read [1/1] 0.00ns
+:1  %xin_read = call i24 @_ssdm_op_Read.axis.volatile.i24P(i24* %xin)
+
+ST_1: tmp [1/1] 0.00ns
+:2  %tmp = trunc i24 %xin_read to i10
+
+ST_1: x_cartesian_M_real_V [1/1] 0.00ns
+:3  %x_cartesian_M_real_V = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp, i5 0)
+
+ST_1: tmp_1 [1/1] 0.00ns
+:4  %tmp_1 = call i10 @_ssdm_op_PartSelect.i10.i24.i32.i32(i24 %xin_read, i32 10, i32 19)
+
+ST_1: x_cartesian_M_imag_V [1/1] 0.00ns
+:5  %x_cartesian_M_imag_V = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_1, i5 0)
+
+ST_1: p_Val2_s [11/11] 7.55ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 2>: 8.51ns
+ST_2: p_Val2_s [10/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 3>: 8.51ns
+ST_3: p_Val2_s [9/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 4>: 8.51ns
+ST_4: p_Val2_s [8/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 5>: 8.51ns
+ST_5: p_Val2_s [7/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 6>: 8.51ns
+ST_6: p_Val2_s [6/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 7>: 8.51ns
+ST_7: p_Val2_s [5/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 8>: 8.51ns
+ST_8: p_Val2_s [4/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 9>: 8.51ns
+ST_9: p_Val2_s [3/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 10>: 8.51ns
+ST_10: p_Val2_s [2/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 11>: 8.39ns
+ST_11: stg_27 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecInterface(i24* %xin, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_11: p_Val2_s [1/11] 8.39ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+ST_11: tmp_2 [1/1] 0.00ns
+:7  %tmp_2 = trunc i16 %p_Val2_s to i15
+
+ST_11: ssdm_int_V_write_assign [1/1] 0.00ns
+:8  %ssdm_int_V_write_assign = call i20 @_ssdm_op_BitConcatenate.i20.i15.i5(i15 %tmp_2, i5 0)
+
+ST_11: stg_31 [1/1] 0.00ns
+:9  ret i20 %ssdm_int_V_write_assign
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is clock enabled: 1
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ xin]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0xa6a4d8d5f0; pingpong=0; private_global=0; IO mode=axis:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+xin_read                (read          ) [ 000000000000]
+tmp                     (trunc         ) [ 000000000000]
+x_cartesian_M_real_V    (bitconcatenate) [ 000000000000]
+tmp_1                   (partselect    ) [ 000000000000]
+x_cartesian_M_imag_V    (bitconcatenate) [ 000000000000]
+stg_27                  (specinterface ) [ 000000000000]
+p_Val2_s                (call          ) [ 000000000000]
+tmp_2                   (trunc         ) [ 000000000000]
+ssdm_int_V_write_assign (bitconcatenate) [ 000000000000]
+stg_31                  (ret           ) [ 000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="xin">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="xin"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.axis.volatile.i24P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i15.i10.i5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i10.i24.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="cmpy_complex_top_cordic_base"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str267"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str266"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i20.i15.i5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1004" name="xin_read_read_fu_26">
+<pin_list>
+<pin id="27" dir="0" index="0" bw="24" slack="0"/>
+<pin id="28" dir="0" index="1" bw="24" slack="0"/>
+<pin id="29" dir="1" index="2" bw="24" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="xin_read/1 "/>
+</bind>
+</comp>
+
+<comp id="32" class="1004" name="grp_cmpy_complex_top_cordic_base_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="16" slack="0"/>
+<pin id="34" dir="0" index="1" bw="15" slack="0"/>
+<pin id="35" dir="0" index="2" bw="15" slack="0"/>
+<pin id="36" dir="1" index="3" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="p_Val2_s/1 "/>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="tmp_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="24" slack="0"/>
+<pin id="40" dir="1" index="1" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="x_cartesian_M_real_V_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="15" slack="0"/>
+<pin id="44" dir="0" index="1" bw="10" slack="0"/>
+<pin id="45" dir="0" index="2" bw="1" slack="0"/>
+<pin id="46" dir="1" index="3" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="x_cartesian_M_real_V/1 "/>
+</bind>
+</comp>
+
+<comp id="51" class="1004" name="tmp_1_fu_51">
+<pin_list>
+<pin id="52" dir="0" index="0" bw="10" slack="0"/>
+<pin id="53" dir="0" index="1" bw="24" slack="0"/>
+<pin id="54" dir="0" index="2" bw="5" slack="0"/>
+<pin id="55" dir="0" index="3" bw="6" slack="0"/>
+<pin id="56" dir="1" index="4" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="partselect(1002) " fcode="partselect"/>
+<opset="tmp_1/1 "/>
+</bind>
+</comp>
+
+<comp id="61" class="1004" name="x_cartesian_M_imag_V_fu_61">
+<pin_list>
+<pin id="62" dir="0" index="0" bw="15" slack="0"/>
+<pin id="63" dir="0" index="1" bw="10" slack="0"/>
+<pin id="64" dir="0" index="2" bw="1" slack="0"/>
+<pin id="65" dir="1" index="3" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="x_cartesian_M_imag_V/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="tmp_2_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="16" slack="0"/>
+<pin id="72" dir="1" index="1" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_2/11 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="ssdm_int_V_write_assign_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="20" slack="0"/>
+<pin id="76" dir="0" index="1" bw="15" slack="0"/>
+<pin id="77" dir="0" index="2" bw="1" slack="0"/>
+<pin id="78" dir="1" index="3" bw="20" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="ssdm_int_V_write_assign/11 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="30"><net_src comp="2" pin="0"/><net_sink comp="26" pin=0"/></net>
+
+<net id="31"><net_src comp="0" pin="0"/><net_sink comp="26" pin=1"/></net>
+
+<net id="37"><net_src comp="14" pin="0"/><net_sink comp="32" pin=0"/></net>
+
+<net id="41"><net_src comp="26" pin="2"/><net_sink comp="38" pin=0"/></net>
+
+<net id="47"><net_src comp="4" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="48"><net_src comp="38" pin="1"/><net_sink comp="42" pin=1"/></net>
+
+<net id="49"><net_src comp="6" pin="0"/><net_sink comp="42" pin=2"/></net>
+
+<net id="50"><net_src comp="42" pin="3"/><net_sink comp="32" pin=1"/></net>
+
+<net id="57"><net_src comp="8" pin="0"/><net_sink comp="51" pin=0"/></net>
+
+<net id="58"><net_src comp="26" pin="2"/><net_sink comp="51" pin=1"/></net>
+
+<net id="59"><net_src comp="10" pin="0"/><net_sink comp="51" pin=2"/></net>
+
+<net id="60"><net_src comp="12" pin="0"/><net_sink comp="51" pin=3"/></net>
+
+<net id="66"><net_src comp="4" pin="0"/><net_sink comp="61" pin=0"/></net>
+
+<net id="67"><net_src comp="51" pin="4"/><net_sink comp="61" pin=1"/></net>
+
+<net id="68"><net_src comp="6" pin="0"/><net_sink comp="61" pin=2"/></net>
+
+<net id="69"><net_src comp="61" pin="3"/><net_sink comp="32" pin=2"/></net>
+
+<net id="73"><net_src comp="32" pin="3"/><net_sink comp="70" pin=0"/></net>
+
+<net id="79"><net_src comp="24" pin="0"/><net_sink comp="74" pin=0"/></net>
+
+<net id="80"><net_src comp="70" pin="1"/><net_sink comp="74" pin=1"/></net>
+
+<net id="81"><net_src comp="6" pin="0"/><net_sink comp="74" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: xin | {}
+  - Chain level:
+	State 1
+		x_cartesian_M_real_V : 1
+		x_cartesian_M_imag_V : 1
+		p_Val2_s : 2
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+		tmp_2 : 1
+		ssdm_int_V_write_assign : 2
+		stg_31 : 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------------|---------|---------|---------|
+| Operation|             Functional Unit            |  Delay  |    FF   |   LUT   |
+|----------|----------------------------------------|---------|---------|---------|
+|   call   | grp_cmpy_complex_top_cordic_base_fu_32 |  1.571  |   622   |   1440  |
+|----------|----------------------------------------|---------|---------|---------|
+|   read   |           xin_read_read_fu_26          |    0    |    0    |    0    |
+|----------|----------------------------------------|---------|---------|---------|
+|   trunc  |                tmp_fu_38               |    0    |    0    |    0    |
+|          |               tmp_2_fu_70              |    0    |    0    |    0    |
+|----------|----------------------------------------|---------|---------|---------|
+|          |       x_cartesian_M_real_V_fu_42       |    0    |    0    |    0    |
+|bitconcatenate|       x_cartesian_M_imag_V_fu_61       |    0    |    0    |    0    |
+|          |      ssdm_int_V_write_assign_fu_74     |    0    |    0    |    0    |
+|----------|----------------------------------------|---------|---------|---------|
+|partselect|               tmp_1_fu_51              |    0    |    0    |    0    |
+|----------|----------------------------------------|---------|---------|---------|
+|   Total  |                                        |  1.571  |   622   |   1440  |
+|----------|----------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    1   |   622  |  1440  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    1   |   622  |  1440  |
++-----------+--------+--------+--------+

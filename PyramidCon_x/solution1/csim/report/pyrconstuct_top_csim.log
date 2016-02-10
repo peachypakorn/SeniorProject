@@ -1,0 +1,6 @@
+   Compiling ../../../pyramid_build_test.cpp in release mode
+   Generating csim.exe
+obj/pyramid_build_test.o:pyramid_build_test.cpp:(.text+0x1da0): undefined reference to `pyrconstuct_top(std::complex<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<std::complex<ap_fixed<17, 6, (ap_q_mode)0, (ap_o_mode)3, 0> > >&, int)'
+collect2: ld returned 1 exit status
+make: *** [csim.exe] Error 1
+@E [SIM-1] 'csim_design' failed: compilation error(s).

@@ -1,0 +1,284 @@
+
+
+================================================================
+== Vivado HLS Report for 'cmpy_complex_top_Loop_2_proc'
+================================================================
+* Date:           Mon Feb 08 23:43:00 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DispCheck
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.70|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------+---------------------------------------+-----+-----+-----+-----+----------+
+        |                                                  |                                       |  Latency  |  Interval | Pipeline |
+        |                     Instance                     |                 Module                | min | max | min | max |   Type   |
+        +--------------------------------------------------+---------------------------------------+-----+-----+-----+-----+----------+
+        |grp_cmpy_complex_top_cordic_base_fu_238           |cmpy_complex_top_cordic_base           |   10|   10|    1|    1| function |
+        |grp_cmpy_complex_top_cordic_base_1_fu_244         |cmpy_complex_top_cordic_base_1         |    7|    7|    1|    1| function |
+        |grp_cmpy_complex_top_fxp_sqrt_20_2_20_2_s_fu_249  |cmpy_complex_top_fxp_sqrt_20_2_20_2_s  |   10|   10|    1|    1| function |
+        +--------------------------------------------------+---------------------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|        34|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      1|       -|      -|
+|Expression       |        -|      2|       0|    607|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      9|    1505|   5741|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     34|
+|Register         |        -|      -|     517|     41|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     12|    2022|   6423|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      5|       1|     12|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+---------------------------------------+---------+-------+-----+------+
+    |                     Instance                     |                 Module                | BRAM_18K| DSP48E|  FF |  LUT |
+    +--------------------------------------------------+---------------------------------------+---------+-------+-----+------+
+    |grp_cmpy_complex_top_cordic_base_fu_238           |cmpy_complex_top_cordic_base           |        0|      0|  663|  1502|
+    |grp_cmpy_complex_top_cordic_base_1_fu_244         |cmpy_complex_top_cordic_base_1         |        0|      0|  581|  1351|
+    |grp_cmpy_complex_top_fxp_sqrt_20_2_20_2_s_fu_249  |cmpy_complex_top_fxp_sqrt_20_2_20_2_s  |        0|      0|  261|  2888|
+    |cmpy_complex_top_mul_19ns_20s_39_3_U12            |cmpy_complex_top_mul_19ns_20s_39_3     |        0|      2|    0|     0|
+    |cmpy_complex_top_mul_19ns_20s_39_3_U13            |cmpy_complex_top_mul_19ns_20s_39_3     |        0|      2|    0|     0|
+    |cmpy_complex_top_mul_40ns_38s_77_7_U11            |cmpy_complex_top_mul_40ns_38s_77_7     |        0|      5|    0|     0|
+    +--------------------------------------------------+---------------------------------------+---------+-------+-----+------+
+    |Total                                             |                                       |        0|      9| 1505|  5741|
+    +--------------------------------------------------+---------------------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    +-------------------------------------------+---------------------------------------+-----------+
+    |                  Instance                 |                 Module                | Expression|
+    +-------------------------------------------+---------------------------------------+-----------+
+    |cmpy_complex_top_mul_mul_10s_18s_28_1_U14  |cmpy_complex_top_mul_mul_10s_18s_28_1  |  i0 * i1  |
+    +-------------------------------------------+---------------------------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |p_Val2_1_fu_353_p2    |     *    |      1|  0|   0|          10|          10|
+    |p_Val2_26_fu_343_p2   |     *    |      1|  0|   0|          10|          10|
+    |OP1_V_1_i_fu_372_p2   |     +    |      0|  0|  18|          18|          18|
+    |p_Val2_30_fu_856_p2   |     +    |      0|  0|  16|          16|          16|
+    |p_Val2_31_fu_929_p2   |     +    |      0|  0|  20|          20|          20|
+    |p_Val2_32_fu_957_p2   |     +    |      0|  0|  20|          20|          20|
+    |r_V_fu_657_p2         |     +    |      0|  0|  21|          18|          21|
+    |ret_V_1_fu_452_p2     |     +    |      0|  0|  12|           1|          12|
+    |val_V_fu_359_p2       |     +    |      0|  0|  20|          20|          20|
+    |x_fu_267_p2           |     +    |      0|  0|  31|          31|           1|
+    |dRes_V_1_fu_777_p2    |     -    |      0|  0|  20|          20|          20|
+    |dRes_V_fu_501_p2      |     -    |      0|  0|  20|          20|          20|
+    |neg_mul_fu_542_p2     |     -    |      0|  0|  77|           1|          77|
+    |neg_ti_fu_567_p2      |     -    |      0|  0|  20|           1|          20|
+    |p_Val2_19_fu_738_p2   |     -    |      0|  0|  40|           1|          40|
+    |p_Val2_3_i_fu_481_p2  |     -    |      0|  0|   8|           8|           8|
+    |p_Val2_i5_fu_722_p2   |     -    |      0|  0|  20|          20|          20|
+    |p_neg_i2_fu_605_p2    |     -    |      0|  0|  38|           1|          38|
+    |p_neg_i_fu_399_p2     |     -    |      0|  0|  19|           1|          19|
+    |tmp_1985_i_fu_415_p2  |     -    |      0|  0|   8|           1|           8|
+    |tmp_6_i_fu_639_p2     |     -    |      0|  0|  20|           1|          20|
+    |p_2_i_fu_466_p3       |  Select  |      0|  0|  12|           1|          12|
+    |p_Val2_17_fu_645_p3   |  Select  |      0|  0|  20|           1|          20|
+    |p_i_fu_458_p3         |  Select  |      0|  0|  12|           1|          12|
+    |p_v_v_fu_557_p3       |  Select  |      0|  0|  21|           1|          21|
+    |tmp_1075_fu_701_p3    |  Select  |      0|  0|   1|           1|           1|
+    |tmp_145_fu_577_p3     |  Select  |      0|  0|  20|           1|          20|
+    |tmp_149_fu_708_p3     |  Select  |      0|  0|   1|           1|           1|
+    |tmp_1987_i_fu_421_p3  |  Select  |      0|  0|   8|           1|           8|
+    |ap_sig_bdd_991        |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_992        |    and   |      0|  0|   1|           1|           1|
+    |qb_assign_fu_848_p2   |    and   |      0|  0|   1|           1|           1|
+    |tmp_18_i_fu_262_p2    |   icmp   |      0|  0|  11|          32|          32|
+    |tmp_23_i_fu_446_p2    |   icmp   |      0|  0|   3|           6|           1|
+    |tmp_2_i_fu_691_p2     |   icmp   |      0|  0|   7|          18|           1|
+    |tmp_7_i_fu_839_p2     |   icmp   |      0|  0|   7|          20|           1|
+    |ap_sig_bdd_63         |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_85         |    or    |      0|  0|   1|           1|           1|
+    |tmp_3_i2_fu_813_p2    |    or    |      0|  0|   1|           1|           1|
+    |p_Val2_16_fu_584_p2   |    xor   |      0|  0|  28|          20|          21|
+    |tmp_1074_fu_696_p2    |    xor   |      0|  0|   2|           1|           2|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      2|  0| 607|         350|         597|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------+----+-----------+-----+-----------+
+    |            Name           | LUT| Input Size| Bits| Total Bits|
+    +---------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                  |   1|          4|    1|          4|
+    |ap_reg_ppiten_pp0_it33     |   1|          2|    1|          2|
+    |ap_sig_ioackin_cmp_TREADY  |   1|          2|    1|          2|
+    |p_Val2_7_reg_227           |  31|          2|   31|         62|
+    +---------------------------+----+-----------+-----+-----------+
+    |Total                      |  34|         10|   34|         70|
+    +---------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |OP2_V_reg_984                           |  28|   0|   28|          0|
+    |ap_CS_fsm                               |   3|   0|    3|          0|
+    |ap_done_reg                             |   1|   0|    1|          0|
+    |ap_reg_ioackin_cmp_TREADY               |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it10                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it11                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it12                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it13                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it14                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it15                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it16                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it17                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it18                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it19                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it2                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it20                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it21                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it22                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it23                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it24                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it25                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it26                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it27                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it28                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it29                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it3                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it30                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it31                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it32                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it33                  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it4                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it5                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it6                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it7                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it8                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it9                   |   1|   0|    1|          0|
+    |ap_reg_ppstg_tmp_1058_reg_1008_pp0_it1  |   2|   0|    2|          0|
+    |mul_reg_1069                            |  77|   0|   77|          0|
+    |nL_read_reg_979                         |  32|   0|   32|          0|
+    |p_2_i_reg_1028                          |  12|   0|   12|          0|
+    |p_Val2_13_reg_1048                      |  20|   0|   20|          0|
+    |p_Val2_16_reg_1084                      |  20|   0|   20|          0|
+    |p_Val2_30_reg_1130                      |  16|   0|   16|          0|
+    |p_Val2_3_i_reg_1033                     |   8|   0|    8|          0|
+    |p_Val2_7_reg_227                        |  31|   0|   31|          0|
+    |p_Val2_8_reg_998                        |  18|   0|   18|          0|
+    |p_Val2_i5_reg_1110                      |  20|   0|   20|          0|
+    |signbit_reg_1115                        |   1|   0|    1|          0|
+    |tmp_1057_reg_1003                       |  12|   0|   12|          0|
+    |tmp_1058_reg_1008                       |   2|   0|    2|          0|
+    |tmp_1063_reg_1043                       |  15|   0|   15|          0|
+    |tmp_1064_reg_1058                       |   1|   0|    1|          0|
+    |tmp_1066_reg_1074                       |  21|   0|   21|          0|
+    |tmp_1070_reg_1089                       |   1|   0|    1|          0|
+    |tmp_1071_reg_1094                       |  18|   0|   18|          0|
+    |tmp_1072_reg_1099                       |   1|   0|    1|          0|
+    |tmp_1073_reg_1104                       |   1|   0|    1|          0|
+    |tmp_145_reg_1079                        |  20|   0|   20|          0|
+    |tmp_18_i_reg_989                        |   1|   0|    1|          0|
+    |tmp_1987_i_reg_1023                     |   8|   0|    8|          0|
+    |tmp_1989_i_reg_1013                     |   5|   0|    5|          0|
+    |tmp_1_i7_reg_1120                       |  15|   0|   15|          0|
+    |tmp_7_i_reg_1125                        |   1|   0|    1|          0|
+    |val_V_reg_1018                          |  20|   0|   20|          0|
+    |xout_cartesian_M_imag_V_reg_1140        |  16|   0|   16|          0|
+    |xout_cartesian_M_real_V_reg_1135        |  16|   0|   16|          0|
+    |xuout_V_i_reg_1064                      |  19|   0|   19|          0|
+    |p_2_i_reg_1028                          |   0|  12|   12|          0|
+    |p_Val2_3_i_reg_1033                     |   0|   8|    8|          0|
+    |tmp_1064_reg_1058                       |   0|   1|    1|          0|
+    |tmp_18_i_reg_989                        |   0|   1|    1|          0|
+    |xuout_V_i_reg_1064                      |   0|  19|   19|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   | 517|  41|  558|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |         Source Object        |    C Type    |
++---------------------+-----+-----+------------+------------------------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|ap_start             |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|ap_done              | out |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|ap_continue          |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|ap_idle              | out |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|ap_ready             | out |    1| ap_ctrl_hs | cmpy_complex_top_Loop_2_proc | return value |
+|factor_V_dout        |  in |   10|   ap_fifo  |           factor_V           |    pointer   |
+|factor_V_empty_n     |  in |    1|   ap_fifo  |           factor_V           |    pointer   |
+|factor_V_read        | out |    1|   ap_fifo  |           factor_V           |    pointer   |
+|nL_dout              |  in |   32|   ap_fifo  |              nL              |    pointer   |
+|nL_empty_n           |  in |    1|   ap_fifo  |              nL              |    pointer   |
+|nL_read              | out |    1|   ap_fifo  |              nL              |    pointer   |
+|refAtans_V_address0  | out |   11|  ap_memory |          refAtans_V          |     array    |
+|refAtans_V_ce0       | out |    1|  ap_memory |          refAtans_V          |     array    |
+|refAtans_V_q0        |  in |   20|  ap_memory |          refAtans_V          |     array    |
+|prealign_V_TDATA     |  in |   24|    axis    |          prealign_V          |    pointer   |
+|prealign_V_TVALID    |  in |    1|    axis    |          prealign_V          |    pointer   |
+|prealign_V_TREADY    | out |    1|    axis    |          prealign_V          |    pointer   |
+|sig_TDATA            |  in |   24|    axis    |              sig             |    pointer   |
+|sig_TVALID           |  in |    1|    axis    |              sig             |    pointer   |
+|sig_TREADY           | out |    1|    axis    |              sig             |    pointer   |
+|cmp_TDATA            | out |   40|    axis    |              cmp             |    pointer   |
+|cmp_TVALID           | out |    1|    axis    |              cmp             |    pointer   |
+|cmp_TREADY           |  in |    1|    axis    |              cmp             |    pointer   |
++---------------------+-----+-----+------------+------------------------------+--------------+
+

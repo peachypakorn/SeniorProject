@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vivado HLS Report for 'cmpy_complex_top_myatan2_complex_ap_fixed_s'
+================================================================
+* Date:           Mon Feb 08 23:42:37 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DispCheck
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.51|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   10|   10|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 11
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 11
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 11, States = { 1 2 3 4 5 6 7 8 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+* FSM state operations: 
+
+ <State 1>: 7.55ns
+ST_1: xin_read [1/1] 0.00ns
+:1  %xin_read = call i24 @_ssdm_op_Read.axis.volatile.i24P(i24* %xin)
+
+ST_1: tmp [1/1] 0.00ns
+:2  %tmp = trunc i24 %xin_read to i10
+
+ST_1: x_cartesian_M_real_V [1/1] 0.00ns
+:3  %x_cartesian_M_real_V = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp, i5 0)
+
+ST_1: tmp_1 [1/1] 0.00ns
+:4  %tmp_1 = call i10 @_ssdm_op_PartSelect.i10.i24.i32.i32(i24 %xin_read, i32 10, i32 19)
+
+ST_1: x_cartesian_M_imag_V [1/1] 0.00ns
+:5  %x_cartesian_M_imag_V = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_1, i5 0)
+
+ST_1: p_Val2_s [11/11] 7.55ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 2>: 8.51ns
+ST_2: p_Val2_s [10/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 3>: 8.51ns
+ST_3: p_Val2_s [9/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 4>: 8.51ns
+ST_4: p_Val2_s [8/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 5>: 8.51ns
+ST_5: p_Val2_s [7/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 6>: 8.51ns
+ST_6: p_Val2_s [6/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 7>: 8.51ns
+ST_7: p_Val2_s [5/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 8>: 8.51ns
+ST_8: p_Val2_s [4/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 9>: 8.51ns
+ST_9: p_Val2_s [3/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 10>: 8.51ns
+ST_10: p_Val2_s [2/11] 8.51ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+
+ <State 11>: 8.39ns
+ST_11: stg_27 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecInterface(i24* %xin, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_11: p_Val2_s [1/11] 8.39ns
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+ST_11: tmp_2 [1/1] 0.00ns
+:7  %tmp_2 = trunc i16 %p_Val2_s to i15
+
+ST_11: ssdm_int_V_write_assign [1/1] 0.00ns
+:8  %ssdm_int_V_write_assign = call i20 @_ssdm_op_BitConcatenate.i20.i15.i5(i15 %tmp_2, i5 0)
+
+ST_11: stg_31 [1/1] 0.00ns
+:9  ret i20 %ssdm_int_V_write_assign
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

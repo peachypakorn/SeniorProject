@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4.1 (64-bit)
+# SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+# IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+# Start of session at: Sun Jan 10 01:50:57 2016
+# Process ID: 29948
+# Current directory: D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog/xsim.dir/pyrconstuct_top/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog/webtalk.log
+# Journal file: D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog/xsim.dir/pyrconstuct_top/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 10 01:50:59 2016...

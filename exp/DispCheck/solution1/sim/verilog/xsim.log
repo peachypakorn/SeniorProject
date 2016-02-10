@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# xsim v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Feb 08 23:46:07 2016
+# Process ID: 2716
+# Current directory: F:/FPGA/exp/DispCheck/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/cmpy_complex_top/xsim_script.tcl}
+# Log file: F:/FPGA/exp/DispCheck/solution1/sim/verilog/xsim.log
+# Journal file: F:/FPGA/exp/DispCheck/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/cmpy_complex_top/xsim_script.tcl
+# xsim {cmpy_complex_top} -maxdeltaid 10000 -autoloadwcfg -tclbatch {cmpy_complex_top.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source cmpy_complex_top.tcl
+## run all
+$finish called at time : 16025 ns : File "F:/FPGA/exp/DispCheck/solution1/sim/verilog/cmpy_complex_top.autotb.v" Line 510
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Feb 08 23:46:14 2016...

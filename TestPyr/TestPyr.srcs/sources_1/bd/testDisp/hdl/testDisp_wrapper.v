@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-//Date        : Tue Feb 09 19:40:09 2016
+//Date        : Wed Feb 10 16:49:26 2016
 //Host        : DESKTOP-SG5D71V running 64-bit major release  (build 9200)
 //Command     : generate_target testDisp_wrapper.bd
 //Design      : testDisp_wrapper

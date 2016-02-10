@@ -1,0 +1,67 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Feb 08 23:59:09 2016
+| Host         : DESKTOP-SG5D71V running 64-bit major release  (build 9200)
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_cmpy_complex_top
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 8
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_mul_10s_18s_28_1_U14/cmpy_complex_top_mul_mul_10s_18s_28_1_DSP48_0_U/p input cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_mul_10s_18s_28_1_U14/cmpy_complex_top_mul_mul_10s_18s_28_1_DSP48_0_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U12/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product output cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U12/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U13/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product output cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U13/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U12/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product multiplier stage cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U12/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U13/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product multiplier stage cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_19ns_20s_39_3_U13/cmpy_complex_top_mul_19ns_20s_39_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_40ns_38s_77_7_U11/cmpy_complex_top_mul_40ns_38s_77_7_MulnS_0_U/buff0_reg multiplier stage cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_40ns_38s_77_7_U11/cmpy_complex_top_mul_40ns_38s_77_7_MulnS_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_mul_10s_18s_28_1_U14/cmpy_complex_top_mul_mul_10s_18s_28_1_DSP48_0_U/p multiplier stage cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_mul_10s_18s_28_1_U14/cmpy_complex_top_mul_mul_10s_18s_28_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

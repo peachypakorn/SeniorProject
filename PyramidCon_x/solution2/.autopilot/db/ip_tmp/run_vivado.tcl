@@ -1,0 +1,11 @@
+create_project prj -part xc7z020clg484-1 -force
+set_property target_language verilog [current_project]
+set vivado_ver [version -short]
+source "F:/FPGA/PyramidCon_x/solution2/syn/verilog/fft_config1_s_core_ip.tcl"
+if {[regexp -nocase {2015\.3.*} $vivado_ver match] || [regexp -nocase {2016\.1.*} $vivado_ver match]} {
+    extract_files -base_dir "./prjsrcs/sources_1/ip" [get_files -all -of [get_ips fft_config1_s_core]]
+}
+source "F:/FPGA/PyramidCon_x/solution2/syn/verilog/fft_config2_s_core_ip.tcl"
+if {[regexp -nocase {2015\.3.*} $vivado_ver match] || [regexp -nocase {2016\.1.*} $vivado_ver match]} {
+    extract_files -base_dir "./prjsrcs/sources_1/ip" [get_files -all -of [get_ips fft_config2_s_core]]
+}

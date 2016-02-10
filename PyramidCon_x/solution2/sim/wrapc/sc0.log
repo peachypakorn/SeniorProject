@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx2016/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_pyrconstuct_top.cpp
+   Compiling pyramid_build_test.cpp_pre.cpp.tb.cpp
+   Compiling pyramidbuild.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

@@ -1,0 +1,156 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'cmpy_complex_top_Loop_1_proc143'" level="0">
+<item name = "Date">Mon Feb 08 23:42:54 2016
+</item>
+<item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
+<item name = "Project">DispCheck</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.51, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102">cmpy_complex_top_myatan2_complex_ap_fixed_s, 10, 10, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">?, ?, 13, 1, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 44</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 674, 1504</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 64</column>
+<column name="Register">-, -, 132, 32</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 3</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102">cmpy_complex_top_myatan2_complex_ap_fixed_s, 0, 0, 674, 1504</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_fu_123_p2">+, 0, 0, 31, 31, 1</column>
+<column name="ap_sig_bdd_68">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_i_i_fu_118_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="ap_sig_bdd_115">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 4, 1, 4</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 2, 1, 2</column>
+<column name="i_i_i_phi_fu_94_p4">31, 2, 31, 62</column>
+<column name="i_i_i_reg_90">31, 2, 31, 62</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it10">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it11">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it8">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it9">1, 0, 1, 0</column>
+<column name="grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_i_i_reg_90">31, 0, 31, 0</column>
+<column name="i_reg_143">31, 0, 31, 0</column>
+<column name="tmp_1980_i_i_reg_148">20, 0, 20, 0</column>
+<column name="tmp_i_i_reg_139">1, 0, 1, 0</column>
+<column name="tmp_reg_134">31, 0, 32, 1</column>
+<column name="i_i_i_reg_90">0, 31, 31, 0</column>
+<column name="tmp_i_i_reg_139">0, 1, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, cmpy_complex_top_Loop_1_proc143, return value</column>
+<column name="nL">in, 32, ap_none, nL, scalar</column>
+<column name="refAtans_V_address0">out, 11, ap_memory, refAtans_V, array</column>
+<column name="refAtans_V_ce0">out, 1, ap_memory, refAtans_V, array</column>
+<column name="refAtans_V_we0">out, 1, ap_memory, refAtans_V, array</column>
+<column name="refAtans_V_d0">out, 20, ap_memory, refAtans_V, array</column>
+<column name="sigRef_TDATA">in, 24, axis, sigRef, pointer</column>
+<column name="sigRef_TVALID">in, 1, axis, sigRef, pointer</column>
+<column name="sigRef_TREADY">out, 1, axis, sigRef, pointer</column>
+<column name="factor_V">in, 10, ap_none, factor_V, scalar</column>
+<column name="nL_out_din">out, 32, ap_fifo, nL_out, pointer</column>
+<column name="nL_out_full_n">in, 1, ap_fifo, nL_out, pointer</column>
+<column name="nL_out_write">out, 1, ap_fifo, nL_out, pointer</column>
+<column name="factor_V_out_din">out, 10, ap_fifo, factor_V_out, pointer</column>
+<column name="factor_V_out_full_n">in, 1, ap_fifo, factor_V_out, pointer</column>
+<column name="factor_V_out_write">out, 1, ap_fifo, factor_V_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

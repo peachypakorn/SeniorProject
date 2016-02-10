@@ -1,0 +1,271 @@
+
+
+================================================================
+== Vivado HLS Report for 'cmpy_complex_top_Loop_1_proc143'
+================================================================
+* Date:           Mon Feb 08 23:42:38 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DispCheck
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.51|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|        13|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 13
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 15
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 13, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	15  / (!tmp_i_i)
+	3  / (tmp_i_i)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	2  / true
+15 --> 
+* FSM state operations: 
+
+ <State 1>: 4.38ns
+ST_1: stg_16 [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i24* %sigRef, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_1: stg_17 [1/1] 0.00ns
+entry:1  call void (...)* @_ssdm_op_SpecInterface(i32* %nL_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: factor_V_read [1/1] 0.00ns
+entry:2  %factor_V_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %factor_V)
+
+ST_1: nL_read [1/1] 0.00ns
+entry:3  %nL_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %nL)
+
+ST_1: stg_20 [1/1] 4.38ns
+entry:4  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %nL_out, i32 %nL_read)
+
+ST_1: stg_21 [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecInterface(i10* %factor_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_22 [1/1] 4.38ns
+entry:6  call void @_ssdm_op_Write.ap_fifo.i10P(i10* %factor_V_out, i10 %factor_V_read)
+
+ST_1: tmp [1/1] 0.00ns
+entry:7  %tmp = shl i32 %nL_read, 1
+
+ST_1: stg_24 [1/1] 1.57ns
+entry:8  br label %.preheader266.i.i
+
+
+ <State 2>: 2.52ns
+ST_2: i_i_i [1/1] 0.00ns
+.preheader266.i.i:0  %i_i_i = phi i31 [ %i, %0 ], [ 0, %entry ]
+
+ST_2: i_cast_i_i [1/1] 0.00ns
+.preheader266.i.i:1  %i_cast_i_i = zext i31 %i_i_i to i32
+
+ST_2: tmp_i_i [1/1] 2.52ns
+.preheader266.i.i:2  %tmp_i_i = icmp slt i32 %i_cast_i_i, %tmp
+
+ST_2: i [1/1] 2.44ns
+.preheader266.i.i:3  %i = add i31 %i_i_i, 1
+
+ST_2: stg_29 [1/1] 0.00ns
+.preheader266.i.i:4  br i1 %tmp_i_i, label %0, label %.exit
+
+
+ <State 3>: 0.00ns
+ST_3: tmp_1980_i_i [11/11] 0.00ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 4>: 8.51ns
+ST_4: tmp_1980_i_i [10/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 5>: 8.51ns
+ST_5: tmp_1980_i_i [9/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 6>: 8.51ns
+ST_6: tmp_1980_i_i [8/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 7>: 8.51ns
+ST_7: tmp_1980_i_i [7/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 8>: 8.51ns
+ST_8: tmp_1980_i_i [6/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 9>: 8.51ns
+ST_9: tmp_1980_i_i [5/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 10>: 8.51ns
+ST_10: tmp_1980_i_i [4/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 11>: 8.51ns
+ST_11: tmp_1980_i_i [3/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 12>: 8.51ns
+ST_12: tmp_1980_i_i [2/11] 8.51ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 13>: 8.39ns
+ST_13: tmp_1980_i_i [1/11] 8.39ns
+:4  %tmp_1980_i_i = call fastcc i20 @"cmpy_complex_top_myatan2<complex,ap_fixed >"(i24* %sigRef)
+
+
+ <State 14>: 2.71ns
+ST_14: tmp_1979_i_i [1/1] 0.00ns
+:0  %tmp_1979_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str268)
+
+ST_14: stg_42 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str266) nounwind
+
+ST_14: tmp_17_i_i [1/1] 0.00ns
+:2  %tmp_17_i_i = zext i31 %i_i_i to i64
+
+ST_14: refAtans_V_addr [1/1] 0.00ns
+:3  %refAtans_V_addr = getelementptr [2048 x i20]* %refAtans_V, i64 0, i64 %tmp_17_i_i
+
+ST_14: stg_45 [1/1] 2.71ns
+:5  store i20 %tmp_1980_i_i, i20* %refAtans_V_addr, align 4
+
+ST_14: empty [1/1] 0.00ns
+:6  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str268, i32 %tmp_1979_i_i)
+
+ST_14: stg_47 [1/1] 0.00ns
+:7  br label %.preheader266.i.i
+
+
+ <State 15>: 0.00ns
+ST_15: stg_48 [1/1] 0.00ns
+.exit:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

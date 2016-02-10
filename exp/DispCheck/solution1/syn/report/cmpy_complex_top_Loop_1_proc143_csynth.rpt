@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vivado HLS Report for 'cmpy_complex_top_Loop_1_proc143'
+================================================================
+* Date:           Mon Feb 08 23:42:54 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DispCheck
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.51|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------+---------------------------------------------+-----+-----+-----+-----+----------+
+        |                                                        |                                             |  Latency  |  Interval | Pipeline |
+        |                        Instance                        |                    Module                   | min | max | min | max |   Type   |
+        +--------------------------------------------------------+---------------------------------------------+-----+-----+-----+-----+----------+
+        |grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102  |cmpy_complex_top_myatan2_complex_ap_fixed_s  |   10|   10|    1|    1| function |
+        +--------------------------------------------------------+---------------------------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|        13|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     44|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|     674|   1504|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     64|
+|Register         |        -|      -|     132|     32|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     806|   1644|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |      3|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------+---------------------------------------------+---------+-------+-----+------+
+    |                        Instance                        |                    Module                   | BRAM_18K| DSP48E|  FF |  LUT |
+    +--------------------------------------------------------+---------------------------------------------+---------+-------+-----+------+
+    |grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102  |cmpy_complex_top_myatan2_complex_ap_fixed_s  |        0|      0|  674|  1504|
+    +--------------------------------------------------------+---------------------------------------------+---------+-------+-----+------+
+    |Total                                                   |                                             |        0|      0|  674|  1504|
+    +--------------------------------------------------------+---------------------------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------+----------+-------+---+----+------------+------------+
+    |   Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------+----------+-------+---+----+------------+------------+
+    |i_fu_123_p2        |     +    |      0|  0|  31|          31|           1|
+    |ap_sig_bdd_68      |    and   |      0|  0|   1|           1|           1|
+    |tmp_i_i_fu_118_p2  |   icmp   |      0|  0|  11|          32|          32|
+    |ap_sig_bdd_115     |    or    |      0|  0|   1|           1|           1|
+    +-------------------+----------+-------+---+----+------------+------------+
+    |Total              |          |      0|  0|  44|          65|          35|
+    +-------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm               |   1|          4|    1|          4|
+    |ap_reg_ppiten_pp0_it12  |   1|          2|    1|          2|
+    |i_i_i_phi_fu_94_p4      |  31|          2|   31|         62|
+    |i_i_i_reg_90            |  31|          2|   31|         62|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   |  64|         10|   64|        130|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                     | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                     |   3|   0|    3|          0|
+    |ap_done_reg                                                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it10                                                        |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it11                                                        |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it12                                                        |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it2                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it3                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it4                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it5                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it6                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it7                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it8                                                         |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it9                                                         |   1|   0|    1|          0|
+    |grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102_ap_start_ap_start_reg  |   1|   0|    1|          0|
+    |i_i_i_reg_90                                                                  |  31|   0|   31|          0|
+    |i_reg_143                                                                     |  31|   0|   31|          0|
+    |tmp_1980_i_i_reg_148                                                          |  20|   0|   20|          0|
+    |tmp_i_i_reg_139                                                               |   1|   0|    1|          0|
+    |tmp_reg_134                                                                   |  31|   0|   32|          1|
+    |i_i_i_reg_90                                                                  |   0|  31|   31|          0|
+    |tmp_i_i_reg_139                                                               |   0|   1|    1|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                         | 132|  32|  165|          1|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+---------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++---------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|ap_start             |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|ap_done              | out |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|ap_continue          |  in |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|ap_idle              | out |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|ap_ready             | out |    1| ap_ctrl_hs | cmpy_complex_top_Loop_1_proc143 | return value |
+|nL                   |  in |   32|   ap_none  |                nL               |    scalar    |
+|refAtans_V_address0  | out |   11|  ap_memory |            refAtans_V           |     array    |
+|refAtans_V_ce0       | out |    1|  ap_memory |            refAtans_V           |     array    |
+|refAtans_V_we0       | out |    1|  ap_memory |            refAtans_V           |     array    |
+|refAtans_V_d0        | out |   20|  ap_memory |            refAtans_V           |     array    |
+|sigRef_TDATA         |  in |   24|    axis    |              sigRef             |    pointer   |
+|sigRef_TVALID        |  in |    1|    axis    |              sigRef             |    pointer   |
+|sigRef_TREADY        | out |    1|    axis    |              sigRef             |    pointer   |
+|factor_V             |  in |   10|   ap_none  |             factor_V            |    scalar    |
+|nL_out_din           | out |   32|   ap_fifo  |              nL_out             |    pointer   |
+|nL_out_full_n        |  in |    1|   ap_fifo  |              nL_out             |    pointer   |
+|nL_out_write         | out |    1|   ap_fifo  |              nL_out             |    pointer   |
+|factor_V_out_din     | out |   10|   ap_fifo  |           factor_V_out          |    pointer   |
+|factor_V_out_full_n  |  in |    1|   ap_fifo  |           factor_V_out          |    pointer   |
+|factor_V_out_write   | out |    1|   ap_fifo  |           factor_V_out          |    pointer   |
++---------------------+-----+-----+------------+---------------------------------+--------------+
+

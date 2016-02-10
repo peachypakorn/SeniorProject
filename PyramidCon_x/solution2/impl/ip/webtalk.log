@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Feb 08 23:59:26 2016
+# Process ID: 9588
+# Current directory: F:/FPGA/PyramidCon_x/solution2/impl/ip
+# Command line: wbtcv.exe -mode batch -source F:/FPGA/PyramidCon_x/solution2/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: F:/FPGA/PyramidCon_x/solution2/impl/ip/webtalk.log
+# Journal file: F:/FPGA/PyramidCon_x/solution2/impl/ip\webtalk.jou
+#-----------------------------------------------------------
+source F:/FPGA/PyramidCon_x/solution2/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 49.238 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 08 23:59:33 2016...

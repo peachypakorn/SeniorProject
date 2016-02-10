@@ -1,0 +1,136 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 2908
+
+Current time: 	2/10/16 1:49:15 AM ICT
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx2016/Vivado/2015.4/tps/win64/jre
+
+User name: 	Peachy
+User home directory: C:/Users/Peachy
+User working directory: F:/SeniorProj/TestPyr
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/Peachy/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Peachy/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	138 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 358 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 37 MB (+36497kb) [00:00:13]
+// [Engine Memory]: 338 MB (+202893kb) [00:00:13]
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: F:\SeniorProj\TestPyr\TestPyr.xpr. Version: Vivado v2015.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project F:/SeniorProj/TestPyr/TestPyr.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 388 MB (+34589kb) [00:00:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 388 MB. GUI used memory: 26 MB. Current time: 2/10/16 1:49:18 AM ICT
+// [Engine Memory]: 449 MB (+43360kb) [00:00:23]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 52 MB (+13364kb) [00:00:28]
+// [Engine Memory]: 485 MB (+14705kb) [00:00:28]
+// [Engine Memory]: 516 MB (+6926kb) [00:00:29]
+// [GUI Memory]: 87 MB (+34652kb) [00:00:29]
+// [Engine Memory]: 566 MB (+25406kb) [00:00:29]
+// [Engine Memory]: 596 MB (+1745kb) [00:00:30]
+// [GUI Memory]: 98 MB (+6530kb) [00:00:30]
+// [Engine Memory]: 628 MB (+2437kb) [00:00:31]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project F:/SeniorProj/TestPyr/TestPyr.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA/exp/DispCheck/solution1/impl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA/PyramidCon_x/solution2/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2016/Vivado/2015.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 637 MB. GUI used memory: 53 MB. Current time: 2/10/16 1:49:33 AM ICT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: TestPyr; location: F:/SeniorProj/TestPyr; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 832.855 ; gain = 289.215 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 29 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// N:x (cq:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // h:JCheckBox (JPanel:JComponent, N:x): TRUE
+selectComboBox(PAResourceItoN.NewExportHardwareDialog_EXPORT_TO, "Choose Location...", 1); // f:JComboBox (JPanel:JComponent, N:x)
+// Elapsed time: 16 seconds
+setFolderChooser("F:/SeniorProj");
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+// 'o' command handler elapsed time: 35 seconds
+dismissDialog("Export Hardware"); // N:x (cq:JFrame)
+// Tcl Message: file mkdir F:/SeniorProj/TestPyr/TestPyr.sdk 
+// Tcl Message: file copy -force F:/SeniorProj/TestPyr/TestPyr.runs/impl_1/testDisp_wrapper.sysdef F:/SeniorProj/testDisp_wrapper.hdf  
+// Elapsed time: 56 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// N:x (cq:JFrame): Export Hardware: addNotify
+selectComboBox(PAResourceItoN.NewExportHardwareDialog_EXPORT_TO, "Choose Location...", 2); // f:JComboBox (JPanel:JComponent, N:x)
+// Elapsed time: 18 seconds
+setFolderChooser("F:/SeniorProj/pry_SDK");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+// 'o' command handler elapsed time: 22 seconds
+dismissDialog("Export Hardware"); // N:x (cq:JFrame)
+// Tcl Message: file copy -force F:/SeniorProj/TestPyr/TestPyr.runs/impl_1/testDisp_wrapper.sysdef F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// Q:x (cq:JFrame): Launch SDK: addNotify
+selectComboBox(PAResourceItoN.NewLaunchHardwareDialog_LOCATION_OF_HARDWARE_DESCRIPTION_FILE, "Choose Location...", 1); // f:JComboBox (JPanel:JComponent, Q:x)
+setFolderChooser("F:/SeniorProj/pry_SDK");
+selectComboBox(PAResourceItoN.NewLaunchHardwareDialog_WORKSPACE, "Choose Location...", 1); // f:JComboBox (JPanel:JComponent, Q:x)
+setFolderChooser("F:/SeniorProj/pry_SDK");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:x)
+// 'q' command handler elapsed time: 8 seconds
+dismissDialog("Launch SDK"); // Q:x (cq:JFrame)
+// Tcl Message: launch_sdk -workspace F:/SeniorProj/pry_SDK -hwspec F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace F:/SeniorProj/pry_SDK -hwspec F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 55 MB. Current time: 2/10/16 1:58:22 AM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 57 MB. Current time: 2/10/16 2:28:22 AM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 54 MB. Current time: 2/10/16 2:58:23 AM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 53 MB. Current time: 2/10/16 3:29:30 AM ICT

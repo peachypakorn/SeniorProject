@@ -123,12 +123,6 @@ COMPONENT testDisp_axi_dma_0_0
     m_axis_mm2s_tvalid : OUT STD_LOGIC;
     m_axis_mm2s_tready : IN STD_LOGIC;
     m_axis_mm2s_tlast : OUT STD_LOGIC;
-    mm2s_cntrl_reset_out_n : OUT STD_LOGIC;
-    m_axis_mm2s_cntrl_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    m_axis_mm2s_cntrl_tkeep : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    m_axis_mm2s_cntrl_tvalid : OUT STD_LOGIC;
-    m_axis_mm2s_cntrl_tready : IN STD_LOGIC;
-    m_axis_mm2s_cntrl_tlast : OUT STD_LOGIC;
     m_axi_s2mm_awaddr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     m_axi_s2mm_awlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     m_axi_s2mm_awsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -151,12 +145,6 @@ COMPONENT testDisp_axi_dma_0_0
     s_axis_s2mm_tvalid : IN STD_LOGIC;
     s_axis_s2mm_tready : OUT STD_LOGIC;
     s_axis_s2mm_tlast : IN STD_LOGIC;
-    s2mm_sts_reset_out_n : OUT STD_LOGIC;
-    s_axis_s2mm_sts_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    s_axis_s2mm_sts_tkeep : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axis_s2mm_sts_tvalid : IN STD_LOGIC;
-    s_axis_s2mm_sts_tready : OUT STD_LOGIC;
-    s_axis_s2mm_sts_tlast : IN STD_LOGIC;
     mm2s_introut : OUT STD_LOGIC;
     s2mm_introut : OUT STD_LOGIC;
     axi_dma_tstvec : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -239,12 +227,6 @@ your_instance_name : testDisp_axi_dma_0_0
     m_axis_mm2s_tvalid => m_axis_mm2s_tvalid,
     m_axis_mm2s_tready => m_axis_mm2s_tready,
     m_axis_mm2s_tlast => m_axis_mm2s_tlast,
-    mm2s_cntrl_reset_out_n => mm2s_cntrl_reset_out_n,
-    m_axis_mm2s_cntrl_tdata => m_axis_mm2s_cntrl_tdata,
-    m_axis_mm2s_cntrl_tkeep => m_axis_mm2s_cntrl_tkeep,
-    m_axis_mm2s_cntrl_tvalid => m_axis_mm2s_cntrl_tvalid,
-    m_axis_mm2s_cntrl_tready => m_axis_mm2s_cntrl_tready,
-    m_axis_mm2s_cntrl_tlast => m_axis_mm2s_cntrl_tlast,
     m_axi_s2mm_awaddr => m_axi_s2mm_awaddr,
     m_axi_s2mm_awlen => m_axi_s2mm_awlen,
     m_axi_s2mm_awsize => m_axi_s2mm_awsize,
@@ -267,12 +249,6 @@ your_instance_name : testDisp_axi_dma_0_0
     s_axis_s2mm_tvalid => s_axis_s2mm_tvalid,
     s_axis_s2mm_tready => s_axis_s2mm_tready,
     s_axis_s2mm_tlast => s_axis_s2mm_tlast,
-    s2mm_sts_reset_out_n => s2mm_sts_reset_out_n,
-    s_axis_s2mm_sts_tdata => s_axis_s2mm_sts_tdata,
-    s_axis_s2mm_sts_tkeep => s_axis_s2mm_sts_tkeep,
-    s_axis_s2mm_sts_tvalid => s_axis_s2mm_sts_tvalid,
-    s_axis_s2mm_sts_tready => s_axis_s2mm_sts_tready,
-    s_axis_s2mm_sts_tlast => s_axis_s2mm_sts_tlast,
     mm2s_introut => mm2s_introut,
     s2mm_introut => s2mm_introut,
     axi_dma_tstvec => axi_dma_tstvec

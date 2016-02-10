@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Port 'cmpy_complex_top/nLen' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:43:01.995+0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'cmpy_complex_top/nLExp' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:43:01.971+0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'cmpy_complex_top_fxp_sqrt&lt;20, 2, 20, 2>' to 'cmpy_complex_top_fxp_sqrt_20_2_20_2_s'." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:42:33.135+0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'cmpy_complex_top_cordic_base.1' to 'cmpy_complex_top_cordic_base_1'." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:42:33.111+0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'cmpy_complex_top_myatan2&lt;complex,ap_fixed >' to 'cmpy_complex_top_myatan2_complex_ap_fixed_s'." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:42:33.098+0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'hls::cordic_base&lt;2, false, 0, 0, 16, 16, 0, 0, 0, 0>' (C:/Xilinx2016/Vivado_HLS/2015.4/common/technology/autopilot/hls/dsp/utils/hls_cordic.h:261:26) into cordic_base.1." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:42:33.021+0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'hls::cordic_base&lt;3, true, 0, 0, 16, 16, 0, 0, 0, 0>' (C:/Xilinx2016/Vivado_HLS/2015.4/common/technology/autopilot/hls/dsp/utils/hls_cordic.h:259:13) into cordic_base." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:42:24.917+0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'myatan2&lt;std::complex&lt;ap_fixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >, ap_fixed&lt;20, 2, (ap_q_mode)0, (ap_o_mode)3, 0> >' (DispCheck/disp.cpp:84) into myatan2&lt;complex,ap_fixed >." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:42:24.888+0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'prealign.V' (DispCheck/disp.cpp:126): may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:55.963+0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'sig' (DispCheck/disp.cpp:124): may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:52.290+0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'sigRef' (DispCheck/disp.cpp:125): may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:52.275+0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'cmp' (DispCheck/disp.cpp:128): may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:52.257+0700" type="Warning"/>
+        <logs message="@W [XFORM-1103] Ignored data pack directive on non-struct variable 'prealign.V' (DispCheck/disp.cpp:126)." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:25.848+0700" type="Warning"/>
+        <logs message="@W [XFORM-803] Cannot specify interface mode 'axis' on argument 'xin._M_imag.V' . This interface directive will be discarded. Please apply it on an argument of top module." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:25.824+0700" type="Warning"/>
+        <logs message="@W [XFORM-803] Cannot specify interface mode 'axis' on argument 'xin._M_real.V' . This interface directive will be discarded. Please apply it on an argument of top module." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:25.811+0700" type="Warning"/>
+        <logs message="@W [SYNCHK-23] C:/Xilinx2016/Vivado_HLS/2015.4/common/technology/autopilot/hls/dsp/utils/hls_cordic_functions.h:219: variable-indexed range selection may cause suboptimal QoR." projectName="DispCheck" solutionName="solution1" date="2016-02-08T23:40:25.244+0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

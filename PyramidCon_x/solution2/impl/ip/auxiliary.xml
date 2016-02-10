@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pyrconstuct_top" xd:componentRef="pyrconstuct_top" xd:initiationInterval="2043" xd:clockPeriod="5.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="imgIn[].real()" xd:originalName="imgIn" xd:direction="in" xd:interfaceRef="imgIn" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:arraySize="512" xd:dataWidth="16"/>
+  <xd:arg xd:name="imgIn[].imag()" xd:originalName="imgIn" xd:direction="in" xd:interfaceRef="imgIn" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:arraySize="512" xd:dataWidth="16"/>
+  <xd:arg xd:name="pyrFilOut.real()" xd:originalName="pyrFilOut" xd:direction="out" xd:interfaceRef="pyrFilOut_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="16:0" xd:arraySize="1520" xd:dataWidth="17"/>
+  <xd:arg xd:name="pyrFilOut.imag()" xd:originalName="pyrFilOut" xd:direction="out" xd:interfaceRef="pyrFilOut_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="33:17" xd:arraySize="1520" xd:dataWidth="17"/>
+  <xd:arg xd:name="nL" xd:originalName="nL" xd:direction="in" xd:interfaceRef="nL" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="2042" xd:worst-case="2042" xd:average-case="2042"/>
+  <xd:resourceEstimates xd:LUT="11963" xd:FF="14394" xd:BRAM="27" xd:DSP="26"/>
+</xd:acceleratorMap>

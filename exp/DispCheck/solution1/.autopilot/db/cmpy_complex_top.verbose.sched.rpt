@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vivado HLS Report for 'cmpy_complex_top'
+================================================================
+* Date:           Mon Feb 08 23:42:47 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DispCheck
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.70|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    ?|    ?|    ?|    ?| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 4.38ns
+ST_1: factor_V_read [1/1] 0.00ns
+.preheader266.preheader:0  %factor_V_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %factor_V)
+
+ST_1: nL_read [1/1] 0.00ns
+.preheader266.preheader:1  %nL_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %nL)
+
+ST_1: factor_V_channel [1/1] 0.00ns
+.preheader266.preheader:2  %factor_V_channel = alloca i10, align 2
+
+ST_1: nL_channel [1/1] 0.00ns
+.preheader266.preheader:3  %nL_channel = alloca i32, align 4
+
+ST_1: refAtans_V [1/1] 0.00ns
+.preheader266.preheader:14  %refAtans_V = alloca [2048 x i20], align 4
+
+ST_1: stg_10 [2/2] 4.38ns
+.preheader266.preheader:23  call fastcc void @cmpy_complex_top_Loop_1_proc143(i32 %nL_read, [2048 x i20]* %refAtans_V, i24* %sigRef, i10 %factor_V_read, i32* %nL_channel, i10* %factor_V_channel)
+
+
+ <State 2>: 0.00ns
+ST_2: stg_11 [1/2] 0.00ns
+.preheader266.preheader:23  call fastcc void @cmpy_complex_top_Loop_1_proc143(i32 %nL_read, [2048 x i20]* %refAtans_V, i24* %sigRef, i10 %factor_V_read, i32* %nL_channel, i10* %factor_V_channel)
+
+
+ <State 3>: 8.46ns
+ST_3: stg_12 [2/2] 8.46ns
+.preheader266.preheader:24  call fastcc void @cmpy_complex_top_Loop_2_proc(i10* %factor_V_channel, i32* %nL_channel, [2048 x i20]* %refAtans_V, i24* %prealign_V, i24* %sig, i40* %cmp)
+
+
+ <State 4>: 8.16ns
+ST_4: stg_13 [1/1] 0.00ns
+.preheader266.preheader:4  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str266) nounwind
+
+ST_4: stg_14 [1/1] 0.00ns
+.preheader266.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap(i24* %sig), !map !7
+
+ST_4: stg_15 [1/1] 0.00ns
+.preheader266.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap(i40* %cmp), !map !16
+
+ST_4: stg_16 [1/1] 0.00ns
+.preheader266.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap(i24* %sigRef), !map !23
+
+ST_4: stg_17 [1/1] 0.00ns
+.preheader266.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap(i24* %prealign_V), !map !32
+
+ST_4: stg_18 [1/1] 0.00ns
+.preheader266.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap(i32 %nL), !map !36
+
+ST_4: stg_19 [1/1] 0.00ns
+.preheader266.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap(i32 %nLExp), !map !42
+
+ST_4: stg_20 [1/1] 0.00ns
+.preheader266.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap(i32 %nLen), !map !46
+
+ST_4: stg_21 [1/1] 0.00ns
+.preheader266.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap(i10 %factor_V), !map !50
+
+ST_4: stg_22 [1/1] 0.00ns
+.preheader266.preheader:13  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @cmpy_complex_top_str) nounwind
+
+ST_4: stg_23 [1/1] 0.00ns
+.preheader266.preheader:15  call void (...)* @_ssdm_op_SpecInterface(i24* %sig, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_4: stg_24 [1/1] 0.00ns
+.preheader266.preheader:16  call void (...)* @_ssdm_op_SpecInterface(i24* %sigRef, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_4: stg_25 [1/1] 0.00ns
+.preheader266.preheader:17  call void (...)* @_ssdm_op_SpecInterface(i24* %prealign_V, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_4: stg_26 [1/1] 0.00ns
+.preheader266.preheader:18  call void (...)* @_ssdm_op_SpecInterface(i40* %cmp, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+ST_4: empty [1/1] 0.00ns
+.preheader266.preheader:19  %empty = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @nL_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %nL_channel, i32* %nL_channel)
+
+ST_4: stg_28 [1/1] 0.00ns
+.preheader266.preheader:20  call void (...)* @_ssdm_op_SpecInterface(i32* %nL_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_25 [1/1] 0.00ns
+.preheader266.preheader:21  %empty_25 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @factor_OC_V_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i10* %factor_V_channel, i10* %factor_V_channel)
+
+ST_4: stg_30 [1/1] 0.00ns
+.preheader266.preheader:22  call void (...)* @_ssdm_op_SpecInterface(i10* %factor_V_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: stg_31 [1/2] 8.16ns
+.preheader266.preheader:24  call fastcc void @cmpy_complex_top_Loop_2_proc(i10* %factor_V_channel, i32* %nL_channel, [2048 x i20]* %refAtans_V, i24* %prealign_V, i24* %sig, i40* %cmp)
+
+ST_4: stg_32 [1/1] 0.00ns
+.preheader266.preheader:25  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

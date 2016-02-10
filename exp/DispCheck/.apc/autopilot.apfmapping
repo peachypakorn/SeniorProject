@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="disp.cpp" path="F:\FPGA\exp\DispCheck\disp.cpp"/>
+    <originFiles name="fxp_sqtrt.h" path="F:\FPGA\exp\DispCheck\fxp_sqtrt.h"/>
+    <originFiles name="sincos.h" path="F:\FPGA\exp\DispCheck\sincos.h"/>
+  </source>
+  <testbench>
+    <originFiles name="disp_test.cpp" path="F:\FPGA\exp\DispCheck\disp_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

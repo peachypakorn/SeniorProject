@@ -1,0 +1,541 @@
+<stg><name>cmpy_complex_top_myatan2<complex,ap_fixed ></name>
+
+
+<trans_list>
+
+<trans id="43" from="1" to="2">
+<condition id="10">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="44" from="2" to="3">
+<condition id="11">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="45" from="3" to="4">
+<condition id="12">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="46" from="4" to="5">
+<condition id="13">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="47" from="5" to="6">
+<condition id="14">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="48" from="6" to="7">
+<condition id="15">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="49" from="7" to="8">
+<condition id="16">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="50" from="8" to="9">
+<condition id="17">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="51" from="9" to="10">
+<condition id="18">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="52" from="10" to="11">
+<condition id="19">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>AXI4Stream</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="3" bw="24" op_0_bw="24" op_1_bw="24">
+<![CDATA[
+:1  %xin_read = call i24 @_ssdm_op_Read.axis.volatile.i24P(i24* %xin)
+
+]]></node>
+<StgValue><ssdm name="xin_read"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="4" bw="10" op_0_bw="24">
+<![CDATA[
+:2  %tmp = trunc i24 %xin_read to i10
+
+]]></node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="5" bw="15" op_0_bw="15" op_1_bw="10" op_2_bw="5">
+<![CDATA[
+:3  %x_cartesian_M_real_V = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp, i5 0)
+
+]]></node>
+<StgValue><ssdm name="x_cartesian_M_real_V"/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="6" bw="10" op_0_bw="10" op_1_bw="24" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+:4  %tmp_1 = call i10 @_ssdm_op_PartSelect.i10.i24.i32.i32(i24 %xin_read, i32 10, i32 19)
+
+]]></node>
+<StgValue><ssdm name="tmp_1"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="7" bw="15" op_0_bw="15" op_1_bw="10" op_2_bw="5">
+<![CDATA[
+:5  %x_cartesian_M_imag_V = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %tmp_1, i5 0)
+
+]]></node>
+<StgValue><ssdm name="x_cartesian_M_imag_V"/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="11" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="18" st_id="2" stage="10" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="19" st_id="3" stage="9" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="20" st_id="4" stage="8" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="21" st_id="5" stage="7" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="6" st_id="6">
+
+<operation id="22" st_id="6" stage="6" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="7" st_id="7">
+
+<operation id="23" st_id="7" stage="5" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="8" st_id="8">
+
+<operation id="24" st_id="8" stage="4" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="9" st_id="9">
+
+<operation id="25" st_id="9" stage="3" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="10" st_id="10">
+
+<operation id="26" st_id="10" stage="2" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+</state>
+
+<state id="11" st_id="11">
+
+<operation id="27" st_id="11" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="2" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8">
+<![CDATA[
+:0  call void (...)* @_ssdm_op_SpecInterface(i24* %xin, [5 x i8]* @p_str267, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266, [1 x i8]* @p_str266)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="28" st_id="11" stage="1" lat="11">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="16" op_0_bw="16" op_1_bw="15" op_2_bw="15">
+<![CDATA[
+:6  %p_Val2_s = call fastcc i16 @cmpy_complex_top_cordic_base(i15 %x_cartesian_M_real_V, i15 %x_cartesian_M_imag_V)
+
+]]></node>
+<StgValue><ssdm name="p_Val2_s"/></StgValue>
+</operation>
+
+<operation id="29" st_id="11" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="9" bw="15" op_0_bw="16">
+<![CDATA[
+:7  %tmp_2 = trunc i16 %p_Val2_s to i15
+
+]]></node>
+<StgValue><ssdm name="tmp_2"/></StgValue>
+</operation>
+
+<operation id="30" st_id="11" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="10" bw="20" op_0_bw="20" op_1_bw="15" op_2_bw="5">
+<![CDATA[
+:8  %ssdm_int_V_write_assign = call i20 @_ssdm_op_BitConcatenate.i20.i15.i5(i15 %tmp_2, i5 0)
+
+]]></node>
+<StgValue><ssdm name="ssdm_int_V_write_assign"/></StgValue>
+</operation>
+
+<operation id="31" st_id="11" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="11" bw="0" op_0_bw="20">
+<![CDATA[
+:9  ret i20 %ssdm_int_V_write_assign
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="53" name="xin" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="xin"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="55" from="_ssdm_op_Read.axis.volatile.i24P" to="xin_read" fromId="54" toId="12">
+</dataflow>
+<dataflow id="56" from="xin" to="xin_read" fromId="53" toId="12">
+</dataflow>
+<dataflow id="57" from="xin_read" to="tmp" fromId="12" toId="13">
+</dataflow>
+<dataflow id="59" from="_ssdm_op_BitConcatenate.i15.i10.i5" to="x_cartesian_M_real_V" fromId="58" toId="14">
+</dataflow>
+<dataflow id="60" from="tmp" to="x_cartesian_M_real_V" fromId="13" toId="14">
+</dataflow>
+<dataflow id="62" from="stg_61" to="x_cartesian_M_real_V" fromId="61" toId="14">
+</dataflow>
+<dataflow id="64" from="_ssdm_op_PartSelect.i10.i24.i32.i32" to="tmp_1" fromId="63" toId="15">
+</dataflow>
+<dataflow id="65" from="xin_read" to="tmp_1" fromId="12" toId="15">
+</dataflow>
+<dataflow id="67" from="stg_66" to="tmp_1" fromId="66" toId="15">
+</dataflow>
+<dataflow id="69" from="stg_68" to="tmp_1" fromId="68" toId="15">
+</dataflow>
+<dataflow id="70" from="_ssdm_op_BitConcatenate.i15.i10.i5" to="x_cartesian_M_imag_V" fromId="58" toId="16">
+</dataflow>
+<dataflow id="71" from="tmp_1" to="x_cartesian_M_imag_V" fromId="15" toId="16">
+</dataflow>
+<dataflow id="72" from="stg_61" to="x_cartesian_M_imag_V" fromId="61" toId="16">
+</dataflow>
+<dataflow id="74" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="17">
+</dataflow>
+<dataflow id="75" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="17">
+</dataflow>
+<dataflow id="76" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="17">
+</dataflow>
+<dataflow id="77" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="18">
+</dataflow>
+<dataflow id="78" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="18">
+</dataflow>
+<dataflow id="79" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="18">
+</dataflow>
+<dataflow id="80" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="19">
+</dataflow>
+<dataflow id="81" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="19">
+</dataflow>
+<dataflow id="82" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="19">
+</dataflow>
+<dataflow id="83" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="20">
+</dataflow>
+<dataflow id="84" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="20">
+</dataflow>
+<dataflow id="85" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="20">
+</dataflow>
+<dataflow id="86" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="21">
+</dataflow>
+<dataflow id="87" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="21">
+</dataflow>
+<dataflow id="88" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="21">
+</dataflow>
+<dataflow id="89" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="22">
+</dataflow>
+<dataflow id="90" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="22">
+</dataflow>
+<dataflow id="91" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="22">
+</dataflow>
+<dataflow id="92" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="23">
+</dataflow>
+<dataflow id="93" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="23">
+</dataflow>
+<dataflow id="94" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="23">
+</dataflow>
+<dataflow id="95" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="24">
+</dataflow>
+<dataflow id="96" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="24">
+</dataflow>
+<dataflow id="97" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="24">
+</dataflow>
+<dataflow id="98" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="25">
+</dataflow>
+<dataflow id="99" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="25">
+</dataflow>
+<dataflow id="100" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="25">
+</dataflow>
+<dataflow id="101" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="26">
+</dataflow>
+<dataflow id="102" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="26">
+</dataflow>
+<dataflow id="103" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="26">
+</dataflow>
+<dataflow id="105" from="_ssdm_op_SpecInterface" to="stg_27" fromId="104" toId="27">
+</dataflow>
+<dataflow id="106" from="xin" to="stg_27" fromId="53" toId="27">
+</dataflow>
+<dataflow id="108" from="p_str267" to="stg_27" fromId="107" toId="27">
+</dataflow>
+<dataflow id="110" from="stg_109" to="stg_27" fromId="109" toId="27">
+</dataflow>
+<dataflow id="111" from="stg_109" to="stg_27" fromId="109" toId="27">
+</dataflow>
+<dataflow id="112" from="stg_109" to="stg_27" fromId="109" toId="27">
+</dataflow>
+<dataflow id="113" from="stg_109" to="stg_27" fromId="109" toId="27">
+</dataflow>
+<dataflow id="115" from="p_str266" to="stg_27" fromId="114" toId="27">
+</dataflow>
+<dataflow id="116" from="p_str266" to="stg_27" fromId="114" toId="27">
+</dataflow>
+<dataflow id="117" from="p_str266" to="stg_27" fromId="114" toId="27">
+</dataflow>
+<dataflow id="118" from="p_str266" to="stg_27" fromId="114" toId="27">
+</dataflow>
+<dataflow id="119" from="cmpy_complex_top_cordic_base" to="p_Val2_s" fromId="73" toId="28">
+</dataflow>
+<dataflow id="120" from="x_cartesian_M_real_V" to="p_Val2_s" fromId="14" toId="28">
+</dataflow>
+<dataflow id="121" from="x_cartesian_M_imag_V" to="p_Val2_s" fromId="16" toId="28">
+</dataflow>
+<dataflow id="122" from="p_Val2_s" to="tmp_2" fromId="28" toId="29">
+</dataflow>
+<dataflow id="124" from="_ssdm_op_BitConcatenate.i20.i15.i5" to="ssdm_int_V_write_assign" fromId="123" toId="30">
+</dataflow>
+<dataflow id="125" from="tmp_2" to="ssdm_int_V_write_assign" fromId="29" toId="30">
+</dataflow>
+<dataflow id="126" from="stg_61" to="ssdm_int_V_write_assign" fromId="61" toId="30">
+</dataflow>
+<dataflow id="127" from="ssdm_int_V_write_assign" to="stg_31" fromId="30" toId="31">
+</dataflow>
+</dataflows>
+
+
+</stg>

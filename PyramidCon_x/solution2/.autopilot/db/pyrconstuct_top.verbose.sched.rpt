@@ -1,0 +1,347 @@
+
+
+================================================================
+== Vivado HLS Report for 'pyrconstuct_top'
+================================================================
+* Date:           Mon Feb 08 23:46:30 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        PyramidCon_x
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      6.80|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+----------+
+    |   Latency   |   Interval  | Pipeline |
+    |  min |  max |  min |  max |   Type   |
+    +------+------+------+------+----------+
+    |  2042|  2042|  1654|  1654| dataflow |
+    +------+------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 14
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+* FSM state operations: 
+
+ <State 1>: 1.00ns
+ST_1: fft_config2_data_V [1/1] 0.00ns
+codeRepl:0  %fft_config2_data_V = alloca i16, align 2
+
+ST_1: fft_config_data_V_channel [1/1] 0.00ns
+codeRepl:1  %fft_config_data_V_channel = alloca i8, align 1
+
+ST_1: imgOutTmpFFTStream_channel [1/1] 0.00ns
+codeRepl:5  %imgOutTmpFFTStream_channel = alloca i48, align 8
+
+ST_1: imgInTmp2_channel [1/1] 0.00ns
+codeRepl:8  %imgInTmp2_channel = alloca i32, align 4
+
+ST_1: imgInTmp_channel [1/1] 0.00ns
+codeRepl:11  %imgInTmp_channel = alloca i32, align 4
+
+ST_1: ifftPyrOut_channel [1/1] 0.00ns
+codeRepl:14  %ifftPyrOut_channel = alloca i48, align 8
+
+ST_1: imgOutTmpBlockRam_M_real_V [1/1] 0.00ns
+codeRepl:19  %imgOutTmpBlockRam_M_real_V = alloca [512 x i24], align 4
+
+ST_1: imgOutTmpBlockRam_M_imag_V [1/1] 0.00ns
+codeRepl:20  %imgOutTmpBlockRam_M_imag_V = alloca [512 x i24], align 4
+
+ST_1: fftPyrOut_M_real_V [1/1] 0.00ns
+codeRepl:21  %fftPyrOut_M_real_V = alloca i24, align 4
+
+ST_1: fftPyrOut_M_imag_V [1/1] 0.00ns
+codeRepl:24  %fftPyrOut_M_imag_V = alloca i24, align 4
+
+ST_1: fft_status_data_V [1/1] 0.00ns
+codeRepl:27  %fft_status_data_V = alloca i8, align 1
+
+ST_1: fft_status2_data_V [1/1] 0.00ns
+codeRepl:28  %fft_status2_data_V = alloca i8, align 1
+
+ST_1: stg_27 [2/2] 1.00ns
+codeRepl:33  call fastcc void @pyrconstuct_top_Loop_1_proc(i32* %imgIn, i32* %imgInTmp_channel)
+
+
+ <State 2>: 0.00ns
+ST_2: stg_28 [1/1] 0.00ns
+codeRepl:32  call fastcc void @pyrconstuct_top_Block_codeRepl26_proc(i8* %fft_config_data_V_channel)
+
+ST_2: stg_29 [1/2] 0.00ns
+codeRepl:33  call fastcc void @pyrconstuct_top_Loop_1_proc(i32* %imgIn, i32* %imgInTmp_channel)
+
+
+ <State 3>: 4.38ns
+ST_3: stg_30 [2/2] 4.38ns
+codeRepl:39  call fastcc void @"fft<config1>"(i32* %imgInTmp_channel, i48* %imgOutTmpFFTStream_channel, i8* %fft_status_data_V, i8* %fft_config_data_V_channel)
+
+
+ <State 4>: 4.38ns
+ST_4: stg_31 [1/2] 4.38ns
+codeRepl:39  call fastcc void @"fft<config1>"(i32* %imgInTmp_channel, i48* %imgOutTmpFFTStream_channel, i8* %fft_status_data_V, i8* %fft_config_data_V_channel)
+
+
+ <State 5>: 0.00ns
+ST_5: stg_32 [2/2] 0.00ns
+codeRepl:40  call fastcc void @pyrconstuct_top_Loop_2_proc(i48* %imgOutTmpFFTStream_channel, [512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V)
+
+
+ <State 6>: 0.00ns
+ST_6: stg_33 [1/2] 0.00ns
+codeRepl:40  call fastcc void @pyrconstuct_top_Loop_2_proc(i48* %imgOutTmpFFTStream_channel, [512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V)
+
+
+ <State 7>: 0.00ns
+ST_7: stg_34 [2/2] 0.00ns
+codeRepl:41  call fastcc void @pyrconstuct_top_Loop_3_proc([512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V)
+
+
+ <State 8>: 0.00ns
+ST_8: stg_35 [1/2] 0.00ns
+codeRepl:41  call fastcc void @pyrconstuct_top_Loop_3_proc([512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V)
+
+
+ <State 9>: 0.00ns
+ST_9: stg_36 [2/2] 0.00ns
+codeRepl:46  call fastcc void @pyrconstuct_top_Loop_4_proc(i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V, i32* %imgInTmp2_channel)
+
+
+ <State 10>: 0.00ns
+ST_10: stg_37 [1/2] 0.00ns
+codeRepl:46  call fastcc void @pyrconstuct_top_Loop_4_proc(i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V, i32* %imgInTmp2_channel)
+
+ST_10: stg_38 [1/1] 0.00ns
+codeRepl:47  call fastcc void @pyrconstuct_top_Block__proc(i16* %fft_config2_data_V)
+
+
+ <State 11>: 4.38ns
+ST_11: stg_39 [2/2] 4.38ns
+codeRepl:53  call fastcc void @"fft<config2>"(i32* %imgInTmp2_channel, i48* %ifftPyrOut_channel, i8* %fft_status2_data_V, i16* %fft_config2_data_V)
+
+
+ <State 12>: 4.38ns
+ST_12: stg_40 [1/2] 4.38ns
+codeRepl:53  call fastcc void @"fft<config2>"(i32* %imgInTmp2_channel, i48* %ifftPyrOut_channel, i8* %fft_status2_data_V, i16* %fft_config2_data_V)
+
+
+ <State 13>: 0.00ns
+ST_13: stg_41 [2/2] 0.00ns
+codeRepl:54  call fastcc void @pyrconstuct_top_Loop_5_proc(i48* %ifftPyrOut_channel, i40* %pyrFilOut_V)
+
+
+ <State 14>: 2.96ns
+ST_14: stg_42 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str275) nounwind
+
+ST_14: stg_43 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %imgIn), !map !7
+
+ST_14: stg_44 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i40* %pyrFilOut_V), !map !16
+
+ST_14: empty [1/1] 0.00ns
+codeRepl:6  %empty = call i32 (...)* @_ssdm_op_SpecChannel([27 x i8]* @imgOutTmpFFTStream_OC_channel_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i48* %imgOutTmpFFTStream_channel, i48* %imgOutTmpFFTStream_channel)
+
+ST_14: stg_46 [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecInterface(i48* %imgOutTmpFFTStream_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_23 [1/1] 0.00ns
+codeRepl:9  %empty_23 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @imgInTmp2_OC_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i32* %imgInTmp2_channel, i32* %imgInTmp2_channel)
+
+ST_14: stg_48 [1/1] 0.00ns
+codeRepl:10  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp2_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_24 [1/1] 0.00ns
+codeRepl:12  %empty_24 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @imgInTmp_OC_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i32* %imgInTmp_channel, i32* %imgInTmp_channel)
+
+ST_14: stg_50 [1/1] 0.00ns
+codeRepl:13  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_25 [1/1] 0.00ns
+codeRepl:15  %empty_25 = call i32 (...)* @_ssdm_op_SpecChannel([19 x i8]* @ifftPyrOut_OC_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i48* %ifftPyrOut_channel, i48* %ifftPyrOut_channel)
+
+ST_14: stg_52 [1/1] 0.00ns
+codeRepl:16  call void (...)* @_ssdm_op_SpecInterface(i48* %ifftPyrOut_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_53 [1/1] 0.00ns
+codeRepl:17  call void (...)* @_ssdm_op_SpecBitsMap(i32 %nL), !map !25
+
+ST_14: stg_54 [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecTopModule([16 x i8]* @pyrconstuct_top_str) nounwind
+
+ST_14: empty_26 [1/1] 0.00ns
+codeRepl:22  %empty_26 = call i32 (...)* @_ssdm_op_SpecChannel([28 x i8]* @fftPyrOut_OC_M_real_OC_V_OC_c, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_real_V)
+
+ST_14: stg_56 [1/1] 0.00ns
+codeRepl:23  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_27 [1/1] 0.00ns
+codeRepl:25  %empty_27 = call i32 (...)* @_ssdm_op_SpecChannel([28 x i8]* @fftPyrOut_OC_M_imag_OC_V_OC_c, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_imag_V, i24* %fftPyrOut_M_imag_V)
+
+ST_14: stg_58 [1/1] 0.00ns
+codeRepl:26  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_59 [1/1] 0.00ns
+codeRepl:29  call void (...)* @_ssdm_op_SpecInterface(i32* %imgIn, [5 x i8]* @p_str274, i32 0, i32 0, i32 0, i32 512, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275)
+
+ST_14: stg_60 [1/1] 0.00ns
+codeRepl:30  call void (...)* @_ssdm_op_SpecInterface(i40* %pyrFilOut_V, [5 x i8]* @p_str274, i32 0, i32 0, i32 0, i32 1520, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275)
+
+ST_14: stg_61 [1/1] 0.00ns
+codeRepl:31  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str275) nounwind
+
+ST_14: stg_62 [1/1] 0.00ns
+codeRepl:34  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_63 [1/1] 0.00ns
+codeRepl:35  call void (...)* @_ssdm_op_SpecInterface(i48* %imgOutTmpFFTStream_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_64 [1/1] 0.00ns
+codeRepl:36  call void (...)* @_ssdm_op_SpecInterface(i8* %fft_status_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_65 [1/1] 0.00ns
+codeRepl:37  call void (...)* @_ssdm_op_SpecInterface(i8* %fft_config_data_V_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_28 [1/1] 0.00ns
+codeRepl:38  %empty_28 = call i32 (...)* @_ssdm_op_SpecChannel([26 x i8]* @fft_config_OC_data_OC_V_OC_cha, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i8* %fft_config_data_V_channel, i8* %fft_config_data_V_channel)
+
+ST_14: empty_29 [1/1] 0.00ns
+codeRepl:42  %empty_29 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @fftPyrOut_OC_M_real_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_real_V)
+
+ST_14: stg_68 [1/1] 0.00ns
+codeRepl:43  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_30 [1/1] 0.00ns
+codeRepl:44  %empty_30 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @fftPyrOut_OC_M_imag_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_imag_V, i24* %fftPyrOut_M_imag_V)
+
+ST_14: stg_70 [1/1] 0.00ns
+codeRepl:45  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_71 [1/1] 0.00ns
+codeRepl:48  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp2_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_72 [1/1] 0.00ns
+codeRepl:49  call void (...)* @_ssdm_op_SpecInterface(i48* %ifftPyrOut_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_73 [1/1] 0.00ns
+codeRepl:50  call void (...)* @_ssdm_op_SpecInterface(i8* %fft_status2_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_74 [1/1] 0.00ns
+codeRepl:51  call void (...)* @_ssdm_op_SpecInterface(i16* %fft_config2_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_31 [1/1] 0.00ns
+codeRepl:52  %empty_31 = call i32 (...)* @_ssdm_op_SpecChannel([27 x i8]* @fft_config2_OC_data_OC_V_OC_ch, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i16* %fft_config2_data_V, i16* %fft_config2_data_V)
+
+ST_14: stg_76 [1/2] 2.96ns
+codeRepl:54  call fastcc void @pyrconstuct_top_Loop_5_proc(i48* %ifftPyrOut_channel, i40* %pyrFilOut_V)
+
+ST_14: stg_77 [1/1] 0.00ns
+codeRepl:55  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

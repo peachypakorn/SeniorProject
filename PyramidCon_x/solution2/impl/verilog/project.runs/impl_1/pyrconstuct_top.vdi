@@ -1,0 +1,742 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 09 00:40:02 2016
+# Process ID: 10000
+# Current directory: F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1
+# Command line: vivado.exe -log pyrconstuct_top.vdi -applog -messageDb vivado.pb -mode batch -source pyrconstuct_top.tcl -notrace
+# Log file: F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1/pyrconstuct_top.vdi
+# Journal file: F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pyrconstuct_top.tcl -notrace
+Command: open_checkpoint F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1/pyrconstuct_top.dcp
+INFO: [Netlist 29-17] Analyzing 778 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1/.Xil/Vivado-10000-/dcp/pyrconstuct_top.xdc]
+Finished Parsing XDC File [F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1/.Xil/Vivado-10000-/dcp/pyrconstuct_top.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM128X1S => RAM128X1S (RAMS64E, RAMS64E, MUXF7): 64 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2015.4 (64-bit) build 1412921
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 516.941 ; gain = 329.223
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.386 . Memory (MB): peak = 519.902 ; gain = 2.961
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: dd25b5de
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 73 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 11c73165c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1008.008 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 178 cells.
+Phase 2 Constant Propagation | Checksum: d77ad370
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1008.008 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 4562 unconnected nets.
+INFO: [Opt 31-11] Eliminated 759 unconnected cells.
+Phase 3 Sweep | Checksum: d3599dc8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.008 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1008.008 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: d3599dc8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.008 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 15 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 30
+Ending PowerOpt Patch Enables Task | Checksum: f29102ca
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Ending Power Optimization Task | Checksum: f29102ca
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1234.180 ; gain = 226.172
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 1234.180 ; gain = 717.238
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1/pyrconstuct_top_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 00000000
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 00000000
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 00000000
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 9aec2680
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1591852bf
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 1467d2bdc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 1467d2bdc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 1467d2bdc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1467d2bdc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1467d2bdc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 22d117dcc
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 22d117dcc
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 25b0d5e91
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 22e4671e9
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 22e4671e9
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 18bca72af
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:36 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 27cb88dc5
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:36 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+
+Phase 3.7.1 Commit Small Macros and Core Logic
+
+Phase 3.7.1.1 Commit Slice Clusters
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: 118cd9dc7
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:40 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 118cd9dc7
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:40 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 118cd9dc7
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 118cd9dc7
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 3.7 Small Shape Detail Placement | Checksum: 118cd9dc7
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 176753937
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:41 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 176753937
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:41 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+
+Phase 4.1.1 callUpdateTimingBeforePCO
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 1f6519db1
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:44 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.1.2 updateClock Trees: PCOPT
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 1f6519db1
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:44 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.1.3 Post Placement Optimization
+
+Phase 4.1.3.1 PCOPT Shape updates
+
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes
+
+Phase 4.1.3.1.1.1 removeInstsFromShapes
+Phase 4.1.3.1.1.1 removeInstsFromShapes | Checksum: f2ab0ef5
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:45 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: f2ab0ef5
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:45 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.1.3.1.2 deleteLutnmShapes
+
+Phase 4.1.3.1.2.1 deleteShapes
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 1e2987515
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:45 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 1e2987515
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:45 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 1e2987515
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:45 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.1.3.2 Post Placement Timing Optimization
+
+Phase 4.1.3.2.1 Restore Best Placement
+Phase 4.1.3.2.1 Restore Best Placement | Checksum: 206776c59
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.839. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 206776c59
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1.3 Post Placement Optimization | Checksum: 206776c59
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 206776c59
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 206776c59
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 206776c59
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+
+Phase 4.4.1 Restore STA
+Phase 4.4.1 Restore STA | Checksum: 206776c59
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.4 Placer Reporting | Checksum: 206776c59
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 1d9e64279
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d9e64279
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Ending Placer Task | Checksum: 182509760
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:02 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 1234.180 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1234.180 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1234.180 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.222 . Memory (MB): peak = 1234.180 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 1d96a46f4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.687 | TNS=-78.588 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppstg_exitcond_i1_reg_299_pp0_it1. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2. Replicated 2 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 2 nets. Created 4 new instances.
+
+INFO: [Physopt 32-76] Pass 2. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2_repN. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppstg_exitcond_i1_reg_299_pp0_it1_repN_1. Replicated 1 times.
+INFO: [Physopt 32-29] End Pass 2. Optimized 2 nets. Created 2 new instances.
+
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.600 | TNS=-74.934 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 2 Fanout Optimization | Checksum: 26e383841
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 34 candidate nets for placement-based optimization.
+INFO: [Physopt 32-663] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/limits_address0[1].  Re-placed instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[9]_i_5
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppstg_exitcond_i1_reg_299_pp0_it1_repN.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppstg_exitcond_i1_reg_299_pp0_it1_reg[0]_replica
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_11_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_11
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_phi_fu_136_p4[0].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_57
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[9]_i_2_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[9]_i_2
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[9]_i_9_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[9]_i_9
+INFO: [Physopt 32-663] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_12_n_2.  Re-placed instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_12
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_reg_132_reg_n_2_[0].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/idx_reg_132_reg[0]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[4]_i_1_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[4]_i_1
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[5]_i_1_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[5]_i_1
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_16_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_16
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_14_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_14
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[7]_i_1_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[7]_i_1
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[8]_i_1_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[8]_i_1
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[6]_i_1_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0[6]_i_1
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_15_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_15
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/i_1_reg_338[0]_i_21_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/i_1_reg_338[0]_i_21
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_10_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_10
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2_repN_1.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2_reg_replica_1
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2_repN_repN.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2_reg_replica_2
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_phi_fu_136_p4[6].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_55
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_phi_fu_136_p4[5].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_56
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppstg_exitcond_i1_reg_299_pp0_it1_repN_1_repN.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppstg_exitcond_i1_reg_299_pp0_it1_reg[0]_replica_2
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_17_n_2.  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_17
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_reg_132_reg_n_2_[1].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/idx_reg_132_reg[1]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_phi_fu_136_p4[1].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_61
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_phi_fu_136_p4[2].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_60
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_phi_fu_136_p4[3].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338[0]_i_59
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/tmp_4_reg_318_reg[8][0].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0_reg[4]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/tmp_4_reg_318_reg[8][4].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0_reg[8]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/tmp_4_reg_318_reg[8][2].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0_reg[6]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/tmp_4_reg_318_reg[8][3].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0_reg[7]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/tmp_4_reg_318_reg[8][1].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0_reg[5]
+INFO: [Physopt 32-662] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/tmp_4_reg_318_reg[8][5].  Did not re-place instance pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/q0_reg[9]
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 2 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.398 | TNS=-73.938 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 3 Placement Based Optimization | Checksum: 2495a5f8e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4 Rewire | Checksum: 2495a5f8e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 4 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/limits_address0[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_reg_132_reg_n_2_[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/idx_reg_132_reg_n_2_[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net pyrconstuct_top_Loop_3_proc_U0/i_1_reg_338_reg[0]. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 3 nets. Created 3 new instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.398 | TNS=-76.098 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 5 Critical Cell Optimization | Checksum: 17ebe20ff
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 6 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 6 DSP Register Optimization | Checksum: 17ebe20ff
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 7 BRAM Register Optimization
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'pyrconstuct_top_Loop_3_proc_U0/coefIdx_0_i_reg_144_reg_rep' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 7 BRAM Register Optimization | Checksum: 17ebe20ff
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 8 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 8 Shift Register Optimization | Checksum: 17ebe20ff
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 9 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 19 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-613] Processed net pyrconstuct_top_Loop_3_proc_U0/limits_U/pyrconstuct_top_Loop_3_proc_limits_rom_U/l_fu_219_p2_0[3].  Swapped 2 critical pin.
+INFO: [Physopt 32-613] Processed net pyrconstuct_top_Loop_3_proc_U0/i_fu_203_p2[18].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net pyrconstuct_top_Loop_3_proc_U0/ap_reg_ppiten_pp0_it2_repN_repN.  Swapped 3 critical pin.
+INFO: [Physopt 32-608] Optimized 3 nets.  Swapped 6 pins.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.386 | TNS=-75.724 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 9 Critical Pin Optimization | Checksum: 18ed87507
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 10 Very High Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net fft_config1_U0/inst/U0/i_synth/axi_wrapper/ce_w2c. Replicated 8 times.
+INFO: [Physopt 32-572] Net fft_config2_U0/inst/U0/i_synth/axi_wrapper/ce_w2c was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-29] End Pass 1. Optimized 1 net. Created 8 new instances.
+
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.386 | TNS=-75.724 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 10 Very High Fanout Optimization | Checksum: 1d338ab8f
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:42 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 11 BRAM Enable Optimization
+Phase 11 BRAM Enable Optimization | Checksum: 1d338ab8f
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.386 | TNS=-75.724 |
+Ending Physical Synthesis Task | Checksum: 17c9d72f2
+----- Checksum: : 149391771 : 33645b81 
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:44 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+116 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:07 ; elapsed = 00:00:48 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 1234.180 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 97ca8539 ConstDB: 0 ShapeSum: 1ba8e1ca RouteDB: 33645b81
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "imgIn_TDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "pyrFilOut_V_TREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "pyrFilOut_V_TREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_start" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_start". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "imgIn_TVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "imgIn_TVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: 1232add64
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1232add64
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:41 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1232add64
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:41 . Memory (MB): peak = 1234.180 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 123634cf3
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:46 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.488 | TNS=-77.135| WHS=-0.328 | THS=-365.404|
+
+Phase 2 Router Initialization | Checksum: 183cf85c2
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:49 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 11c4586f6
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:51 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 541
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 107117373
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:57 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.768 | TNS=-2579.631| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 145384384
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:57 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: a6887a06
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1.2 GlobIterForTiming | Checksum: 20fdda098
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4.1 Global Iteration 0 | Checksum: 20fdda098
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:58 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: e9175351
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.811 | TNS=-2579.601| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 129ae8371
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 129ae8371
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:59 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16132dd26
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:00 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.616 | TNS=-2304.220| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1c9735c81
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1c9735c81
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1c9735c81
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 147d2eadf
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:01 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.616 | TNS=-2298.924| WHS=0.023  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 17472e836
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:01 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.45035 %
+  Global Horizontal Routing Utilization  = 2.55747 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 56.7568%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 44.1441%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 51.4706%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1ff6b5ef4
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:02 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1ff6b5ef4
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:02 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 199bda21e
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:03 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.616 | TNS=-2298.924| WHS=0.023  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 199bda21e
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:03 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 1234.180 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+132 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:04 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 1234.180 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.180 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/FPGA/PyramidCon_x/solution2/impl/verilog/project.runs/impl_1/pyrconstuct_top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1234.180 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 09 00:44:25 2016...

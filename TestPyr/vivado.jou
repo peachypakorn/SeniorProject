@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Feb 10 01:48:42 2016
+# Process ID: 2908
+# Current directory: F:/SeniorProj/TestPyr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5752 F:\SeniorProj\TestPyr\TestPyr.xpr
+# Log file: F:/SeniorProj/TestPyr/vivado.log
+# Journal file: F:/SeniorProj/TestPyr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/SeniorProj/TestPyr/TestPyr.xpr
+file mkdir F:/SeniorProj/TestPyr/TestPyr.sdk
+file copy -force F:/SeniorProj/TestPyr/TestPyr.runs/impl_1/testDisp_wrapper.sysdef F:/SeniorProj/testDisp_wrapper.hdf
+
+file copy -force F:/SeniorProj/TestPyr/TestPyr.runs/impl_1/testDisp_wrapper.sysdef F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf
+
+launch_sdk -workspace F:/SeniorProj/pry_SDK -hwspec F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf

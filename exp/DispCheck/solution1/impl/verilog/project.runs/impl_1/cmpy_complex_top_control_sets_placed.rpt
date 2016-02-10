@@ -1,0 +1,83 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Feb 08 23:59:35 2016
+| Host         : DESKTOP-SG5D71V running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file cmpy_complex_top_control_sets_placed.rpt
+| Design       : cmpy_complex_top
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    30 |
+| Minimum Number of register sites lost to control set restrictions |    83 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |           17 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              19 |            9 |
+| Yes          | No                    | No                     |            2280 |          658 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              96 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                                                                      Enable Signal                                                                                      |                                     Set/Reset Signal                                     | Slice Load Count | Bel Load Count |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/p_Val2_3_i_reg_10330                                                                                                                                    |                                                                                          |                2 |              8 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/ap_NS_fsm5                                                                                                                                           | cmpy_complex_top_Loop_2_proc_U0/ap_rst_n_inv                                             |                2 |             10 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/p_5_in                                                                                                                                               |                                                                                          |                6 |             13 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/tmp_1980_i_i_reg_1480                                                                                                                                |                                                                                          |                5 |             15 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/p_Val2_13_reg_10480                                                                                                                                     |                                                                                          |                5 |             15 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/p_Val2_30_reg_11300                                                                                                                                     |                                                                                          |                4 |             16 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/signbit_reg_11150                                                                                                                                       |                                                                                          |                5 |             16 |
+|  ap_clk      |                                                                                                                                                                                         | cmpy_complex_top_Loop_2_proc_U0/ap_rst_n_inv                                             |                9 |             19 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/p_2_i_reg_10280                                                                                                                                         |                                                                                          |                6 |             19 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/p_Val2_16_reg_10840                                                                                                                                     |                                                                                          |                7 |             19 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/p_Val2_i5_reg_11100                                                                                                                                     |                                                                                          |                7 |             19 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/tmp_1066_reg_10740                                                                                                                                      |                                                                                          |                6 |             19 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/tmp_145_reg_10790                                                                                                                                       |                                                                                          |                4 |             19 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/SRL_SIG_reg[1][0][0]                                                                                                                                 |                                                                                          |                3 |             20 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/tmp_1064_reg_10580                                                                                                                                      |                                                                                          |                5 |             20 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/ap_NS_fsm5                                                                                                                                              | cmpy_complex_top_Loop_2_proc_U0/ap_rst_n_inv                                             |                8 |             24 |
+|  ap_clk      |                                                                                                                                                                                         |                                                                                          |               17 |             26 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/p_3_in                                                                                                                                               |                                                                                          |                8 |             31 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/i_i_i_reg_900                                                                                                                                        | cmpy_complex_top_Loop_1_proc143_U0/cmpy_complex_top_Loop_1_proc143_U0_factor_V_out_write |               11 |             31 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/cmpy_complex_top_Loop_1_proc143_U0_factor_V_out_write                                                                                                |                                                                                          |                8 |             31 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_mul_10s_18s_28_1_U14/cmpy_complex_top_mul_mul_10s_18s_28_1_DSP48_0_U/p_0[0]                                                        |                                                                                          |               11 |             31 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/sig_TREADY                                                                                                                                              | cmpy_complex_top_Loop_2_proc_U0/p_Val2_7_reg_227                                         |                8 |             31 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/ap_NS_fsm5                                                                                                                                           |                                                                                          |                8 |             32 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/cmpy_complex_top_mul_mul_10s_18s_28_1_U14/cmpy_complex_top_mul_mul_10s_18s_28_1_DSP48_0_U/E[0]                                                          |                                                                                          |               12 |             32 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/xout_cartesian_M_imag_V_reg_11400                                                                                                                       |                                                                                          |                8 |             32 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/E[0]                                                                                                                                                 |                                                                                          |               18 |             64 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/mul_reg_10690                                                                                                                                           |                                                                                          |               28 |             75 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/ap_NS_fsm5                                                                                                                                              |                                                                                          |               30 |             97 |
+|  ap_clk      | cmpy_complex_top_Loop_1_proc143_U0/grp_cmpy_complex_top_myatan2_complex_ap_fixed_s_fu_102/grp_cmpy_complex_top_cordic_base_fu_32/ap_reg_ppstg_p_Result_166_11_reg_9893_pp0_it9_reg[0]_0 |                                                                                          |              126 |            452 |
+|  ap_clk      | cmpy_complex_top_Loop_2_proc_U0/grp_cmpy_complex_top_cordic_base_fu_238/ap_reg_ppstg_p_Result_166_11_reg_9893_pp0_it9_reg[4]_0                                                          |                                                                                          |              361 |           1277 |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+----------------+
+
+

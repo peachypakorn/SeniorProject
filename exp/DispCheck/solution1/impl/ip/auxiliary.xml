@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="cmpy_complex_top" xd:componentRef="cmpy_complex_top" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="sig[].real()" xd:originalName="sig" xd:direction="in" xd:interfaceRef="sig" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="9:0" xd:arraySize="1024" xd:dataWidth="10"/>
+  <xd:arg xd:name="sig[].imag()" xd:originalName="sig" xd:direction="in" xd:interfaceRef="sig" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="19:10" xd:arraySize="1024" xd:dataWidth="10"/>
+  <xd:arg xd:name="sigRef[].real()" xd:originalName="sigRef" xd:direction="in" xd:interfaceRef="sigRef" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="9:0" xd:arraySize="2048" xd:dataWidth="10"/>
+  <xd:arg xd:name="sigRef[].imag()" xd:originalName="sigRef" xd:direction="in" xd:interfaceRef="sigRef" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="19:10" xd:arraySize="2048" xd:dataWidth="10"/>
+  <xd:arg xd:name="prealign[]" xd:originalName="prealign" xd:direction="in" xd:interfaceRef="prealign_V" xd:busTypeRef="axis" xd:arraySize="1024" xd:dataWidth="18"/>
+  <xd:arg xd:name="cmp[].real()" xd:originalName="cmp" xd:direction="out" xd:interfaceRef="cmp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="19:0" xd:arraySize="1024" xd:dataWidth="20"/>
+  <xd:arg xd:name="cmp[].imag()" xd:originalName="cmp" xd:direction="out" xd:interfaceRef="cmp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="39:20" xd:arraySize="1024" xd:dataWidth="20"/>
+  <xd:arg xd:name="nL" xd:originalName="nL" xd:direction="in" xd:interfaceRef="nL" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="nLExp" xd:originalName="nLExp" xd:direction="in" xd:interfaceRef="nLExp" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="nLen" xd:originalName="nLen" xd:direction="in" xd:interfaceRef="nLen" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="factor" xd:originalName="factor" xd:direction="in" xd:interfaceRef="factor_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="8136" xd:FF="2843" xd:BRAM="6" xd:DSP="12"/>
+</xd:acceleratorMap>

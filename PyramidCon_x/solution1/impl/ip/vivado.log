@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.1 (64-bit)
+# SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+# IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+# Start of session at: Thu Dec 31 02:16:43 2015
+# Process ID: 13660
+# Current directory: H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip/vivado.log
+# Journal file: H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 273.031 ; gain = 62.781
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'ovflo' from 'false' to '1' has been ignored for IP 'fft_config1_s_core'
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft_config1_s_core'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft_config1_s_core'...
+****** Webtalk v2015.4.1 (64-bit)
+  **** SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+  **** IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 31 02:17:20 2015...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 31 02:17:22 2015...

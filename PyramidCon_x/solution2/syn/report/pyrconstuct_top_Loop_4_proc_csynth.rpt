@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vivado HLS Report for 'pyrconstuct_top_Loop_4_proc'
+================================================================
+* Date:           Mon Feb 08 23:46:31 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        PyramidCon_x
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      2.07|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  514|  514|  514|  514|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  512|  512|         2|          1|          1|   512|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     16|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     11|
+|Register         |        -|      -|      17|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      17|     27|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |i_fu_84_p2          |     +    |      0|  0|  10|          10|           1|
+    |exitcond2_fu_78_p2  |   icmp   |      0|  0|   4|          10|          11|
+    |ap_sig_bdd_64       |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_77       |    or    |      0|  0|   1|           1|           1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0|  16|          22|          14|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |   1|          4|    1|          4|
+    |i6_reg_67  |  10|          2|   10|         20|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  11|          6|   11|         24|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |ap_CS_fsm              |   3|   0|    3|          0|
+    |ap_done_reg            |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it0  |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1  |   1|   0|    1|          0|
+    |exitcond2_reg_123      |   1|   0|    1|          0|
+    |i6_reg_67              |  10|   0|   10|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  |  17|   0|   17|          0|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+-----------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++----------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|ap_done                     | out |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs | pyrconstuct_top_Loop_4_proc | return value |
+|fftPyrOut_M_real_V_dout     |  in |   24|   ap_fifo  |      fftPyrOut_M_real_V     |    pointer   |
+|fftPyrOut_M_real_V_empty_n  |  in |    1|   ap_fifo  |      fftPyrOut_M_real_V     |    pointer   |
+|fftPyrOut_M_real_V_read     | out |    1|   ap_fifo  |      fftPyrOut_M_real_V     |    pointer   |
+|fftPyrOut_M_imag_V_dout     |  in |   24|   ap_fifo  |      fftPyrOut_M_imag_V     |    pointer   |
+|fftPyrOut_M_imag_V_empty_n  |  in |    1|   ap_fifo  |      fftPyrOut_M_imag_V     |    pointer   |
+|fftPyrOut_M_imag_V_read     | out |    1|   ap_fifo  |      fftPyrOut_M_imag_V     |    pointer   |
+|imgInTmp2_din               | out |   32|   ap_fifo  |          imgInTmp2          |    pointer   |
+|imgInTmp2_full_n            |  in |    1|   ap_fifo  |          imgInTmp2          |    pointer   |
+|imgInTmp2_write             | out |    1|   ap_fifo  |          imgInTmp2          |    pointer   |
++----------------------------+-----+-----+------------+-----------------------------+--------------+
+
