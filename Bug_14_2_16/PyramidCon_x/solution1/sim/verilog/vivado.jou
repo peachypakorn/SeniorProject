@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.1 (64-bit)
+# SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+# IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+# Start of session at: Sun Jan 10 01:51:57 2016
+# Process ID: 28184
+# Current directory: D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog/vivado.log
+# Journal file: D:/3DTV/Hardware/FPGA/PyramidCon/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+add_wave {{/apatb_pyrconstuct_top_top/start}} 
+add_wave {{/apatb_pyrconstuct_top_top/done_cnt}} 
+add_wave {{/apatb_pyrconstuct_top_top/ap_done}} 
+add_wave {{/apatb_pyrconstuct_top_top/imgIn_M_real_V_dout}} 
+add_wave {{/apatb_pyrconstuct_top_top/ap_clk}} 
+add_wave {{/apatb_pyrconstuct_top_top/imgIn_M_real_V_read}} 
+add_wave {{/apatb_pyrconstuct_top_top/pyrFilOut_V_din}} {{/apatb_pyrconstuct_top_top/pyrFilOut_V_full_n}} {{/apatb_pyrconstuct_top_top/pyrFilOut_V_write}} 
+close_sim

@@ -1,0 +1,114 @@
+
+
+================================================================
+== Vivado HLS Report for 'fft_config2_s'
+================================================================
+* Date:           Fri Feb 12 16:58:25 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        PyramidCon_x
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      2.00|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  1653|  1653|  1653|  1653|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        3|     12|    7903|   6262|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        3|     12|    7903|   6262|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        1|      5|       7|     11|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                    |  in |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|ap_rst                    |  in |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|ap_start                  |  in |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|ap_ce                     |  in |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|ap_done                   | out |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|ap_idle                   | out |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|ap_ready                  | out |    1| ap_ctrl_hs |   fft<config2>   | return value |
+|xn_dout                   |  in |   32|   ap_fifo  |        xn        |    pointer   |
+|xn_empty_n                |  in |    1|   ap_fifo  |        xn        |    pointer   |
+|xn_read                   | out |    1|   ap_fifo  |        xn        |    pointer   |
+|xk_din                    | out |   48|   ap_fifo  |        xk        |    pointer   |
+|xk_full_n                 |  in |    1|   ap_fifo  |        xk        |    pointer   |
+|xk_write                  | out |    1|   ap_fifo  |        xk        |    pointer   |
+|status_data_V_din         | out |    8|   ap_fifo  |   status_data_V  |    pointer   |
+|status_data_V_full_n      |  in |    1|   ap_fifo  |   status_data_V  |    pointer   |
+|status_data_V_write       | out |    1|   ap_fifo  |   status_data_V  |    pointer   |
+|config_ch_data_V_dout     |  in |   16|   ap_fifo  | config_ch_data_V |    pointer   |
+|config_ch_data_V_empty_n  |  in |    1|   ap_fifo  | config_ch_data_V |    pointer   |
+|config_ch_data_V_read     | out |    1|   ap_fifo  | config_ch_data_V |    pointer   |
++--------------------------+-----+-----+------------+------------------+--------------+
+

@@ -1,0 +1,396 @@
+
+{
+  'fileSets' => [
+    {
+      'files' => [
+        {
+          'fileType' => 'datSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_sim/pyrbuild_top_consFilters_V_rom.dat'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_sim/pyrbuild_top_consFilters_V.v'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_sim/pyrbuild_top_fftTmp_M_real_V.v'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_sim/pyrbuild_top_mul_mul_15ns_16s_31_1.v'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_sim/pyrbuild_top.v'
+        }
+      ],
+      'name' => 'vivado_hls_sim_verilog_fileset'
+    },
+    {
+      'files' => [
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_sim/pyrbuild_top_consFilters_V.vhd'
+        },
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_sim/pyrbuild_top_fftTmp_M_real_V.vhd'
+        },
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_sim/pyrbuild_top_mul_mul_15ns_16s_31_1.vhd'
+        },
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_sim/pyrbuild_top.vhd'
+        }
+      ],
+      'name' => 'vivado_hls_sim_vhdl_fileset'
+    },
+    {
+      'files' => [
+        {
+          'fileType' => 'datSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_impl/pyrbuild_top_consFilters_V_rom.dat'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'pyrbuild_top_consFilters_V',
+          'name' => 'verilog_impl/pyrbuild_top_consFilters_V.v'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'pyrbuild_top_fftTmp_M_real_V',
+          'name' => 'verilog_impl/pyrbuild_top_fftTmp_M_real_V.v'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'pyrbuild_top_mul_mul_15ns_16s_31_1',
+          'name' => 'verilog_impl/pyrbuild_top_mul_mul_15ns_16s_31_1.v'
+        },
+        {
+          'fileType' => 'verilogSource',
+          'logicalName' => 'work',
+          'name' => 'verilog_impl/pyrbuild_top.v'
+        }
+      ],
+      'name' => 'vivado_hls_impl_verilog_fileset'
+    },
+    {
+      'files' => [
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_impl/pyrbuild_top_consFilters_V.vhd'
+        },
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_impl/pyrbuild_top_fftTmp_M_real_V.vhd'
+        },
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_impl/pyrbuild_top_mul_mul_15ns_16s_31_1.vhd'
+        },
+        {
+          'fileType' => 'vhdlSource',
+          'logicalName' => 'work',
+          'name' => 'vhdl_impl/pyrbuild_top.vhd'
+        }
+      ],
+      'name' => 'vivado_hls_impl_vhdl_fileset'
+    }
+  ],
+  'DesignConstraint' => {
+      'clk_period' => '10.000000'
+  },
+  'library' => 'VIVADO_HLS',
+  'model' => {
+    'modelParameters'=>{
+        'combinational' => '0',
+        'latency' => '636',
+        'II' => 'x'
+    },
+    'ports' => [
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'ap_clk',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'ap_rst_n',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'ap_start',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'ap_done',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'ap_idle',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'ap_ready',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '14',
+          'type' => 'Signed'
+        },
+        'direction' => 'in',
+        'left' => '15',
+        'name' => 'fftIn_V_M_real_V_TDATA',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'fftIn_V_M_real_V_TVALID',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'fftIn_V_M_real_V_TREADY',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '14',
+          'type' => 'Signed'
+        },
+        'direction' => 'in',
+        'left' => '15',
+        'name' => 'fftIn_V_M_imag_V_TDATA',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'fftIn_V_M_imag_V_TVALID',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'fftIn_V_M_imag_V_TREADY',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '14',
+          'type' => 'Signed'
+        },
+        'direction' => 'out',
+        'left' => '15',
+        'name' => 'pyrFilOut_V_M_real_V_TDATA',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'pyrFilOut_V_M_real_V_TVALID',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'pyrFilOut_V_M_real_V_TREADY',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '14',
+          'type' => 'Signed'
+        },
+        'direction' => 'out',
+        'left' => '15',
+        'name' => 'pyrFilOut_V_M_imag_V_TDATA',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'out',
+        'left' => '0',
+        'name' => 'pyrFilOut_V_M_imag_V_TVALID',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'bool'
+        },
+        'direction' => 'in',
+        'left' => '0',
+        'name' => 'pyrFilOut_V_M_imag_V_TREADY',
+        'right' => '0',
+        'type' => 'std_logic'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'Signed'
+        },
+        'direction' => 'in',
+        'left' => '31',
+        'name' => 'width',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'Signed'
+        },
+        'direction' => 'in',
+        'left' => '31',
+        'name' => 'height',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      },
+      {
+        'dataType' => {
+          'fractionWidth' => '0',
+          'type' => 'Signed'
+        },
+        'direction' => 'in',
+        'left' => '31',
+        'name' => 'nL',
+        'right' => '0',
+        'type' => 'std_logic_vector'
+      }
+    ],
+    'views' => [
+      {
+        'envIdentifier' => 'verilogSource:sysgen.xilinx.com:synthesis',
+        'fileSetRef' => {
+          'localName' => 'vivado_hls_impl_verilog_fileset'
+        },
+        'language' => 'VERILOG',
+        'name' => 'xilinx_verilogsynthesis'
+      },
+      {
+        'envIdentifier' => 'vhdlSource:sysgen.xilinx.com:synthesis',
+        'fileSetRef' => {
+          'localName' => 'vivado_hls_impl_vhdl_fileset'
+        },
+        'language' => 'VHDL',
+        'name' => 'xilinx_vhdlsynthesis'
+      },
+      {
+        'envIdentifier' => 'verilogSource:sysgen.xilinx.com:synthesis',
+        'fileSetRef' => {
+          'localName' => 'vivado_hls_sim_verilog_fileset'
+        },
+        'language' => 'VERILOG',
+        'name' => 'xilinx_verilogsimulation'
+      },
+      {
+        'envIdentifier' => 'vhdlSource:sysgen.xilinx.com:synthesis',
+        'fileSetRef' => {
+          'localName' => 'vivado_hls_sim_vhdl_fileset'
+        },
+        'language' => 'VHDL',
+        'name' => 'xilinx_vhdlsimulation'
+      }
+    ]
+  },
+  'name' => 'pyrbuild_top',
+  'vendor' => 'xilinx.com',
+  'version' => '1.0'
+}

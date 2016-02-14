@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Feb 12 17:03:16 2016
+# Process ID: 2128
+# Current directory: C:/Users/Peachy/Desktop/SeniorProj/PyramidCon_x/solution2/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/Peachy/Desktop/SeniorProj/PyramidCon_x/solution2/sim/verilog/xsim.dir/pyrconstuct_top/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Peachy/Desktop/SeniorProj/PyramidCon_x/solution2/sim/verilog/webtalk.log
+# Journal file: C:/Users/Peachy/Desktop/SeniorProj/PyramidCon_x/solution2/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Peachy/Desktop/SeniorProj/PyramidCon_x/solution2/sim/verilog/xsim.dir/pyrconstuct_top/webtalk/xsim_webtalk.tcl -notrace

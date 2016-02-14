@@ -28,9 +28,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xlcons
 # IP: bd/testDisp/ip/testDisp_pyrconstuct_top_0_0/testDisp_pyrconstuct_top_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_pyrconstuct_top_0_0 || ORIG_REF_NAME==testDisp_pyrconstuct_top_0_0}]
 
-# IP: bd/testDisp/ip/testDisp_axis_subset_converter_0_0/testDisp_axis_subset_converter_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axis_subset_converter_0_0 || ORIG_REF_NAME==testDisp_axis_subset_converter_0_0}]
-
 # IP: bd/testDisp/ip/testDisp_xlconcat_0_0/testDisp_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xlconcat_0_0 || ORIG_REF_NAME==testDisp_xlconcat_0_0}]
 
@@ -39,6 +36,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xbar_1
 
 # IP: bd/testDisp/ip/testDisp_xlconstant_1_0/testDisp_xlconstant_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_xlconstant_1_0 || ORIG_REF_NAME==testDisp_xlconstant_1_0}]
+
+# IP: bd/testDisp/ip/testDisp_axis_dwidth_converter_0_0/testDisp_axis_dwidth_converter_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_axis_dwidth_converter_0_0 || ORIG_REF_NAME==testDisp_axis_dwidth_converter_0_0}]
 
 # IP: bd/testDisp/ip/testDisp_auto_pc_0/testDisp_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==testDisp_auto_pc_0 || ORIG_REF_NAME==testDisp_auto_pc_0}]
@@ -78,9 +78,9 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/testDisp/ip/testDisp_pyrconstuct_top_0_0/constraints/pyrconstuct_top_ooc.xdc
 
-# XDC: bd/testDisp/ip/testDisp_axis_subset_converter_0_0/testDisp_axis_subset_converter_0_0_ooc.xdc
-
 # XDC: bd/testDisp/ip/testDisp_xbar_1/testDisp_xbar_1_ooc.xdc
+
+# XDC: bd/testDisp/ip/testDisp_axis_dwidth_converter_0_0/testDisp_axis_dwidth_converter_0_0_ooc.xdc
 
 # XDC: bd/testDisp/ip/testDisp_auto_pc_0/testDisp_auto_pc_0_ooc.xdc
 

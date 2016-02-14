@@ -1,0 +1,72 @@
+00:12:21 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+00:12:22 INFO  : XSDB server has started successfully.
+00:12:23 INFO  : Processing command line option -hwspec C:/Users/Peachy/Desktop/pyr_test_2.
+00:12:24 ERROR : Error occurred while creating hardware platform pyr_test_2_hw_platform_0 from sysdef
+java.io.FileNotFoundException: C:\Users\Peachy\Desktop\pyr_test_2 (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:417)
+	at com.xilinx.sdk.startup.InitSDK.access$7(InitSDK.java:399)
+	at com.xilinx.sdk.startup.InitSDK$11.run(InitSDK.java:350)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:12:46 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+00:12:47 INFO  : XSDB server has started successfully.
+00:12:48 INFO  : Processing command line option -hwspec C:/Users/Peachy/Desktop/pyr_test_2.
+00:12:48 ERROR : Error occurred while creating hardware platform pyr_test_2_hw_platform_1 from sysdef
+java.io.FileNotFoundException: C:\Users\Peachy\Desktop\pyr_test_2 (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:417)
+	at com.xilinx.sdk.startup.InitSDK.access$7(InitSDK.java:399)
+	at com.xilinx.sdk.startup.InitSDK$11.run(InitSDK.java:350)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:13:14 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+00:13:15 INFO  : XSDB server has started successfully.
+00:13:15 INFO  : Processing command line option -hwspec C:/Users/Peachy/Desktop/pyr_test_2.
+00:13:15 ERROR : Error occurred while creating hardware platform pyr_test_2_hw_platform_2 from sysdef
+java.io.FileNotFoundException: C:\Users\Peachy\Desktop\pyr_test_2 (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:417)
+	at com.xilinx.sdk.startup.InitSDK.access$7(InitSDK.java:399)
+	at com.xilinx.sdk.startup.InitSDK$11.run(InitSDK.java:350)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+00:13:36 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+00:13:37 INFO  : XSDB server has started successfully.
+00:13:37 INFO  : Processing command line option -hwspec C:/Users/Peachy/Desktop/pyr_test_2.
+00:13:38 ERROR : Error occurred while creating hardware platform pyr_test_2_hw_platform_3 from sysdef
+java.io.FileNotFoundException: C:\Users\Peachy\Desktop\pyr_test_2 (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:417)
+	at com.xilinx.sdk.startup.InitSDK.access$7(InitSDK.java:399)
+	at com.xilinx.sdk.startup.InitSDK$11.run(InitSDK.java:350)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

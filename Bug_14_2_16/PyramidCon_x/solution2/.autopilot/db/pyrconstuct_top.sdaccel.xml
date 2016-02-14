@@ -1,0 +1,173 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pyrconstuct_top'" level="0">
+<item name = "Date">Fri Feb 12 16:58:25 2016
+</item>
+<item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
+<item name = "Project">PyramidCon_x</item>
+<item name = "Solution">solution2</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">5.00</item>
+<item name = "Clock uncertainty (ns)">0.63</item>
+<item name = "Estimated clock period (ns)">6.80</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2042, 2042, 1654, 1654, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="stg_28_pyrconstuct_top_Block_codeRepl20_proc_fu_172">pyrconstuct_top_Block_codeRepl20_proc, 0, 0, 0, 0, none</column>
+<column name="grp_pyrconstuct_top_Loop_1_proc_fu_165">pyrconstuct_top_Loop_1_proc, 513, 513, 513, 513, none</column>
+<column name="grp_fft_config1_s_fu_182">fft_config1_s, 1653, 1653, 1653, 1653, none</column>
+<column name="grp_pyrconstuct_top_Loop_2_proc_fu_158">pyrconstuct_top_Loop_2_proc, 513, 513, 513, 513, none</column>
+<column name="grp_pyrconstuct_top_Loop_3_proc_fu_130">pyrconstuct_top_Loop_3_proc, 1527, 1527, 1527, 1527, none</column>
+<column name="grp_pyrconstuct_top_Loop_4_proc_fu_151">pyrconstuct_top_Loop_4_proc, 514, 514, 514, 514, none</column>
+<column name="stg_38_pyrconstuct_top_Block_proc_fu_177">pyrconstuct_top_Block_proc, 0, 0, 0, 0, none</column>
+<column name="grp_fft_config2_s_fu_190">fft_config2_s, 1653, 1653, 1653, 1653, none</column>
+<column name="grp_pyrconstuct_top_Loop_5_proc_fu_142">pyrconstuct_top_Loop_5_proc, 514, 514, 514, 514, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 1</column>
+<column name="FIFO">16, -, 416, 622</column>
+<column name="Instance">7, 26, 13962, 11337</column>
+<column name="Memory">4, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 4</column>
+<column name="Register">-, -, 17, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">9, 11, 13, 22</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="fft_config1_U0">fft_config1_s, 3, 12, 5803, 4642</column>
+<column name="fft_config2_U0">fft_config2_s, 3, 12, 7903, 6262</column>
+<column name="pyrconstuct_top_Block_codeRepl20_proc_U0">pyrconstuct_top_Block_codeRepl20_proc, 0, 0, 2, 1</column>
+<column name="pyrconstuct_top_Block_proc_U0">pyrconstuct_top_Block_proc, 0, 0, 2, 1</column>
+<column name="pyrconstuct_top_Loop_1_proc_U0">pyrconstuct_top_Loop_1_proc, 0, 0, 13, 27</column>
+<column name="pyrconstuct_top_Loop_2_proc_U0">pyrconstuct_top_Loop_2_proc, 0, 0, 13, 27</column>
+<column name="pyrconstuct_top_Loop_3_proc_U0">pyrconstuct_top_Loop_3_proc, 1, 2, 190, 289</column>
+<column name="pyrconstuct_top_Loop_4_proc_U0">pyrconstuct_top_Loop_4_proc, 0, 0, 17, 27</column>
+<column name="pyrconstuct_top_Loop_5_proc_U0">pyrconstuct_top_Loop_5_proc, 0, 0, 19, 61</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="imgOutTmpBlockRam_M_real_V_U">pyrconstuct_top_imgOutTmpBlockRam_M_real_V, 2, 0, 0, 512, 24, 2, 24576</column>
+<column name="imgOutTmpBlockRam_M_imag_V_U">pyrconstuct_top_imgOutTmpBlockRam_M_real_V, 2, 0, 0, 512, 24, 2, 24576</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="fftPyrOut_M_imag_V_U">3, 63, 117, 1520, 24, 36480</column>
+<column name="fftPyrOut_M_real_V_U">3, 63, 117, 1520, 24, 36480</column>
+<column name="fft_config2_data_V_U">0, 5, 28, 1, 16, 16</column>
+<column name="fft_config_data_V_channel_U">0, 5, 20, 1, 8, 8</column>
+<column name="ifftPyrOut_channel_U">3, 78, 91, 512, 48, 24576</column>
+<column name="imgInTmp2_channel_U">2, 62, 79, 512, 32, 16384</column>
+<column name="imgInTmp_channel_U">2, 62, 79, 512, 32, 16384</column>
+<column name="imgOutTmpFFTStream_channel_U">3, 78, 91, 512, 48, 24576</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="pyrconstuct_top_Loop_3_proc_U0_ap_start">and, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_chn_write_pyrconstuct_top_Loop_2_proc_U0_imgOutTmpBlockRam_M_imag_V">1, 2, 1, 2</column>
+<column name="ap_chn_write_pyrconstuct_top_Loop_2_proc_U0_imgOutTmpBlockRam_M_real_V">1, 2, 1, 2</column>
+<column name="ap_sig_ready_pyrconstuct_top_Loop_2_proc_U0_imgOutTmpBlockRam_M_imag_V_pipo_status">1, 2, 1, 2</column>
+<column name="ap_sig_ready_pyrconstuct_top_Loop_2_proc_U0_imgOutTmpBlockRam_M_real_V_pipo_status">1, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_fft_config1_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_fft_config2_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Block_codeRepl20_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Block_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Loop_1_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Loop_2_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Loop_3_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Loop_4_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_pyrconstuct_top_Loop_5_proc_U0">1, 0, 1, 0</column>
+<column name="ap_reg_ready_pyrconstuct_top_Loop_2_proc_U0_imgOutTmpBlockRam_M_imag_V_pipo_status">1, 0, 1, 0</column>
+<column name="ap_reg_ready_pyrconstuct_top_Loop_2_proc_U0_imgOutTmpBlockRam_M_real_V_pipo_status">1, 0, 1, 0</column>
+<column name="fft_config1_U0_ap_start">1, 0, 1, 0</column>
+<column name="fft_config2_U0_ap_start">1, 0, 1, 0</column>
+<column name="pyrconstuct_top_Loop_2_proc_U0_ap_start">1, 0, 1, 0</column>
+<column name="pyrconstuct_top_Loop_4_proc_U0_ap_start">1, 0, 1, 0</column>
+<column name="pyrconstuct_top_Loop_5_proc_U0_ap_start">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, pyrconstuct_top, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, pyrconstuct_top, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, pyrconstuct_top, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, pyrconstuct_top, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, pyrconstuct_top, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, pyrconstuct_top, return value</column>
+<column name="imgIn_TDATA">in, 32, axis, imgIn, pointer</column>
+<column name="imgIn_TVALID">in, 1, axis, imgIn, pointer</column>
+<column name="imgIn_TREADY">out, 1, axis, imgIn, pointer</column>
+<column name="pyrFilOut_V_M_real_V_TDATA">out, 24, axis, pyrFilOut_V_M_real_V, pointer</column>
+<column name="pyrFilOut_V_M_real_V_TVALID">out, 1, axis, pyrFilOut_V_M_real_V, pointer</column>
+<column name="pyrFilOut_V_M_real_V_TREADY">in, 1, axis, pyrFilOut_V_M_real_V, pointer</column>
+<column name="pyrFilOut_V_M_imag_V_TDATA">out, 24, axis, pyrFilOut_V_M_imag_V, pointer</column>
+<column name="pyrFilOut_V_M_imag_V_TVALID">out, 1, axis, pyrFilOut_V_M_imag_V, pointer</column>
+<column name="pyrFilOut_V_M_imag_V_TREADY">in, 1, axis, pyrFilOut_V_M_imag_V, pointer</column>
+<column name="nL">in, 32, ap_none, nL, scalar</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">4.38</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="">call, 4.38, 4.38, -, -, -, -, -, -, -, -, -, fft&lt;config1&gt;, -</column>
+</table>
+</item>
+</section>
+</profile>

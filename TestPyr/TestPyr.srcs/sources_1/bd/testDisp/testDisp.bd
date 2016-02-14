@@ -217,16 +217,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>axis_subset_converter_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axis_subset_converter" spirit:vendor="xilinx.com" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">testDisp_axis_subset_converter_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="S_TDATA_NUM_BYTES">5</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="M_TDATA_NUM_BYTES">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="TDATA_REMAP">tdata[31:0]</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>xlconcat_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
@@ -238,6 +228,15 @@
         <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">testDisp_xlconstant_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axis_dwidth_converter_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axis_dwidth_converter" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">testDisp_axis_dwidth_converter_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="S_TDATA_NUM_BYTES">5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="M_TDATA_NUM_BYTES">4</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -280,11 +279,11 @@
       <spirit:interconnection>
         <spirit:name>pyrconstuct_top_0_pyrFilOut_V</spirit:name>
         <spirit:activeInterface spirit:busRef="pyrFilOut_V" spirit:componentRef="pyrconstuct_top_0"/>
-        <spirit:activeInterface spirit:busRef="S_AXIS" spirit:componentRef="axis_subset_converter_0"/>
+        <spirit:activeInterface spirit:busRef="S_AXIS" spirit:componentRef="axis_dwidth_converter_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>axis_subset_converter_0_M_AXIS</spirit:name>
-        <spirit:activeInterface spirit:busRef="M_AXIS" spirit:componentRef="axis_subset_converter_0"/>
+        <spirit:name>axis_dwidth_converter_0_M_AXIS</spirit:name>
+        <spirit:activeInterface spirit:busRef="M_AXIS" spirit:componentRef="axis_dwidth_converter_0"/>
         <spirit:activeInterface spirit:busRef="S_AXIS_S2MM" spirit:componentRef="axi_dma_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
@@ -300,7 +299,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_dma_0" spirit:portRef="m_axi_sg_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_dma_0" spirit:portRef="m_axi_s2mm_aclk"/>
         <spirit:internalPortReference spirit:componentRef="pyrconstuct_top_0" spirit:portRef="ap_clk"/>
-        <spirit:internalPortReference spirit:componentRef="axis_subset_converter_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ACLK"/>
@@ -310,6 +308,7 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axis_dwidth_converter_0" spirit:portRef="aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>rst_processing_system7_0_100M_peripheral_aresetn</spirit:name>
@@ -327,9 +326,9 @@
       <spirit:adHocConnection>
         <spirit:name>rst_processing_system7_0_100M_interconnect_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_100M" spirit:portRef="interconnect_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axis_subset_converter_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axis_dwidth_converter_0" spirit:portRef="aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_0_dout</spirit:name>
@@ -360,10 +359,6 @@
         <spirit:name>xlconstant_1_dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlconstant_1" spirit:portRef="dout"/>
         <spirit:internalPortReference spirit:componentRef="pyrconstuct_top_0" spirit:portRef="ap_start"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>pyrconstuct_top_0_ap_done</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pyrconstuct_top_0" spirit:portRef="ap_done"/>
         <spirit:internalPortReference spirit:componentRef="axi_dma_0" spirit:portRef="s_axis_s2mm_tlast"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>

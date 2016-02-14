@@ -1,0 +1,6 @@
+23:19:18 **** Incremental Build of configuration Debug for project pyr_sdk_test ****
+make all 
+make: Nothing to be done for `all'.
+
+23:19:18 Build Finished (took 138ms)
+

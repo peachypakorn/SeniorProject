@@ -1,0 +1,580 @@
+
+
+================================================================
+== Vivado HLS Report for 'pyrconstuct_top_Loop_1_proc'
+================================================================
+* Date:           Fri Feb 12 16:58:24 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        PyramidCon_x
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      2.07|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  513|  513|  513|  513|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  512|  512|         1|          -|          -|   512|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     16|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     11|
+|Register         |        -|      -|      13|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      13|     27|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_63_p2        |     +    |      0|  0|  10|          10|           1|
+    |exitcond1_fu_57_p2  |   icmp   |      0|  0|   4|          10|          11|
+    |ap_sig_bdd_52       |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_61       |    or    |      0|  0|   1|           1|           1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0|  16|          22|          14|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |   1|          3|    1|          3|
+    |i_reg_46   |  10|          2|   10|         20|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  11|          5|   11|         23|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+----+----+-----+-----------+
+    |     Name    | FF | LUT| Bits| Const Bits|
+    +-------------+----+----+-----+-----------+
+    |ap_CS_fsm    |   2|   0|    2|          0|
+    |ap_done_reg  |   1|   0|    1|          0|
+    |i_reg_46     |  10|   0|   10|          0|
+    +-------------+----+----+-----+-----------+
+    |Total        |  13|   0|   13|          0|
+    +-------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-----------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++-----------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|ap_start         |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|ap_done          | out |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|ap_continue      |  in |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|ap_idle          | out |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|ap_ready         | out |    1| ap_ctrl_hs | pyrconstuct_top_Loop_1_proc | return value |
+|imgIn_TDATA      |  in |   32|    axis    |            imgIn            |    pointer   |
+|imgIn_TVALID     |  in |    1|    axis    |            imgIn            |    pointer   |
+|imgIn_TREADY     | out |    1|    axis    |            imgIn            |    pointer   |
+|imgInTmp_din     | out |   32|   ap_fifo  |           imgInTmp          |    pointer   |
+|imgInTmp_full_n  |  in |    1|   ap_fifo  |           imgInTmp          |    pointer   |
+|imgInTmp_write   | out |    1|   ap_fifo  |           imgInTmp          |    pointer   |
++-----------------+-----+-----+------------+-----------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!exitcond1)
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: stg_3 [1/1] 0.00ns
+newFuncRoot:0  call void (...)* @_ssdm_op_SpecInterface(i32* %imgIn, [5 x i8]* @p_str274, i32 0, i32 0, i32 0, i32 512, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275)
+
+ST_1: stg_4 [1/1] 0.00ns
+newFuncRoot:1  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_5 [1/1] 1.57ns
+newFuncRoot:2  br label %0
+
+
+ <State 2>: 2.07ns
+ST_2: i [1/1] 0.00ns
+:0  %i = phi i10 [ 0, %newFuncRoot ], [ %i_1, %1 ]
+
+ST_2: exitcond1 [1/1] 2.07ns
+:1  %exitcond1 = icmp eq i10 %i, -512
+
+ST_2: empty [1/1] 0.00ns
+:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)
+
+ST_2: i_1 [1/1] 1.84ns
+:3  %i_1 = add i10 %i, 1
+
+ST_2: stg_10 [1/1] 0.00ns
+:4  br i1 %exitcond1, label %.exitStub, label %1
+
+ST_2: imgIn_read [1/1] 0.00ns
+:0  %imgIn_read = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %imgIn)
+
+ST_2: stg_12 [1/1] 1.00ns
+:1  call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %imgInTmp, i32 %imgIn_read)
+
+ST_2: stg_13 [1/1] 0.00ns
+:2  br label %0
+
+ST_2: stg_14 [1/1] 0.00ns
+.exitStub:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is clock enabled: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ imgIn]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x24a4ea97a10; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ imgInTmp]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; mode=0x24a4ea9a830; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+stg_3      (specinterface    ) [ 000]
+stg_4      (specinterface    ) [ 000]
+stg_5      (br               ) [ 011]
+i          (phi              ) [ 001]
+exitcond1  (icmp             ) [ 001]
+empty      (speclooptripcount) [ 000]
+i_1        (add              ) [ 011]
+stg_10     (br               ) [ 000]
+imgIn_read (read             ) [ 000]
+stg_12     (write            ) [ 000]
+stg_13     (br               ) [ 011]
+stg_14     (ret              ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="imgIn">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgIn"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="imgInTmp">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgInTmp"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str274"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str275"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.axis.volatile.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_fifo.volatile.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1004" name="imgIn_read_read_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="32" slack="0"/>
+<pin id="34" dir="0" index="1" bw="32" slack="0"/>
+<pin id="35" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="imgIn_read/2 "/>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="stg_12_write_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="0" slack="0"/>
+<pin id="40" dir="0" index="1" bw="32" slack="0"/>
+<pin id="41" dir="0" index="2" bw="32" slack="0"/>
+<pin id="42" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="stg_12/2 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1005" name="i_reg_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="10" slack="1"/>
+<pin id="48" dir="1" index="1" bw="10" slack="1"/>
+</pin_list>
+<bind>
+<opset="i (phireg) "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="i_phi_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="1" slack="1"/>
+<pin id="52" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="53" dir="0" index="2" bw="10" slack="0"/>
+<pin id="54" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="55" dir="1" index="4" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="i/2 "/>
+</bind>
+</comp>
+
+<comp id="57" class="1004" name="exitcond1_fu_57">
+<pin_list>
+<pin id="58" dir="0" index="0" bw="10" slack="0"/>
+<pin id="59" dir="0" index="1" bw="10" slack="0"/>
+<pin id="60" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="exitcond1/2 "/>
+</bind>
+</comp>
+
+<comp id="63" class="1004" name="i_1_fu_63">
+<pin_list>
+<pin id="64" dir="0" index="0" bw="10" slack="0"/>
+<pin id="65" dir="0" index="1" bw="1" slack="0"/>
+<pin id="66" dir="1" index="2" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="i_1/2 "/>
+</bind>
+</comp>
+
+<comp id="72" class="1005" name="i_1_reg_72">
+<pin_list>
+<pin id="73" dir="0" index="0" bw="10" slack="0"/>
+<pin id="74" dir="1" index="1" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opset="i_1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="36"><net_src comp="28" pin="0"/><net_sink comp="32" pin=0"/></net>
+
+<net id="37"><net_src comp="0" pin="0"/><net_sink comp="32" pin=1"/></net>
+
+<net id="43"><net_src comp="30" pin="0"/><net_sink comp="38" pin=0"/></net>
+
+<net id="44"><net_src comp="2" pin="0"/><net_sink comp="38" pin=1"/></net>
+
+<net id="45"><net_src comp="32" pin="2"/><net_sink comp="38" pin=2"/></net>
+
+<net id="49"><net_src comp="18" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="56"><net_src comp="46" pin="1"/><net_sink comp="50" pin=0"/></net>
+
+<net id="61"><net_src comp="50" pin="4"/><net_sink comp="57" pin=0"/></net>
+
+<net id="62"><net_src comp="20" pin="0"/><net_sink comp="57" pin=1"/></net>
+
+<net id="67"><net_src comp="50" pin="4"/><net_sink comp="63" pin=0"/></net>
+
+<net id="68"><net_src comp="26" pin="0"/><net_sink comp="63" pin=1"/></net>
+
+<net id="75"><net_src comp="63" pin="2"/><net_sink comp="72" pin=0"/></net>
+
+<net id="76"><net_src comp="72" pin="1"/><net_sink comp="50" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: imgIn | {}
+	Port: imgInTmp | {2 }
+  - Chain level:
+	State 1
+	State 2
+		exitcond1 : 1
+		i_1 : 1
+		stg_10 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------|---------|---------|
+| Operation|    Functional Unit    |    FF   |   LUT   |
+|----------|-----------------------|---------|---------|
+|    add   |       i_1_fu_63       |    0    |    10   |
+|----------|-----------------------|---------|---------|
+|   icmp   |    exitcond1_fu_57    |    0    |    4    |
+|----------|-----------------------|---------|---------|
+|   read   | imgIn_read_read_fu_32 |    0    |    0    |
+|----------|-----------------------|---------|---------|
+|   write  |   stg_12_write_fu_38  |    0    |    0    |
+|----------|-----------------------|---------|---------|
+|   Total  |                       |    0    |    14   |
+|----------|-----------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++----------+--------+
+|          |   FF   |
++----------+--------+
+|i_1_reg_72|   10   |
+| i_reg_46 |   10   |
++----------+--------+
+|   Total  |   20   |
++----------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |    0   |   14   |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |   20   |    -   |
++-----------+--------+--------+
+|   Total   |   20   |   14   |
++-----------+--------+--------+

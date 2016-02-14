@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.1 (64-bit)
+# SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+# IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+# Start of session at: Thu Dec 31 02:16:43 2015
+# Process ID: 13660
+# Current directory: H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip/vivado.log
+# Journal file: H:/m/3DTV/Hardware/FPGA/PyramidCon/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

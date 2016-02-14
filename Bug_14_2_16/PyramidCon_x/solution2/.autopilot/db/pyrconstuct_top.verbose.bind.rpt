@@ -1,0 +1,1347 @@
+
+
+================================================================
+== Vivado HLS Report for 'pyrconstuct_top'
+================================================================
+* Date:           Fri Feb 12 16:58:24 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        PyramidCon_x
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      6.80|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+----------+
+    |   Latency   |   Interval  | Pipeline |
+    |  min |  max |  min |  max |   Type   |
+    +------+------+------+------+----------+
+    |  2042|  2042|  1654|  1654| dataflow |
+    +------+------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 14
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+* FSM state operations: 
+
+ <State 1>: 2.71ns
+ST_1: fft_config2_data_V [1/1] 0.00ns
+codeRepl:0  %fft_config2_data_V = alloca i16, align 2
+
+ST_1: fft_config_data_V_channel [1/1] 0.00ns
+codeRepl:1  %fft_config_data_V_channel = alloca i8, align 1
+
+ST_1: imgOutTmpFFTStream_channel [1/1] 0.00ns
+codeRepl:4  %imgOutTmpFFTStream_channel = alloca i48, align 8
+
+ST_1: imgInTmp2_channel [1/1] 0.00ns
+codeRepl:7  %imgInTmp2_channel = alloca i32, align 4
+
+ST_1: imgInTmp_channel [1/1] 0.00ns
+codeRepl:10  %imgInTmp_channel = alloca i32, align 4
+
+ST_1: ifftPyrOut_channel [1/1] 0.00ns
+codeRepl:13  %ifftPyrOut_channel = alloca i48, align 8
+
+ST_1: imgOutTmpBlockRam_M_real_V [1/1] 2.71ns
+codeRepl:20  %imgOutTmpBlockRam_M_real_V = alloca [512 x i24], align 4
+
+ST_1: imgOutTmpBlockRam_M_imag_V [1/1] 2.71ns
+codeRepl:21  %imgOutTmpBlockRam_M_imag_V = alloca [512 x i24], align 4
+
+ST_1: fftPyrOut_M_real_V [1/1] 0.00ns
+codeRepl:22  %fftPyrOut_M_real_V = alloca i24, align 4
+
+ST_1: fftPyrOut_M_imag_V [1/1] 0.00ns
+codeRepl:25  %fftPyrOut_M_imag_V = alloca i24, align 4
+
+ST_1: fft_status_data_V [1/1] 0.00ns
+codeRepl:28  %fft_status_data_V = alloca i8, align 1
+
+ST_1: fft_status2_data_V [1/1] 0.00ns
+codeRepl:29  %fft_status2_data_V = alloca i8, align 1
+
+ST_1: stg_27 [2/2] 1.00ns
+codeRepl:34  call fastcc void @pyrconstuct_top_Loop_1_proc(i32* %imgIn, i32* %imgInTmp_channel)
+
+
+ <State 2>: 0.00ns
+ST_2: stg_28 [1/1] 0.00ns
+codeRepl:33  call fastcc void @pyrconstuct_top_Block_codeRepl20_proc(i8* %fft_config_data_V_channel)
+
+ST_2: stg_29 [1/2] 0.00ns
+codeRepl:34  call fastcc void @pyrconstuct_top_Loop_1_proc(i32* %imgIn, i32* %imgInTmp_channel)
+
+
+ <State 3>: 4.38ns
+ST_3: stg_30 [2/2] 4.38ns
+codeRepl:40  call fastcc void @"fft<config1>"(i32* %imgInTmp_channel, i48* %imgOutTmpFFTStream_channel, i8* %fft_status_data_V, i8* %fft_config_data_V_channel)
+
+
+ <State 4>: 4.38ns
+ST_4: stg_31 [1/2] 4.38ns
+codeRepl:40  call fastcc void @"fft<config1>"(i32* %imgInTmp_channel, i48* %imgOutTmpFFTStream_channel, i8* %fft_status_data_V, i8* %fft_config_data_V_channel)
+
+
+ <State 5>: 0.00ns
+ST_5: stg_32 [2/2] 0.00ns
+codeRepl:41  call fastcc void @pyrconstuct_top_Loop_2_proc(i48* %imgOutTmpFFTStream_channel, [512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V)
+
+
+ <State 6>: 0.00ns
+ST_6: stg_33 [1/2] 0.00ns
+codeRepl:41  call fastcc void @pyrconstuct_top_Loop_2_proc(i48* %imgOutTmpFFTStream_channel, [512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V)
+
+
+ <State 7>: 0.00ns
+ST_7: stg_34 [2/2] 0.00ns
+codeRepl:42  call fastcc void @pyrconstuct_top_Loop_3_proc([512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V)
+
+
+ <State 8>: 0.00ns
+ST_8: stg_35 [1/2] 0.00ns
+codeRepl:42  call fastcc void @pyrconstuct_top_Loop_3_proc([512 x i24]* %imgOutTmpBlockRam_M_real_V, [512 x i24]* %imgOutTmpBlockRam_M_imag_V, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V)
+
+
+ <State 9>: 0.00ns
+ST_9: stg_36 [2/2] 0.00ns
+codeRepl:47  call fastcc void @pyrconstuct_top_Loop_4_proc(i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V, i32* %imgInTmp2_channel)
+
+
+ <State 10>: 0.00ns
+ST_10: stg_37 [1/2] 0.00ns
+codeRepl:47  call fastcc void @pyrconstuct_top_Loop_4_proc(i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_imag_V, i32* %imgInTmp2_channel)
+
+ST_10: stg_38 [1/1] 0.00ns
+codeRepl:48  call fastcc void @pyrconstuct_top_Block__proc(i16* %fft_config2_data_V)
+
+
+ <State 11>: 4.38ns
+ST_11: stg_39 [2/2] 4.38ns
+codeRepl:54  call fastcc void @"fft<config2>"(i32* %imgInTmp2_channel, i48* %ifftPyrOut_channel, i8* %fft_status2_data_V, i16* %fft_config2_data_V)
+
+
+ <State 12>: 4.38ns
+ST_12: stg_40 [1/2] 4.38ns
+codeRepl:54  call fastcc void @"fft<config2>"(i32* %imgInTmp2_channel, i48* %ifftPyrOut_channel, i8* %fft_status2_data_V, i16* %fft_config2_data_V)
+
+
+ <State 13>: 0.00ns
+ST_13: stg_41 [2/2] 0.00ns
+codeRepl:55  call fastcc void @pyrconstuct_top_Loop_5_proc(i48* %ifftPyrOut_channel, i24* %pyrFilOut_V_M_real_V, i24* %pyrFilOut_V_M_imag_V)
+
+
+ <State 14>: 2.96ns
+ST_14: stg_42 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str275) nounwind
+
+ST_14: stg_43 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %imgIn), !map !7
+
+ST_14: empty [1/1] 0.00ns
+codeRepl:5  %empty = call i32 (...)* @_ssdm_op_SpecChannel([27 x i8]* @imgOutTmpFFTStream_OC_channel_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i48* %imgOutTmpFFTStream_channel, i48* %imgOutTmpFFTStream_channel)
+
+ST_14: stg_45 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i48* %imgOutTmpFFTStream_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_23 [1/1] 0.00ns
+codeRepl:8  %empty_23 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @imgInTmp2_OC_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i32* %imgInTmp2_channel, i32* %imgInTmp2_channel)
+
+ST_14: stg_47 [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp2_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_24 [1/1] 0.00ns
+codeRepl:11  %empty_24 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @imgInTmp_OC_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i32* %imgInTmp_channel, i32* %imgInTmp_channel)
+
+ST_14: stg_49 [1/1] 0.00ns
+codeRepl:12  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_25 [1/1] 0.00ns
+codeRepl:14  %empty_25 = call i32 (...)* @_ssdm_op_SpecChannel([19 x i8]* @ifftPyrOut_OC_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 512, i32 512, i48* %ifftPyrOut_channel, i48* %ifftPyrOut_channel)
+
+ST_14: stg_51 [1/1] 0.00ns
+codeRepl:15  call void (...)* @_ssdm_op_SpecInterface(i48* %ifftPyrOut_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_52 [1/1] 0.00ns
+codeRepl:16  call void (...)* @_ssdm_op_SpecBitsMap(i24* %pyrFilOut_V_M_real_V), !map !16
+
+ST_14: stg_53 [1/1] 0.00ns
+codeRepl:17  call void (...)* @_ssdm_op_SpecBitsMap(i24* %pyrFilOut_V_M_imag_V), !map !22
+
+ST_14: stg_54 [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecBitsMap(i32 %nL), !map !26
+
+ST_14: stg_55 [1/1] 0.00ns
+codeRepl:19  call void (...)* @_ssdm_op_SpecTopModule([16 x i8]* @pyrconstuct_top_str) nounwind
+
+ST_14: empty_26 [1/1] 0.00ns
+codeRepl:23  %empty_26 = call i32 (...)* @_ssdm_op_SpecChannel([28 x i8]* @fftPyrOut_OC_M_real_OC_V_OC_c, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_real_V)
+
+ST_14: stg_57 [1/1] 0.00ns
+codeRepl:24  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_27 [1/1] 0.00ns
+codeRepl:26  %empty_27 = call i32 (...)* @_ssdm_op_SpecChannel([28 x i8]* @fftPyrOut_OC_M_imag_OC_V_OC_c, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_imag_V, i24* %fftPyrOut_M_imag_V)
+
+ST_14: stg_59 [1/1] 0.00ns
+codeRepl:27  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_60 [1/1] 0.00ns
+codeRepl:30  call void (...)* @_ssdm_op_SpecInterface(i32* %imgIn, [5 x i8]* @p_str274, i32 0, i32 0, i32 0, i32 512, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275)
+
+ST_14: stg_61 [1/1] 0.00ns
+codeRepl:31  call void (...)* @_ssdm_op_SpecInterface(i24* %pyrFilOut_V_M_real_V, i24* %pyrFilOut_V_M_imag_V, [5 x i8]* @p_str274, i32 0, i32 0, i32 0, i32 1520, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275, [1 x i8]* @p_str275)
+
+ST_14: stg_62 [1/1] 0.00ns
+codeRepl:32  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str275) nounwind
+
+ST_14: stg_63 [1/1] 0.00ns
+codeRepl:35  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_64 [1/1] 0.00ns
+codeRepl:36  call void (...)* @_ssdm_op_SpecInterface(i48* %imgOutTmpFFTStream_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_65 [1/1] 0.00ns
+codeRepl:37  call void (...)* @_ssdm_op_SpecInterface(i8* %fft_status_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_66 [1/1] 0.00ns
+codeRepl:38  call void (...)* @_ssdm_op_SpecInterface(i8* %fft_config_data_V_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_28 [1/1] 0.00ns
+codeRepl:39  %empty_28 = call i32 (...)* @_ssdm_op_SpecChannel([26 x i8]* @fft_config_OC_data_OC_V_OC_cha, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i8* %fft_config_data_V_channel, i8* %fft_config_data_V_channel)
+
+ST_14: empty_29 [1/1] 0.00ns
+codeRepl:43  %empty_29 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @fftPyrOut_OC_M_real_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_real_V, i24* %fftPyrOut_M_real_V)
+
+ST_14: stg_69 [1/1] 0.00ns
+codeRepl:44  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_30 [1/1] 0.00ns
+codeRepl:45  %empty_30 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @fftPyrOut_OC_M_imag_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1520, i32 1520, i24* %fftPyrOut_M_imag_V, i24* %fftPyrOut_M_imag_V)
+
+ST_14: stg_71 [1/1] 0.00ns
+codeRepl:46  call void (...)* @_ssdm_op_SpecInterface(i24* %fftPyrOut_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_72 [1/1] 0.00ns
+codeRepl:49  call void (...)* @_ssdm_op_SpecInterface(i32* %imgInTmp2_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_73 [1/1] 0.00ns
+codeRepl:50  call void (...)* @_ssdm_op_SpecInterface(i48* %ifftPyrOut_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_74 [1/1] 0.00ns
+codeRepl:51  call void (...)* @_ssdm_op_SpecInterface(i8* %fft_status2_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: stg_75 [1/1] 0.00ns
+codeRepl:52  call void (...)* @_ssdm_op_SpecInterface(i16* %fft_config2_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_14: empty_31 [1/1] 0.00ns
+codeRepl:53  %empty_31 = call i32 (...)* @_ssdm_op_SpecChannel([27 x i8]* @fft_config2_OC_data_OC_V_OC_ch, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i16* %fft_config2_data_V, i16* %fft_config2_data_V)
+
+ST_14: stg_77 [1/2] 2.96ns
+codeRepl:55  call fastcc void @pyrconstuct_top_Loop_5_proc(i48* %ifftPyrOut_channel, i24* %pyrFilOut_V_M_real_V, i24* %pyrFilOut_V_M_imag_V)
+
+ST_14: stg_78 [1/1] 0.00ns
+codeRepl:56  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is clock enabled: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ imgIn]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x24a4ea97350; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ pyrFilOut_V_M_real_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x24a4ea97230; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ pyrFilOut_V_M_imag_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x24a4ea97500; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ nL]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; mode=0x24a4ea97590; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ limits]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; mode=0x24a4ea97740; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ consFilters_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; mode=0x24a4ea97860; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+fft_config2_data_V         (alloca              ) [ 001111111111111]
+fft_config_data_V_channel  (alloca              ) [ 001111111111111]
+imgOutTmpFFTStream_channel (alloca              ) [ 001111111111111]
+imgInTmp2_channel          (alloca              ) [ 001111111111111]
+imgInTmp_channel           (alloca              ) [ 011111111111111]
+ifftPyrOut_channel         (alloca              ) [ 001111111111111]
+imgOutTmpBlockRam_M_real_V (alloca              ) [ 001111111000000]
+imgOutTmpBlockRam_M_imag_V (alloca              ) [ 001111111000000]
+fftPyrOut_M_real_V         (alloca              ) [ 001111111111111]
+fftPyrOut_M_imag_V         (alloca              ) [ 001111111111111]
+fft_status_data_V          (alloca              ) [ 001111111111111]
+fft_status2_data_V         (alloca              ) [ 001111111111111]
+stg_28                     (call                ) [ 000000000000000]
+stg_29                     (call                ) [ 000000000000000]
+stg_31                     (call                ) [ 000000000000000]
+stg_33                     (call                ) [ 000000000000000]
+stg_35                     (call                ) [ 000000000000000]
+stg_37                     (call                ) [ 000000000000000]
+stg_38                     (call                ) [ 000000000000000]
+stg_40                     (call                ) [ 000000000000000]
+stg_42                     (specdataflowpipeline) [ 000000000000000]
+stg_43                     (specbitsmap         ) [ 000000000000000]
+empty                      (specchannel         ) [ 000000000000000]
+stg_45                     (specinterface       ) [ 000000000000000]
+empty_23                   (specchannel         ) [ 000000000000000]
+stg_47                     (specinterface       ) [ 000000000000000]
+empty_24                   (specchannel         ) [ 000000000000000]
+stg_49                     (specinterface       ) [ 000000000000000]
+empty_25                   (specchannel         ) [ 000000000000000]
+stg_51                     (specinterface       ) [ 000000000000000]
+stg_52                     (specbitsmap         ) [ 000000000000000]
+stg_53                     (specbitsmap         ) [ 000000000000000]
+stg_54                     (specbitsmap         ) [ 000000000000000]
+stg_55                     (spectopmodule       ) [ 000000000000000]
+empty_26                   (specchannel         ) [ 000000000000000]
+stg_57                     (specinterface       ) [ 000000000000000]
+empty_27                   (specchannel         ) [ 000000000000000]
+stg_59                     (specinterface       ) [ 000000000000000]
+stg_60                     (specinterface       ) [ 000000000000000]
+stg_61                     (specinterface       ) [ 000000000000000]
+stg_62                     (specdataflowpipeline) [ 000000000000000]
+stg_63                     (specinterface       ) [ 000000000000000]
+stg_64                     (specinterface       ) [ 000000000000000]
+stg_65                     (specinterface       ) [ 000000000000000]
+stg_66                     (specinterface       ) [ 000000000000000]
+empty_28                   (specchannel         ) [ 000000000000000]
+empty_29                   (specchannel         ) [ 000000000000000]
+stg_69                     (specinterface       ) [ 000000000000000]
+empty_30                   (specchannel         ) [ 000000000000000]
+stg_71                     (specinterface       ) [ 000000000000000]
+stg_72                     (specinterface       ) [ 000000000000000]
+stg_73                     (specinterface       ) [ 000000000000000]
+stg_74                     (specinterface       ) [ 000000000000000]
+stg_75                     (specinterface       ) [ 000000000000000]
+empty_31                   (specchannel         ) [ 000000000000000]
+stg_77                     (call                ) [ 000000000000000]
+stg_78                     (ret                 ) [ 000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="imgIn">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgIn"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="pyrFilOut_V_M_real_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrFilOut_V_M_real_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="pyrFilOut_V_M_imag_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrFilOut_V_M_imag_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="nL">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="nL"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="limits">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="limits"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="consFilters_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="consFilters_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Loop_1_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Block_codeRepl20_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fft<config1>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Loop_2_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Loop_3_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Loop_4_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Block__proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fft<config2>"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_Loop_5_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str275"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgOutTmpFFTStream_OC_channel_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgInTmp2_OC_channel_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="imgInTmp_OC_channel_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ifftPyrOut_OC_channel_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pyrconstuct_top_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftPyrOut_OC_M_real_OC_V_OC_c"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1001" name="const_70">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftPyrOut_OC_M_imag_OC_V_OC_c"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1001" name="const_72">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str274"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1001" name="const_74">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fft_config_OC_data_OC_V_OC_cha"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1001" name="const_76">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftPyrOut_OC_M_real_OC_V_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1001" name="const_78">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftPyrOut_OC_M_imag_OC_V_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1001" name="const_80">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fft_config2_OC_data_OC_V_OC_ch"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="fft_config2_data_V_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="1" slack="0"/>
+<pin id="84" dir="1" index="1" bw="16" slack="9"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fft_config2_data_V/1 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="fft_config_data_V_channel_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="1" slack="0"/>
+<pin id="88" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fft_config_data_V_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="imgOutTmpFFTStream_channel_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="1" slack="0"/>
+<pin id="92" dir="1" index="1" bw="48" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="imgOutTmpFFTStream_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="imgInTmp2_channel_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="1" slack="0"/>
+<pin id="96" dir="1" index="1" bw="32" slack="8"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="imgInTmp2_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="imgInTmp_channel_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="1" slack="0"/>
+<pin id="100" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="imgInTmp_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1004" name="ifftPyrOut_channel_fu_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="1" slack="0"/>
+<pin id="104" dir="1" index="1" bw="48" slack="10"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="ifftPyrOut_channel/1 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="imgOutTmpBlockRam_M_real_V_alloca_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="1" slack="0"/>
+<pin id="108" dir="1" index="1" bw="24" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="imgOutTmpBlockRam_M_real_V/1 "/>
+</bind>
+</comp>
+
+<comp id="110" class="1004" name="imgOutTmpBlockRam_M_imag_V_alloca_fu_110">
+<pin_list>
+<pin id="111" dir="0" index="0" bw="1" slack="0"/>
+<pin id="112" dir="1" index="1" bw="24" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="imgOutTmpBlockRam_M_imag_V/1 "/>
+</bind>
+</comp>
+
+<comp id="114" class="1004" name="fftPyrOut_M_real_V_fu_114">
+<pin_list>
+<pin id="115" dir="0" index="0" bw="1" slack="0"/>
+<pin id="116" dir="1" index="1" bw="24" slack="6"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fftPyrOut_M_real_V/1 "/>
+</bind>
+</comp>
+
+<comp id="118" class="1004" name="fftPyrOut_M_imag_V_fu_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="1" slack="0"/>
+<pin id="120" dir="1" index="1" bw="24" slack="6"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fftPyrOut_M_imag_V/1 "/>
+</bind>
+</comp>
+
+<comp id="122" class="1004" name="fft_status_data_V_fu_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="1" slack="0"/>
+<pin id="124" dir="1" index="1" bw="8" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fft_status_data_V/1 "/>
+</bind>
+</comp>
+
+<comp id="126" class="1004" name="fft_status2_data_V_fu_126">
+<pin_list>
+<pin id="127" dir="0" index="0" bw="1" slack="0"/>
+<pin id="128" dir="1" index="1" bw="8" slack="10"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fft_status2_data_V/1 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1004" name="grp_pyrconstuct_top_Loop_3_proc_fu_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="0" slack="0"/>
+<pin id="132" dir="0" index="1" bw="24" slack="2147483647"/>
+<pin id="133" dir="0" index="2" bw="24" slack="2147483647"/>
+<pin id="134" dir="0" index="3" bw="24" slack="6"/>
+<pin id="135" dir="0" index="4" bw="24" slack="6"/>
+<pin id="136" dir="0" index="5" bw="10" slack="0"/>
+<pin id="137" dir="0" index="6" bw="9" slack="0"/>
+<pin id="138" dir="1" index="7" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_34/7 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="grp_pyrconstuct_top_Loop_5_proc_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="0" slack="0"/>
+<pin id="144" dir="0" index="1" bw="48" slack="12"/>
+<pin id="145" dir="0" index="2" bw="24" slack="0"/>
+<pin id="146" dir="0" index="3" bw="24" slack="0"/>
+<pin id="147" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_41/13 "/>
+</bind>
+</comp>
+
+<comp id="151" class="1004" name="grp_pyrconstuct_top_Loop_4_proc_fu_151">
+<pin_list>
+<pin id="152" dir="0" index="0" bw="0" slack="0"/>
+<pin id="153" dir="0" index="1" bw="24" slack="8"/>
+<pin id="154" dir="0" index="2" bw="24" slack="8"/>
+<pin id="155" dir="0" index="3" bw="32" slack="8"/>
+<pin id="156" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_36/9 "/>
+</bind>
+</comp>
+
+<comp id="158" class="1004" name="grp_pyrconstuct_top_Loop_2_proc_fu_158">
+<pin_list>
+<pin id="159" dir="0" index="0" bw="0" slack="0"/>
+<pin id="160" dir="0" index="1" bw="48" slack="4"/>
+<pin id="161" dir="0" index="2" bw="24" slack="2147483647"/>
+<pin id="162" dir="0" index="3" bw="24" slack="2147483647"/>
+<pin id="163" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_32/5 "/>
+</bind>
+</comp>
+
+<comp id="165" class="1004" name="grp_pyrconstuct_top_Loop_1_proc_fu_165">
+<pin_list>
+<pin id="166" dir="0" index="0" bw="0" slack="0"/>
+<pin id="167" dir="0" index="1" bw="32" slack="0"/>
+<pin id="168" dir="0" index="2" bw="32" slack="0"/>
+<pin id="169" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_27/1 "/>
+</bind>
+</comp>
+
+<comp id="172" class="1004" name="stg_28_pyrconstuct_top_Block_codeRepl20_proc_fu_172">
+<pin_list>
+<pin id="173" dir="0" index="0" bw="0" slack="0"/>
+<pin id="174" dir="0" index="1" bw="8" slack="1"/>
+<pin id="175" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_28/2 "/>
+</bind>
+</comp>
+
+<comp id="177" class="1004" name="stg_38_pyrconstuct_top_Block_proc_fu_177">
+<pin_list>
+<pin id="178" dir="0" index="0" bw="0" slack="0"/>
+<pin id="179" dir="0" index="1" bw="16" slack="9"/>
+<pin id="180" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_38/10 "/>
+</bind>
+</comp>
+
+<comp id="182" class="1004" name="grp_fft_config1_s_fu_182">
+<pin_list>
+<pin id="183" dir="0" index="0" bw="0" slack="0"/>
+<pin id="184" dir="0" index="1" bw="32" slack="2"/>
+<pin id="185" dir="0" index="2" bw="48" slack="2"/>
+<pin id="186" dir="0" index="3" bw="8" slack="2"/>
+<pin id="187" dir="0" index="4" bw="8" slack="2"/>
+<pin id="188" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_30/3 "/>
+</bind>
+</comp>
+
+<comp id="190" class="1004" name="grp_fft_config2_s_fu_190">
+<pin_list>
+<pin id="191" dir="0" index="0" bw="0" slack="0"/>
+<pin id="192" dir="0" index="1" bw="32" slack="10"/>
+<pin id="193" dir="0" index="2" bw="48" slack="10"/>
+<pin id="194" dir="0" index="3" bw="8" slack="10"/>
+<pin id="195" dir="0" index="4" bw="16" slack="10"/>
+<pin id="196" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_39/11 "/>
+</bind>
+</comp>
+
+<comp id="198" class="1005" name="fft_config2_data_V_reg_198">
+<pin_list>
+<pin id="199" dir="0" index="0" bw="16" slack="9"/>
+<pin id="200" dir="1" index="1" bw="16" slack="9"/>
+</pin_list>
+<bind>
+<opset="fft_config2_data_V "/>
+</bind>
+</comp>
+
+<comp id="204" class="1005" name="fft_config_data_V_channel_reg_204">
+<pin_list>
+<pin id="205" dir="0" index="0" bw="8" slack="1"/>
+<pin id="206" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="fft_config_data_V_channel "/>
+</bind>
+</comp>
+
+<comp id="210" class="1005" name="imgOutTmpFFTStream_channel_reg_210">
+<pin_list>
+<pin id="211" dir="0" index="0" bw="48" slack="2"/>
+<pin id="212" dir="1" index="1" bw="48" slack="2"/>
+</pin_list>
+<bind>
+<opset="imgOutTmpFFTStream_channel "/>
+</bind>
+</comp>
+
+<comp id="216" class="1005" name="imgInTmp2_channel_reg_216">
+<pin_list>
+<pin id="217" dir="0" index="0" bw="32" slack="8"/>
+<pin id="218" dir="1" index="1" bw="32" slack="8"/>
+</pin_list>
+<bind>
+<opset="imgInTmp2_channel "/>
+</bind>
+</comp>
+
+<comp id="222" class="1005" name="imgInTmp_channel_reg_222">
+<pin_list>
+<pin id="223" dir="0" index="0" bw="32" slack="0"/>
+<pin id="224" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="imgInTmp_channel "/>
+</bind>
+</comp>
+
+<comp id="228" class="1005" name="ifftPyrOut_channel_reg_228">
+<pin_list>
+<pin id="229" dir="0" index="0" bw="48" slack="10"/>
+<pin id="230" dir="1" index="1" bw="48" slack="10"/>
+</pin_list>
+<bind>
+<opset="ifftPyrOut_channel "/>
+</bind>
+</comp>
+
+<comp id="234" class="1005" name="fftPyrOut_M_real_V_reg_234">
+<pin_list>
+<pin id="235" dir="0" index="0" bw="24" slack="6"/>
+<pin id="236" dir="1" index="1" bw="24" slack="6"/>
+</pin_list>
+<bind>
+<opset="fftPyrOut_M_real_V "/>
+</bind>
+</comp>
+
+<comp id="240" class="1005" name="fftPyrOut_M_imag_V_reg_240">
+<pin_list>
+<pin id="241" dir="0" index="0" bw="24" slack="6"/>
+<pin id="242" dir="1" index="1" bw="24" slack="6"/>
+</pin_list>
+<bind>
+<opset="fftPyrOut_M_imag_V "/>
+</bind>
+</comp>
+
+<comp id="246" class="1005" name="fft_status_data_V_reg_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="8" slack="2"/>
+<pin id="248" dir="1" index="1" bw="8" slack="2"/>
+</pin_list>
+<bind>
+<opset="fft_status_data_V "/>
+</bind>
+</comp>
+
+<comp id="251" class="1005" name="fft_status2_data_V_reg_251">
+<pin_list>
+<pin id="252" dir="0" index="0" bw="8" slack="10"/>
+<pin id="253" dir="1" index="1" bw="8" slack="10"/>
+</pin_list>
+<bind>
+<opset="fft_status2_data_V "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="85"><net_src comp="12" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="89"><net_src comp="12" pin="0"/><net_sink comp="86" pin=0"/></net>
+
+<net id="93"><net_src comp="12" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="97"><net_src comp="12" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="101"><net_src comp="12" pin="0"/><net_sink comp="98" pin=0"/></net>
+
+<net id="105"><net_src comp="12" pin="0"/><net_sink comp="102" pin=0"/></net>
+
+<net id="109"><net_src comp="12" pin="0"/><net_sink comp="106" pin=0"/></net>
+
+<net id="113"><net_src comp="12" pin="0"/><net_sink comp="110" pin=0"/></net>
+
+<net id="117"><net_src comp="12" pin="0"/><net_sink comp="114" pin=0"/></net>
+
+<net id="121"><net_src comp="12" pin="0"/><net_sink comp="118" pin=0"/></net>
+
+<net id="125"><net_src comp="12" pin="0"/><net_sink comp="122" pin=0"/></net>
+
+<net id="129"><net_src comp="12" pin="0"/><net_sink comp="126" pin=0"/></net>
+
+<net id="139"><net_src comp="22" pin="0"/><net_sink comp="130" pin=0"/></net>
+
+<net id="140"><net_src comp="8" pin="0"/><net_sink comp="130" pin=5"/></net>
+
+<net id="141"><net_src comp="10" pin="0"/><net_sink comp="130" pin=6"/></net>
+
+<net id="148"><net_src comp="30" pin="0"/><net_sink comp="142" pin=0"/></net>
+
+<net id="149"><net_src comp="2" pin="0"/><net_sink comp="142" pin=2"/></net>
+
+<net id="150"><net_src comp="4" pin="0"/><net_sink comp="142" pin=3"/></net>
+
+<net id="157"><net_src comp="24" pin="0"/><net_sink comp="151" pin=0"/></net>
+
+<net id="164"><net_src comp="20" pin="0"/><net_sink comp="158" pin=0"/></net>
+
+<net id="170"><net_src comp="14" pin="0"/><net_sink comp="165" pin=0"/></net>
+
+<net id="171"><net_src comp="0" pin="0"/><net_sink comp="165" pin=1"/></net>
+
+<net id="176"><net_src comp="16" pin="0"/><net_sink comp="172" pin=0"/></net>
+
+<net id="181"><net_src comp="26" pin="0"/><net_sink comp="177" pin=0"/></net>
+
+<net id="189"><net_src comp="18" pin="0"/><net_sink comp="182" pin=0"/></net>
+
+<net id="197"><net_src comp="28" pin="0"/><net_sink comp="190" pin=0"/></net>
+
+<net id="201"><net_src comp="82" pin="1"/><net_sink comp="198" pin=0"/></net>
+
+<net id="202"><net_src comp="198" pin="1"/><net_sink comp="177" pin=1"/></net>
+
+<net id="203"><net_src comp="198" pin="1"/><net_sink comp="190" pin=4"/></net>
+
+<net id="207"><net_src comp="86" pin="1"/><net_sink comp="204" pin=0"/></net>
+
+<net id="208"><net_src comp="204" pin="1"/><net_sink comp="172" pin=1"/></net>
+
+<net id="209"><net_src comp="204" pin="1"/><net_sink comp="182" pin=4"/></net>
+
+<net id="213"><net_src comp="90" pin="1"/><net_sink comp="210" pin=0"/></net>
+
+<net id="214"><net_src comp="210" pin="1"/><net_sink comp="182" pin=2"/></net>
+
+<net id="215"><net_src comp="210" pin="1"/><net_sink comp="158" pin=1"/></net>
+
+<net id="219"><net_src comp="94" pin="1"/><net_sink comp="216" pin=0"/></net>
+
+<net id="220"><net_src comp="216" pin="1"/><net_sink comp="151" pin=3"/></net>
+
+<net id="221"><net_src comp="216" pin="1"/><net_sink comp="190" pin=1"/></net>
+
+<net id="225"><net_src comp="98" pin="1"/><net_sink comp="222" pin=0"/></net>
+
+<net id="226"><net_src comp="222" pin="1"/><net_sink comp="165" pin=2"/></net>
+
+<net id="227"><net_src comp="222" pin="1"/><net_sink comp="182" pin=1"/></net>
+
+<net id="231"><net_src comp="102" pin="1"/><net_sink comp="228" pin=0"/></net>
+
+<net id="232"><net_src comp="228" pin="1"/><net_sink comp="190" pin=2"/></net>
+
+<net id="233"><net_src comp="228" pin="1"/><net_sink comp="142" pin=1"/></net>
+
+<net id="237"><net_src comp="114" pin="1"/><net_sink comp="234" pin=0"/></net>
+
+<net id="238"><net_src comp="234" pin="1"/><net_sink comp="130" pin=3"/></net>
+
+<net id="239"><net_src comp="234" pin="1"/><net_sink comp="151" pin=1"/></net>
+
+<net id="243"><net_src comp="118" pin="1"/><net_sink comp="240" pin=0"/></net>
+
+<net id="244"><net_src comp="240" pin="1"/><net_sink comp="130" pin=4"/></net>
+
+<net id="245"><net_src comp="240" pin="1"/><net_sink comp="151" pin=2"/></net>
+
+<net id="249"><net_src comp="122" pin="1"/><net_sink comp="246" pin=0"/></net>
+
+<net id="250"><net_src comp="246" pin="1"/><net_sink comp="182" pin=3"/></net>
+
+<net id="254"><net_src comp="126" pin="1"/><net_sink comp="251" pin=0"/></net>
+
+<net id="255"><net_src comp="251" pin="1"/><net_sink comp="190" pin=3"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: pyrFilOut_V_M_real_V | {13 14 }
+	Port: pyrFilOut_V_M_imag_V | {13 14 }
+  - Chain level:
+	State 1
+		stg_27 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------------------------|---------|---------|---------|---------|---------|
+| Operation|                   Functional Unit                   |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|-----------------------------------------------------|---------|---------|---------|---------|---------|
+|          |        grp_pyrconstuct_top_Loop_3_proc_fu_130       |    0    |    2    |  15.71  |   320   |   318   |
+|          |        grp_pyrconstuct_top_Loop_5_proc_fu_142       |    0    |    0    |    0    |    21   |    42   |
+|          |        grp_pyrconstuct_top_Loop_4_proc_fu_151       |    0    |    0    |    0    |    21   |    14   |
+|          |        grp_pyrconstuct_top_Loop_2_proc_fu_158       |    0    |    0    |    0    |    20   |    14   |
+|   call   |        grp_pyrconstuct_top_Loop_1_proc_fu_165       |    0    |    0    |    0    |    20   |    14   |
+|          | stg_28_pyrconstuct_top_Block_codeRepl20_proc_fu_172 |    0    |    0    |    0    |    0    |    0    |
+|          |       stg_38_pyrconstuct_top_Block_proc_fu_177      |    0    |    0    |    0    |    0    |    0    |
+|          |               grp_fft_config1_s_fu_182              |    3    |    12   |    0    |   7903  |   6262  |
+|          |               grp_fft_config2_s_fu_190              |    3    |    12   |    0    |   7903  |   6262  |
+|----------|-----------------------------------------------------|---------|---------|---------|---------|---------|
+|   Total  |                                                     |    6    |    26   |  15.71  |  16208  |  12926  |
+|----------|-----------------------------------------------------|---------|---------|---------|---------|---------|
+
+Memories:
++--------------------------+--------+--------+--------+
+|                          |  BRAM  |   FF   |   LUT  |
++--------------------------+--------+--------+--------+
+|       consFilters_V      |    1   |    0   |    0   |
+|imgOutTmpBlockRam_M_imag_V|    2   |    0   |    0   |
+|imgOutTmpBlockRam_M_real_V|    2   |    0   |    0   |
+|          limits          |    0   |   10   |    2   |
++--------------------------+--------+--------+--------+
+|           Total          |    5   |   10   |    2   |
++--------------------------+--------+--------+--------+
+
+* Register list:
++----------------------------------+--------+
+|                                  |   FF   |
++----------------------------------+--------+
+|    fftPyrOut_M_imag_V_reg_240    |   24   |
+|    fftPyrOut_M_real_V_reg_234    |   24   |
+|    fft_config2_data_V_reg_198    |   16   |
+| fft_config_data_V_channel_reg_204|    8   |
+|    fft_status2_data_V_reg_251    |    8   |
+|     fft_status_data_V_reg_246    |    8   |
+|    ifftPyrOut_channel_reg_228    |   48   |
+|     imgInTmp2_channel_reg_216    |   32   |
+|     imgInTmp_channel_reg_222     |   32   |
+|imgOutTmpFFTStream_channel_reg_210|   48   |
++----------------------------------+--------+
+|               Total              |   248  |
++----------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    6   |   26   |   15   |  16208 |  12926 |
+|   Memory  |    5   |    -   |    -   |   10   |    2   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |   248  |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |   11   |   26   |   15   |  16466 |  12928 |
++-----------+--------+--------+--------+--------+--------+

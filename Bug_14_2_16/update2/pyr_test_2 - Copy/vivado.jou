@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Feb 13 23:34:59 2016
+# Process ID: 7532
+# Current directory: C:/Users/Peachy/Desktop/pyr_test_2 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4568 C:\Users\Peachy\Desktop\pyr_test_2 - Copy\pyr_test_2.xpr
+# Log file: C:/Users/Peachy/Desktop/pyr_test_2 - Copy/vivado.log
+# Journal file: C:/Users/Peachy/Desktop/pyr_test_2 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.xpr}
+open_bd_design {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}
+delete_bd_objs [get_bd_intf_nets pyrconstuct_top_0_pyrFilOut_V_M_real_V]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {4.5 1088 661} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TVALID] [get_bd_pins axis_subset_converter_0/s_axis_tvalid]
+connect_bd_net [get_bd_pins axis_subset_converter_0/s_axis_tready] [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TREADY]
+connect_bd_net [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TDATA] [get_bd_pins axis_subset_converter_0/s_axis_tdata]
+delete_bd_objs [get_bd_nets pyrconstuct_top_0_pyrFilOut_V_M_real_V_TDATA]
+connect_bd_net [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TDATA] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins axis_subset_converter_0/s_axis_tdata]
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {24} CONFIG.DIN_TO {1} CONFIG.DIN_FROM {16} CONFIG.DIN_FROM {16} CONFIG.DOUT_WIDTH {16}] [get_bd_cells xlslice_0]
+endgroup
+validate_bd_design
+generate_target all [get_files  {{C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}}] -no_script -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}}] -directory {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.ip_user_files/sim_scripts} -force -quiet
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+file copy -force {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef} {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+
+launch_sdk -workspace {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk} -hwspec {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+file copy -force {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef} {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+
+launch_sdk -workspace {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk} -hwspec {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+file copy -force {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef} {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+
+launch_sdk -workspace {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk} -hwspec {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+launch_sdk -workspace {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk} -hwspec {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.sdk/pyr_test2_wrapper.hdf}
+file copy -force {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef} C:/Users/Peachy/Desktop/2/pyr_test2_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Peachy/Desktop/2 -hwspec C:/Users/Peachy/Desktop/2/pyr_test2_wrapper.hdf
+open_bd_design {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}
+startgroup
+set_property -dict [list CONFIG.M_HAS_TKEEP.VALUE_SRC PROPAGATED CONFIG.M_HAS_TLAST.VALUE_SRC PROPAGATED] [get_bd_cells axis_subset_converter_0]
+set_property -dict [list CONFIG.DEFAULT_TLAST {0} CONFIG.TKEEP_REMAP {1'b0} CONFIG.TLAST_REMAP {1'b0}] [get_bd_cells axis_subset_converter_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.M_HAS_TKEEP.VALUE_SRC USER CONFIG.M_HAS_TLAST.VALUE_SRC USER] [get_bd_cells axis_subset_converter_0]
+set_property -dict [list CONFIG.M_HAS_TKEEP {0} CONFIG.M_HAS_TLAST {0} CONFIG.DEFAULT_TLAST {0} CONFIG.TKEEP_REMAP {1'b0} CONFIG.TLAST_REMAP {1'b0}] [get_bd_cells axis_subset_converter_0]
+endgroup
+validate_bd_design
+generate_target all [get_files  {{C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}}] -no_script -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd}}] -directory {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.ip_user_files/sim_scripts} -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force {C:/Users/Peachy/Desktop/pyr_test_2 - Copy/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef} C:/Users/Peachy/Desktop/2/pyr_test2_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Peachy/Desktop/2 -hwspec C:/Users/Peachy/Desktop/2/pyr_test2_wrapper.hdf
+startgroup
+set_property -dict [list CONFIG.c_include_mm2s_dre {0} CONFIG.c_include_s2mm_dre {1} CONFIG.c_s2mm_burst_size {256}] [get_bd_cells axi_dma_0]
+endgroup
+save_bd_design

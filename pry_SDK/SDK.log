@@ -83,3 +83,59 @@
 17:34:18 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx2016/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
 17:34:21 INFO  : XSDB server has started successfully.
 17:34:21 INFO  : Processing command line option -hwspec F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf.
+17:36:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469153" && level==0} -index 1' command is executed.
+17:37:00 INFO  : FPGA configured successfully with bitstream "F:/SeniorProj/pry_SDK/testDisp_wrapper_hw_platform_0/testDisp_wrapper.bit"
+17:37:11 INFO  : ps7_init is completed.
+17:37:11 INFO  : ps7_post_config is completed.
+17:37:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:51:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469153" && level==0} -index 1' command is executed.
+17:51:32 INFO  : FPGA configured successfully with bitstream "F:/SeniorProj/pry_SDK/testDisp_wrapper_hw_platform_0/testDisp_wrapper.bit"
+17:52:30 INFO  : ps7_init is completed.
+17:52:30 INFO  : ps7_post_config is completed.
+17:52:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:53:24 INFO  : System reset is completed.
+17:53:27 INFO  : FPGA configured successfully with bitstream "F:/SeniorProj/pry_SDK/testDisp_wrapper_hw_platform_0/testDisp_wrapper.bit"
+17:53:28 INFO  : ps7_init is completed.
+17:53:28 INFO  : ps7_post_config is completed.
+17:55:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:56:04 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx2016/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:56:07 INFO  : XSDB server has started successfully.
+17:56:07 INFO  : Processing command line option -hwspec F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf.
+17:56:07 INFO  : Checking for hwspec changes in the project testDisp_wrapper_hw_platform_1.
+17:58:21 INFO  : System reset is completed.
+17:58:24 INFO  : FPGA configured successfully with bitstream "F:/SeniorProj/pry_SDK/testDisp_wrapper_hw_platform_0/testDisp_wrapper.bit"
+17:58:24 INFO  : ps7_init is completed.
+17:58:24 INFO  : ps7_post_config is completed.
+18:00:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:01:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:01:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1455105511813,  Project:1455100334608
+19:01:49 INFO  : Project testDisp_wrapper_hw_platform_1's source hardware specification located at F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:02:04 INFO  : Copied contents of F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf into \testDisp_wrapper_hw_platform_1\system.hdf.
+19:02:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:02:11 INFO  : Clearing existing target manager status.
+19:02:11 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:02:11 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+19:02:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:02:36 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx2016/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:02:40 INFO  : XSDB server has started successfully.
+19:02:40 INFO  : Processing command line option -hwspec F:/SeniorProj/pry_SDK/testDisp_wrapper.hdf.
+19:02:40 INFO  : Checking for hwspec changes in the project testDisp_wrapper_hw_platform_1.
+19:03:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:03:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469153" && level==0} -index 1' command is executed.
+19:03:26 INFO  : FPGA configured successfully with bitstream "F:/SeniorProj/pry_SDK/testDisp_wrapper_hw_platform_0/testDisp_wrapper.bit"
+19:03:41 INFO  : ps7_init is completed.
+19:03:41 INFO  : ps7_post_config is completed.
+19:03:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:04:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:04:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:04:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:05:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:05:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:06:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:06:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:06:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:06:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:13:01 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

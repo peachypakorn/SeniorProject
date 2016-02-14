@@ -1,0 +1,154 @@
+
+
+================================================================
+== Vivado HLS Report for 'pyrconstuct_top_Loop_2_proc'
+================================================================
+* Date:           Fri Feb 12 16:58:23 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        PyramidCon_x
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|      3.71|        0.63|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  513|  513|  513|  513|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  512|  512|         1|          -|          -|   512|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!exitcond_i)
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: stg_3 [1/1] 0.00ns
+newFuncRoot:0  call void (...)* @_ssdm_op_SpecInterface(i48* %imgOutTmpFFTStream, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_4 [1/1] 1.57ns
+newFuncRoot:1  br label %0
+
+
+ <State 2>: 3.71ns
+ST_2: i_0_i [1/1] 0.00ns
+:0  %i_0_i = phi i10 [ 0, %newFuncRoot ], [ %i, %1 ]
+
+ST_2: exitcond_i [1/1] 2.07ns
+:1  %exitcond_i = icmp eq i10 %i_0_i, -512
+
+ST_2: empty [1/1] 0.00ns
+:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)
+
+ST_2: i [1/1] 1.84ns
+:3  %i = add i10 %i_0_i, 1
+
+ST_2: stg_9 [1/1] 0.00ns
+:4  br i1 %exitcond_i, label %"dummy_proc2<complex<ap_fixed<24, 16, 5, 3, 0> > >.exit.exitStub", label %1
+
+ST_2: tmp_1 [1/1] 0.00ns
+:0  %tmp_1 = zext i10 %i_0_i to i64
+
+ST_2: imgOutTmpFFTStream_read [1/1] 1.00ns
+:1  %imgOutTmpFFTStream_read = call i48 @_ssdm_op_Read.ap_fifo.volatile.i48P(i48* %imgOutTmpFFTStream)
+
+ST_2: tmp [1/1] 0.00ns
+:2  %tmp = trunc i48 %imgOutTmpFFTStream_read to i24
+
+ST_2: imgOutTmpBlockRam_M_real_V_ad [1/1] 0.00ns
+:3  %imgOutTmpBlockRam_M_real_V_ad = getelementptr [512 x i24]* %imgOutTmpBlockRam_M_real_V, i64 0, i64 %tmp_1
+
+ST_2: stg_14 [1/1] 2.71ns
+:4  store i24 %tmp, i24* %imgOutTmpBlockRam_M_real_V_ad, align 8
+
+ST_2: imgOutTmpFFTStream_1_load_new [1/1] 0.00ns
+:5  %imgOutTmpFFTStream_1_load_new = call i24 @_ssdm_op_PartSelect.i24.i48.i32.i32(i48 %imgOutTmpFFTStream_read, i32 24, i32 47)
+
+ST_2: imgOutTmpBlockRam_M_imag_V_ad [1/1] 0.00ns
+:6  %imgOutTmpBlockRam_M_imag_V_ad = getelementptr [512 x i24]* %imgOutTmpBlockRam_M_imag_V, i64 0, i64 %tmp_1
+
+ST_2: stg_17 [1/1] 2.71ns
+:7  store i24 %imgOutTmpFFTStream_1_load_new, i24* %imgOutTmpBlockRam_M_imag_V_ad, align 4
+
+ST_2: stg_18 [1/1] 0.00ns
+:8  br label %0
+
+ST_2: stg_19 [1/1] 0.00ns
+dummy_proc2<complex<ap_fixed<24, 16, 5, 3, 0> > >.exit.exitStub:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

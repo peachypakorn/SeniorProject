@@ -1,0 +1,1399 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 8644
+
+Current time: 	2/13/16 9:51:21 PM ICT
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	Peachy
+User home directory: C:/Users/Peachy
+User working directory: C:/Users/Peachy/Desktop/pyr_test_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/Peachy/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Peachy/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	223 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 416 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Peachy\Desktop\pyr_test_2\pyr_test_2.xpr. Version: Vivado v2015.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 34 MB (+32980kb) [00:00:05]
+// [Engine Memory]: 404 MB (+271985kb) [00:00:05]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 482 MB. GUI used memory: 28 MB. Current time: 2/13/16 9:51:23 PM ICT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+12605kb) [00:00:08]
+// [Engine Memory]: 484 MB (+63125kb) [00:00:08]
+// [GUI Memory]: 71 MB (+22274kb) [00:00:09]
+// [Engine Memory]: 509 MB (+897kb) [00:00:09]
+// [Engine Memory]: 549 MB (+14822kb) [00:00:09]
+// [GUI Memory]: 78 MB (+3317kb) [00:00:10]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Peachy/Desktop/SeniorProj/PyramidCon_x/solution2/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 581 MB (+4753kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: pyr_test_2; location: C:/Users/Peachy/Desktop/pyr_test_2; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 830.961 ; gain = 268.609 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// [GUI Memory]: 86 MB (+4786kb) [00:00:12]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 41 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// [GUI Memory]: 92 MB (+1674kb) [00:00:56]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd} 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 57 MB. Current time: 2/13/16 9:52:13 PM ICT
+// [Engine Memory]: 658 MB (+50646kb) [00:00:59]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1 Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0 Adding component instance block -- pitchaya:hls:pyrconstuct_top:1.0 - pyrconstuct_top_0 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <pyr_test2> from BD file <C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 711 MB (+21137kb) [00:01:04]
+// [GUI Memory]: 97 MB (+468kb) [00:01:05]
+// TclEventType: RSB_CONNECTION_CHANGE
+// [Engine Memory]: 748 MB (+1055kb) [00:01:05]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 976.930 ; gain = 129.566 
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 21 seconds
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// Q:x (cq:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:x)
+// [GUI Memory]: 109 MB (+7352kb) [00:01:32]
+dismissDialog("Launch SDK"); // Q:x (cq:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk -hwspec C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk -hwspec C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 783 MB. GUI used memory: 73 MB. Current time: 2/13/16 9:52:48 PM ICT
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 481 seconds
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// [Engine Memory]: 787 MB (+1324kb) [00:10:05]
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 56 seconds
+setText("Generate TLAST", "1"); // O:ao (aO:N, t:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 796 MB. GUI used memory: 70 MB. Current time: 2/13/16 10:22:51 PM ICT
+// Elapsed time: 1671 seconds
+selectButton(PAResourceEtoH.HACGCComboBox_VALUE_OF_SPECIFIED_PARAMETER, "Enable TKEEP (M_HAS_TKEEP)"); // s:JideToggleButton (JPanel:JComponent, t:g): TRUE
+selectComboBox("Enable TKEEP (M_HAS_TKEEP)", "No", 0); // x:f (H:JPanel, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+// Elapsed time: 40 seconds
+selectButton(PAResourceEtoH.HACGCComboBox_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, "Enable TKEEP (M_HAS_TKEEP)"); // s:JideToggleButton (JPanel:JComponent, t:g): FALSE
+selectButton(PAResourceEtoH.HACGCComboBox_VALUE_OF_SPECIFIED_PARAMETER, "Enable TKEEP (M_HAS_TKEEP)"); // s:JideToggleButton (JPanel:JComponent, t:g): TRUE
+selectComboBox("Enable TKEEP (M_HAS_TKEEP)", "Yes", 1); // x:f (H:JPanel, t:g)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.M_HAS_TKEEP.VALUE_SRC USER] [get_bd_cells axis_subset_converter_0] 
+// Tcl Message: set_property -dict [list CONFIG.M_HAS_TKEEP {1} CONFIG.DEFAULT_TLAST {1} CONFIG.TKEEP_REMAP {4'b1111} CONFIG.TLAST_REMAP {tlast[0]}] [get_bd_cells axis_subset_converter_0] 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bF:g (cq:JFrame):  Validate Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1044.996 ; gain = 0.000 
+// dp:a (cq:JFrame): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY", 0); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY", 0, false, false, false, false, true); // d:a (JViewport:JComponent, dp:a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // dp:a (cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, validate_bd_design. , [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY. . ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY;-;pyr_test2;-;1;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+// [GUI Memory]: 116 MB (+1589kb) [00:39:48]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, validate_bd_design. , [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY. . ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY;-;pyr_test2;-;1;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, validate_bd_design. , [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY. . ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY;-;pyr_test2;-;1;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, validate_bd_design. , [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY. . ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY;-;pyr_test2;-;1;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+// Elapsed time: 42 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+selectButton("PAResourceTtoZ.ValidateRSBDesign_BLOCK_DESIGN_ALREADY_IN_VALIDATED_Rerun Validate Design", "Rerun Validate Design"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// bF:g (cq:JFrame):  Validate Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1048.281 ; gain = 0.000 
+// dp:a (cq:JFrame): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, dp:a)
+dismissDialog("Critical Messages"); // dp:a (cq:JFrame)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+// [GUI Memory]: 124 MB (+1773kb) [00:40:50]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd} 
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aB:x (cq:JFrame): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a:JButton (JPanel:JComponent, aB:x)
+// bF:g (cq:JFrame):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_target all [get_files  C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects  [get_files  C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd] -sync -no_script -force -quiet 
+// 'aT' command handler elapsed time: 3 seconds
+dismissDialog("Managing Output Products"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aR:y (cq:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aR:y)
+// bF:g (cq:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aR:y (cq:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd>  
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+dismissDialog("Save Constraints"); // bF:g (cq:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [BD 41-1662] The design 'pyr_test2.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// bF:g (cq:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/hdl/pyr_test2.v Verilog Output written to : C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/hdl/pyr_test2_wrapper.v 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pyr_test2_processing_system7_0_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pyr_test2_processing_system7_0_0'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 63 MB. Current time: 2/13/16 10:32:46 PM ICT
+// [Engine Memory]: 826 MB (+307kb) [00:41:32]
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pyr_test2_processing_system7_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'pyr_test2_processing_system7_0_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'pyr_test2_processing_system7_0_0'... INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pyr_test2_axi_dma_0_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pyr_test2_axi_dma_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pyr_test2_axi_dma_0_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'pyr_test2_axi_dma_0_0'... 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 . INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pyr_test2_rst_processing_system7_0_100M_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pyr_test2_rst_processing_system7_0_100M_0'... INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 924 MB. GUI used memory: 54 MB. Current time: 2/13/16 10:33:06 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 932 MB (+66864kb) [00:41:52]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: Exporting to file C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/hw_handoff/pyr_test2.hwh Generated Block Design Tcl file C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/hw_handoff/pyr_test2_bd.tcl Generated Hardware Definition File C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/hdl/pyr_test2.hwdef 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Feb 13 22:33:09 2016] Launched synth_1... Run output will be captured here: C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.runs/synth_1/runme.log [Sat Feb 13 22:33:09 2016] Launched impl_1... Run output will be captured here: C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1166.621 ; gain = 118.340 
+// ak:a (cq:JFrame): Launch Run Critical Messages: addNotify
+// Elapsed time: 341 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+dismissDialog("Launch Run Critical Messages"); // ak:a (cq:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 958 MB. GUI used memory: 59 MB. Current time: 2/13/16 10:59:37 PM ICT
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 1555 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bF:g (cq:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 999 MB (+22036kb) [01:13:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,114 MB. GUI used memory: 57 MB. Current time: 2/13/16 11:04:22 PM ICT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 1,127 MB (+82093kb) [01:13:07]
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,162 MB. GUI used memory: 64 MB. Current time: 2/13/16 11:04:27 PM ICT
+// [Engine Memory]: 1,204 MB (+20797kb) [01:13:12]
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 858 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.4 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/Peachy/Desktop/pyr_test_2/.Xil/Vivado-8644-DESKTOP-6GLAFKI/dcp/pyr_test2_wrapper_early.xdc] Finished Parsing XDC File [C:/Users/Peachy/Desktop/pyr_test_2/.Xil/Vivado-8644-DESKTOP-6GLAFKI/dcp/pyr_test2_wrapper_early.xdc] Parsing XDC File [C:/Users/Peachy/Desktop/pyr_test_2/.Xil/Vivado-8644-DESKTOP-6GLAFKI/dcp/pyr_test2_wrapper_late.xdc] Finished Parsing XDC File [C:/Users/Peachy/Desktop/pyr_test_2/.Xil/Vivado-8644-DESKTOP-6GLAFKI/dcp/pyr_test2_wrapper_late.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1387.227 ; gain = 32.684 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1387.227 ; gain = 32.684 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 69 instances were transformed.   RAM128X1S => RAM128X1S (RAMS64E, RAMS64E, MUXF7): 64 instances   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 4 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances  
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dt' command handler elapsed time: 13 seconds
+// [Engine Memory]: 1,264 MB (+244kb) [01:13:13]
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 13 seconds
+dismissDialog("Open Implemented Design"); // bF:g (cq:JFrame)
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 4.4s
+// Device view-level: 0.0
+// [Engine Memory]: 1,331 MB (+3342kb) [01:13:16]
+selectTab((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,351 MB. GUI used memory: 94 MB. Current time: 2/13/16 11:04:34 PM ICT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd} 
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// [Engine Memory]: 1,473 MB (+80125kb) [01:13:25]
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// RouteApi::initDelayMediator elapsed time: 13s
+// [Engine Memory]: 1,685 MB (+144097kb) [01:13:26]
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// N:x (cq:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // h:JCheckBox (JPanel:JComponent, N:x): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+// 'o' command handler elapsed time: 10 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // N:x (cq:JFrame)
+// Tcl Message: file copy -force C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// Q:x (cq:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:x)
+dismissDialog("Launch SDK"); // Q:x (cq:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk -hwspec C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk -hwspec C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 132 MB (+1876kb) [01:13:58]
+// Elapsed time: 17 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// N:x (cq:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // N:x (cq:JFrame)
+// Tcl Message: file copy -force C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.runs/impl_1/pyr_test2_wrapper.sysdef C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+// [GUI Memory]: 142 MB (+3136kb) [01:14:08]
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// Q:x (cq:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:x)
+dismissDialog("Launch SDK"); // Q:x (cq:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk -hwspec C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk -hwspec C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.sdk/pyr_test2_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 367 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// [GUI Memory]: 149 MB (+125kb) [01:27:51]
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 685 867} [get_bd_cells pyrconstuct_top_0] 
+// Elapsed time: 994 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+selectButton(PAResourceEtoH.HACGCComboBox_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, "Enable TKEEP (M_HAS_TKEEP)"); // s:JideToggleButton (JPanel:JComponent, t:g): FALSE
+// Elapsed time: 36 seconds
+setText("TDATA Remap String", "tdata[23:0],8'b00000000"); // O:ao (K:N, t:g)
+selectButton(PAResourceEtoH.HACGCTextField_VALUE_OF_SPECIFIED_PARAMETER, "TID Width (bits) (M_TID_WIDTH)"); // s:JideToggleButton (H:JPanel, t:g): TRUE
+selectButton(PAResourceEtoH.HACGCTextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, "TID Width (bits) (M_TID_WIDTH)"); // s:JideToggleButton (H:JPanel, t:g): FALSE
+setText("TDATA Remap String", "tdata[23:0],8'b00000000"); // O:ao (K:N, t:g)
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.M_TID_WIDTH.VALUE_SRC PROPAGATED CONFIG.M_HAS_TKEEP.VALUE_SRC PROPAGATED] [get_bd_cells axis_subset_converter_0] 
+// Tcl Message: set_property -dict [list CONFIG.TDATA_REMAP {tdata[23:0],8'b00000000} CONFIG.TKEEP_REMAP {1'b0}] [get_bd_cells axis_subset_converter_0] 
+// Tcl Message: ERROR: [IP_Flow 19-3478] Validation failed for parameter 'TKEEP Remap String(TKEEP_REMAP)' with value '1'b0' for BD Cell '/axis_subset_converter_0'. Error: undersized remap specification: 1 bits specified, 4 bits required ! 
+// Tcl Message: INFO: [IP_Flow 19-3438] Customization errors found on '/axis_subset_converter_0'. Restoring to previous valid configuration. INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.TDATA_REMAP {tdata[23:0],8'b00000000} CONFIG.TKEEP_REMAP {1'b0}] [get_bd_cells axis_subset_converter_0]' 
+// Tcl Message: ERROR: [Common 17-39] 'set_property' failed due to earlier errors. 
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "slice"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Register Slice", 0, "AXI4-Stream Register Slice", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Register Slice", 0, "AXI4-Stream Register Slice", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Register Slice", 0); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Register Slice", 0, "AXI4-Stream Register Slice", 0, false, false, false, false, false, true); // T:aw (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axis_register_slice:1.1 axis_register_slice_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 1098 647} [get_bd_cells axis_register_slice_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+selectButton(PAResourceEtoH.HACGCTextField_VALUE_OF_SPECIFIED_PARAMETER, "TDATA Width (bytes) (TDATA_NUM_BYTES)"); // s:JideToggleButton (H:JPanel, t:g): TRUE
+setText("TDATA Width (bytes)", "3", true); // O:ao (aO:N, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// bF:g (t:g):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_register_slice_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.TDATA_NUM_BYTES {3}] [get_bd_cells axis_register_slice_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Customize IP"); // bF:g (t:g)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells axis_register_slice_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "sli"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false, false, false, false, false, true); // T:aw (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 981 552} [get_bd_cells xlslice_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 30 seconds
+setText("Din From", "17"); // O:ao (cI:N, t:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,708 MB. GUI used memory: 103 MB. Current time: 2/13/16 11:31:08 PM ICT
+setText("Din Down To", "1"); // O:ao (cI:N, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.DIN_TO {1} CONFIG.DIN_FROM {17} CONFIG.DIN_FROM {17} CONFIG.DOUT_WIDTH {17}] [get_bd_cells xlslice_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlslice_0/Din] [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TDATA] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 10 seconds
+setText("Din Width", "24", true); // O:ao (cI:N, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.DIN_WIDTH {24} CONFIG.DIN_TO {1} CONFIG.DIN_FROM {17}] [get_bd_cells xlslice_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 16 seconds
+setText("Din From", "16"); // O:ao (cI:N, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.DIN_FROM {16} CONFIG.DOUT_WIDTH {16}] [get_bd_cells xlslice_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// Tcl Message: startgroup 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins axis_subset_converter_0/s_axis_tdata] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 16 seconds
+setText("TDATA Width (bytes)", "2", true); // O:ao (aO:N, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {2} CONFIG.TDATA_REMAP {16'b0000000000000000,tdata[15:0]}] [get_bd_cells axis_subset_converter_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// Tcl Message: startgroup 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 17 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bF:g (cq:JFrame):  Validate Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1915.922 ; gain = 0.000 
+// dp:a (cq:JFrame): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_subset_converter_0/S_AXIS(2) and /pyrconstuct_top_0/pyrFilOut_V_M_real_V(3)", 0); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY", 1); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_subset_converter_0/S_AXIS(2) and /pyrconstuct_top_0/pyrFilOut_V_M_real_V(3)", 0); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_subset_converter_0/S_AXIS(2) and /pyrconstuct_top_0/pyrFilOut_V_M_real_V(3)", 0); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_subset_converter_0/S_AXIS(2) and /pyrconstuct_top_0/pyrFilOut_V_M_real_V(3)", 0, false, false, false, false, true); // d:a (JViewport:JComponent, dp:a) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // dp:a (cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, validate_bd_design. , [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY. . ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY;-;pyr_test2;-;1;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, validate_bd_design. , [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY. . ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "bd_pin;-;/pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY;-;pyr_test2;-;1;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+selectButton("PAResourceTtoZ.ValidateRSBDesign_BLOCK_DESIGN_ALREADY_IN_VALIDATED_Rerun Validate Design", "Rerun Validate Design"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bF:g (cq:JFrame):  Validate Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,730 MB. GUI used memory: 104 MB. Current time: 2/13/16 11:33:08 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1929.164 ; gain = 13.242 
+// dp:a (cq:JFrame): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bF:g (cq:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, impl_1]", 5); // ag:k (JViewport:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, impl_1]", 5); // ag:k (JViewport:JComponent, cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_subset_converter_0/S_AXIS(2) and /pyrconstuct_top_0/pyrFilOut_V_M_real_V(3)", 0); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. . Please check your design and connect them if needed: . /pyrconstuct_top_0/pyrFilOut_V_M_imag_V_TREADY", 1); // d:a (JViewport:JComponent, dp:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axis_subset_converter_0/S_AXIS(2) and /pyrconstuct_top_0/pyrFilOut_V_M_real_V(3)", 0); // d:a (JViewport:JComponent, dp:a)
+// Elapsed time: 14 seconds
+dismissDialog("Critical Messages"); // dp:a (cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets pyrconstuct_top_0_pyrFilOut_V_M_real_V] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TVALID] [get_bd_pins axis_subset_converter_0/s_axis_tvalid] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins pyrconstuct_top_0/pyrFilOut_V_M_real_V_TREADY] [get_bd_pins axis_subset_converter_0/s_axis_tready] 
+// Elapsed time: 29 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bF:g (cq:JFrame):  Validate Design : addNotify
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.164 ; gain = 0.000 
+// dp:a (cq:JFrame): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, dp:a)
+dismissDialog("Critical Messages"); // dp:a (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pyr_test2_wrapper (pyr_test2_wrapper.v), pyr_test2_i - pyr_test2 (pyr_test2.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aB:x (cq:JFrame): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a:JButton (JPanel:JComponent, aB:x)
+// bF:g (cq:JFrame):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_target all [get_files  C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects  [get_files  C:/Users/Peachy/Desktop/pyr_test_2/pyr_test_2.srcs/sources_1/bd/pyr_test2/pyr_test2.bd] -sync -no_script -force -quiet 
+dismissDialog("Managing Output Products"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

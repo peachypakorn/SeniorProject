@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-//Date        : Wed Feb 10 16:49:25 2016
+//Date        : Wed Feb 10 18:16:20 2016
 //Host        : DESKTOP-SG5D71V running 64-bit major release  (build 9200)
 //Command     : generate_target testDisp.bd
 //Design      : testDisp
@@ -1814,9 +1814,9 @@ module testDisp
   wire axi_mem_intercon_M00_AXI_WREADY;
   wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
   wire axi_mem_intercon_M00_AXI_WVALID;
-  wire [31:0]axis_subset_converter_0_M_AXIS_TDATA;
-  wire axis_subset_converter_0_M_AXIS_TREADY;
-  wire axis_subset_converter_0_M_AXIS_TVALID;
+  wire [31:0]axis_dwidth_converter_0_M_AXIS_TDATA;
+  wire axis_dwidth_converter_0_M_AXIS_TREADY;
+  wire axis_dwidth_converter_0_M_AXIS_TVALID;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -1894,7 +1894,6 @@ module testDisp
   wire [31:0]processing_system7_0_axi_periph_M00_AXI_WDATA;
   wire processing_system7_0_axi_periph_M00_AXI_WREADY;
   wire [0:0]processing_system7_0_axi_periph_M00_AXI_WVALID;
-  wire pyrconstuct_top_0_ap_done;
   wire [39:0]pyrconstuct_top_0_pyrFilOut_V_TDATA;
   wire pyrconstuct_top_0_pyrFilOut_V_TREADY;
   wire pyrconstuct_top_0_pyrFilOut_V_TVALID;
@@ -1989,11 +1988,11 @@ module testDisp
         .s_axi_lite_wdata(processing_system7_0_axi_periph_M00_AXI_WDATA),
         .s_axi_lite_wready(processing_system7_0_axi_periph_M00_AXI_WREADY),
         .s_axi_lite_wvalid(processing_system7_0_axi_periph_M00_AXI_WVALID),
-        .s_axis_s2mm_tdata(axis_subset_converter_0_M_AXIS_TDATA),
+        .s_axis_s2mm_tdata(axis_dwidth_converter_0_M_AXIS_TDATA),
         .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
-        .s_axis_s2mm_tlast(pyrconstuct_top_0_ap_done),
-        .s_axis_s2mm_tready(axis_subset_converter_0_M_AXIS_TREADY),
-        .s_axis_s2mm_tvalid(axis_subset_converter_0_M_AXIS_TVALID));
+        .s_axis_s2mm_tlast(xlconstant_1_dout),
+        .s_axis_s2mm_tready(axis_dwidth_converter_0_M_AXIS_TREADY),
+        .s_axis_s2mm_tvalid(axis_dwidth_converter_0_M_AXIS_TVALID));
   testDisp_axi_mem_intercon_0 axi_mem_intercon
        (.ACLK(processing_system7_0_FCLK_CLK0),
         .ARESETN(rst_processing_system7_0_100M_interconnect_aresetn),
@@ -2101,12 +2100,12 @@ module testDisp
         .S02_AXI_wready(axi_dma_0_M_AXI_S2MM_WREADY),
         .S02_AXI_wstrb(axi_dma_0_M_AXI_S2MM_WSTRB),
         .S02_AXI_wvalid(axi_dma_0_M_AXI_S2MM_WVALID));
-  testDisp_axis_subset_converter_0_0 axis_subset_converter_0
+  testDisp_axis_dwidth_converter_0_0 axis_dwidth_converter_0
        (.aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_processing_system7_0_100M_interconnect_aresetn),
-        .m_axis_tdata(axis_subset_converter_0_M_AXIS_TDATA),
-        .m_axis_tready(axis_subset_converter_0_M_AXIS_TREADY),
-        .m_axis_tvalid(axis_subset_converter_0_M_AXIS_TVALID),
+        .m_axis_tdata(axis_dwidth_converter_0_M_AXIS_TDATA),
+        .m_axis_tready(axis_dwidth_converter_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_dwidth_converter_0_M_AXIS_TVALID),
         .s_axis_tdata(pyrconstuct_top_0_pyrFilOut_V_TDATA),
         .s_axis_tready(pyrconstuct_top_0_pyrFilOut_V_TREADY),
         .s_axis_tvalid(pyrconstuct_top_0_pyrFilOut_V_TVALID));
@@ -2289,7 +2288,6 @@ module testDisp
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
   testDisp_pyrconstuct_top_0_0 pyrconstuct_top_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
-        .ap_done(pyrconstuct_top_0_ap_done),
         .ap_rst_n(rst_processing_system7_0_100M_peripheral_aresetn),
         .ap_start(xlconstant_1_dout),
         .imgIn_TDATA(axi_dma_0_M_AXIS_MM2S_TDATA),

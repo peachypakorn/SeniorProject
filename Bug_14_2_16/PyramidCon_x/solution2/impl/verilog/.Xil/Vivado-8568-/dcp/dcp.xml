@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Checkpoint Version="4" Minor="0">
+	<BUILD_NUMBER Name="1412921"/>
+	<FULL_BUILD Name="SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015"/>
+	<PRODUCT Name="Vivado v2015.4 (64-bit)"/>
+	<Part Name="xc7z020clg484-1"/>
+	<Top Name="pyrconstuct_top"/>
+	<DisableAutoIOBuffers Name="1"/>
+	<OutOfContext Name="1"/>
+	<File Type="XDC" Name="pyrconstuct_top.xdc" ModTime="1455273170"/>
+	<File Type="XDC_IN_CONTEXT" Name="pyrconstuct_top_in_context.xdc" ModTime="1455273170"/>
